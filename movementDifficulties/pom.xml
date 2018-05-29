@@ -7,10 +7,10 @@
     </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>e3movement</artifactId>
+  <artifactId>movementDifficulties</artifactId>
   <packaging>jar</packaging>
-  <name>E3 Movement problems</name>
-  <description>Scenario based on E3's interview. Patient has trouble with movement and sometimes fails entirely</description>
+  <name>Dementia movement problems</name>
+  <description>Patient has trouble with movement and sometimes fails entirely</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
   <licenses>

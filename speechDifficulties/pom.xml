@@ -7,10 +7,10 @@
     </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>e3speech</artifactId>
+  <artifactId>speechDifficulties</artifactId>
   <packaging>jar</packaging>
-  <name>E3 Speech problems</name>
-  <description>Scenario based on E3's interview. Patient has trouble speaking and sometimes forgets words</description>
+  <name>Dementia speech problems</name>
+  <description>Patient has trouble speaking and sometimes forgets words</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
   <licenses>
