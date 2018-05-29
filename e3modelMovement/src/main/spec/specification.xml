@@ -518,14 +518,14 @@
 </object>
 <object id="FDelayFilter1" type="ingenias.editor.entities.FDelayFilter">
 <mapproperties>
-<key id="DelayPercentageField">150</key>
+<key id="DelayPercentageField">200</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
 <object id="FDelayFilter2" type="ingenias.editor.entities.FDelayFilter">
 <mapproperties>
-<key id="DelayPercentageField">200</key>
+<key id="DelayPercentageField">400</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
