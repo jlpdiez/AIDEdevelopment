@@ -313,7 +313,7 @@
 <key id="CanBeInterruptedField"></key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
-<key id="BTaskDuration">2</key>
+<key id="BTaskDuration">25</key>
 </mapproperties>
 </object>
 <object id="GoIntoBed3" type="ingenias.editor.entities.GoIntoBed">
