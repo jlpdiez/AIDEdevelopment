@@ -289,7 +289,8 @@
 		</artifactItems>
 		<!-- configure the plugin here -->
 		</configuration>
-	      </execution>
+	   </execution>
+		</executions>
 	  </plugin>
 	</plugins>
 	<pluginManagement>

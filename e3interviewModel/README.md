@@ -8,7 +8,7 @@ The problems they report she has are the following:
 
 * Sometimes when speaking she forgets words. She is aware of that.
 * Routinely forgets dates and times for schedules such as doctors.
-* Forgets about tasks she has already done like having brakfast.
+* Forgets about tasks she has already done like having breakfast.
 * She forgets about ever having been in places like the hospital where she usually goes.
 * Has difficulties when she has to take decisions. For example at one time her house flooded and  she didn't knew what to do about it.
 * Has had mood changes. It is reported that before she was more grumpy but now she seems more calmed and relaxed.
