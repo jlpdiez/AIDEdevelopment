@@ -1,4 +1,4 @@
-#Description
+# Description
 This project focuses on the interview to patient E3. 
 
 The patient is an 86 year old female who was diagnosed as having an incipient senility 4 or 5 years ago, when she started noticing she sometimes forgot words and phone numbers.
@@ -25,7 +25,7 @@ Three different simulations have been made that try to mimic some of these sympt
 
 ---
 
-##Patient sometimes forgets words
+## Patient sometimes forgets words
 
 For this case we modelled a conversation and made a filter that makes her unable to speak on occasion.
 
@@ -43,7 +43,7 @@ The resulting initialization of the simulation is as follows:
 
 ---
 
-##Patient is described as having a lower energy drive
+## Patient is described as having a lower energy drive
 
 In this case we made a simple sequence of getting in & out of bed, moving and using a chair. A filter is then applied that makes these actions take a longer time.
 
@@ -61,7 +61,7 @@ The resulting initialization is the following:
 
 ---
 
-##Patient sometimes forgets a task she was about to perform
+## Patient sometimes forgets a task she was about to perform
 
 For this simulation a sequence of task was constructed that tries to mimic typical actions performed in the morning such as showering. A filter is then applied that cancels some of the tasks that have to be performed.
 
@@ -79,7 +79,7 @@ To init the simulation we apply the following variables
 
 ---
 
-##Difficulties encountered
+## Difficulties encountered
 
 Some issues were encountered when trying to model the interview into the software. The main problem is that a lot of information gets lost along the way as there is no direct way of modelling things such as feelings, thoughts or emotions.
 
