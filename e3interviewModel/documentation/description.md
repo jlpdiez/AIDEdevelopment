@@ -11,7 +11,7 @@ The problems they report she has are the following:
 * Routinely forgets dates and times for schedules such as doctors.
 * Forgets about tasks she has already done like having breakfast.
 * She forgets about ever having been in places like the hospital where she usually goes.
-* Has difficulties when she has to take decisions. For example at one time her house flooded and  she didn't knew what to do about it.
+* Has difficulties when she has to take decisions. For example at one time her house flooded and she didn't knew what to do about it.
 * Has had mood changes. It is reported that before she was more grumpy but now she seems more calmed and relaxed.
 * She has lower energy drive. Nowadays she is more lazy while before she was always doing things.
 
@@ -78,3 +78,16 @@ To init the simulation we apply the following variables
 ![alt text](movementInit.png "Movement simulation initialization")
 
 ---
+
+##Difficulties encountered
+
+Some issues were encountered when trying to model the interview into the software. The main problem is that a lot of information gets lost along the way as there is no direct way of modelling things such as feelings, thoughts or emotions.
+
+To give an example, there is no easy way of modelling the fact that she used to do a lot of stuff throughout the day whereas she is more "passive" nowadays.
+
+Of all the symptoms the patient and her caregiver describe many would get modelled similarly. For example in the case of forgetting tasks already performed or having difficulties while planning what to do next. Both cases fit pretty well on the "SimTasks" simulation, where one task is replaced by another, as there is no easy way of describing "what's inside her head".
+
+Another example would be in the case of losing oneself at home, which wouldn't be the same as getting lost in a railroad station. In both cases the simulation would be more or less the same, losing all the context and difficulties that would arise in one place or another.
+
+Another problem was in the case of simulating a conversation where the patient forgets a word. Leaving aside the fact that to model speech in which real information is shared would generate countless diagrams, there is also the fact that we are limited to "turning off" the task of speaking, thus losing all the context of trying to find a synonym.
+
