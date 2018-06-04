@@ -9,8 +9,8 @@
   <groupId>net.sf.mydevel</groupId>
   <artifactId>movementDifficulties</artifactId>
   <packaging>jar</packaging>
-  <name>Dementia movement problems</name>
-  <description>Patient has trouble with movement and sometimes fails entirely</description>
+  <name>E1 Interview</name>
+  <description>Model of E1 interview</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
   <properties>
