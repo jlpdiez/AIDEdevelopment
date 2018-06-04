@@ -2,7 +2,7 @@
 <project cid="21" version="1.2">
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
- <openeddiagram>Go to the WC</openeddiagram> <openeddiagram>Have a shower</openeddiagram> <openeddiagram>Washing hands</openeddiagram> <openeddiagram>patient morning activities</openeddiagram> <openeddiagram>VisitAllRooms</openeddiagram> <openeddiagram>Prepare the drugs</openeddiagram> <openeddiagram>TakeMedicines</openeddiagram> <openeddiagram>Rest for a while</openeddiagram> <openeddiagram>Use the fridge</openeddiagram> <openeddiagram>Wash up dishes</openeddiagram> <openeddiagram>Clean kitchen</openeddiagram> <openeddiagram>Have breakfast in chair 2</openeddiagram> <openeddiagram>Cooking a meal</openeddiagram> <openeddiagram>GoToFrontDoorAndRing</openeddiagram> <openeddiagram>House</openeddiagram> <openeddiagram>Floor0Diagram</openeddiagram> <openeddiagram>Greet Patient</openeddiagram> <openeddiagram>Devices</openeddiagram> <openeddiagram>patient schedule</openeddiagram> <openeddiagram>KitchenSpecDiag</openeddiagram> <openeddiagram>BedRoom1SpecDiag</openeddiagram> <openeddiagram>BathRoom1SpecDiag</openeddiagram> <openeddiagram>LivingRoomSpecDiag</openeddiagram> <openeddiagram>HallSpecDiag</openeddiagram> <openeddiagram>sleep for 1 hour</openeddiagram> <openeddiagram>TidyUpBedroom1</openeddiagram> <openeddiagram>Put on clothes</openeddiagram> <openeddiagram>ADSimNoSymptoms</openeddiagram> <openeddiagram>medium filter</openeddiagram> <openeddiagram>symptoms specification</openeddiagram> <openeddiagram>patient profile</openeddiagram></projectproperties>
+ <openeddiagram>Go to the WC</openeddiagram> <openeddiagram>Have a shower</openeddiagram> <openeddiagram>Washing hands</openeddiagram> <openeddiagram>patient morning activities</openeddiagram> <openeddiagram>VisitAllRooms</openeddiagram> <openeddiagram>Prepare the drugs</openeddiagram> <openeddiagram>TakeMedicines</openeddiagram> <openeddiagram>Rest for a while</openeddiagram> <openeddiagram>Use the fridge</openeddiagram> <openeddiagram>Wash up dishes</openeddiagram> <openeddiagram>Clean kitchen</openeddiagram> <openeddiagram>Have breakfast in chair 2</openeddiagram> <openeddiagram>Cooking a meal</openeddiagram> <openeddiagram>GoToFrontDoorAndRing</openeddiagram> <openeddiagram>House</openeddiagram> <openeddiagram>Floor0Diagram</openeddiagram> <openeddiagram>Greet Patient</openeddiagram> <openeddiagram>Devices</openeddiagram> <openeddiagram>patient schedule</openeddiagram> <openeddiagram>KitchenSpecDiag</openeddiagram> <openeddiagram>BedRoom1SpecDiag</openeddiagram> <openeddiagram>BathRoom1SpecDiag</openeddiagram> <openeddiagram>LivingRoomSpecDiag</openeddiagram> <openeddiagram>HallSpecDiag</openeddiagram> <openeddiagram>sleep for 1 hour</openeddiagram> <openeddiagram>TidyUpBedroom1</openeddiagram> <openeddiagram>Put on clothes</openeddiagram> <openeddiagram>ADSimNoSymptoms</openeddiagram> <openeddiagram>medium filter</openeddiagram> <openeddiagram>symptoms specification</openeddiagram> <openeddiagram>patient profile</openeddiagram> <openeddiagram>patient social profile</openeddiagram> <openeddiagram>Have breakfast in chair1</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -1215,223 +1215,18 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<object id="SayTask0" type="ingenias.editor.entities.SayTask">
+<object id="SayHi" type="ingenias.editor.entities.SayTask">
 <mapproperties>
 <key id="CanBeInterruptedField">Yes</key>
-<key id="MessageField">Please, turn on the tv for me</key>
+<key id="MessageField">Hi, how are you?</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<object id="SayTask1" type="ingenias.editor.entities.SayTask">
+<object id="GiveMedicines" type="ingenias.editor.entities.SayTask">
 <mapproperties>
 <key id="CanBeInterruptedField">Yes</key>
-<key id="MessageField">Goodmorning, how are you?</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="GiveMediciness" type="ingenias.editor.entities.SayTask">
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="MessageField">Here you are the medicines</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="OnOffButton" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">No</key>
-<key id="YPosOnScreen">280</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCButton1" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">363</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">143</key>
-</mapproperties>
-</object>
-<object id="RCButton2" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">364</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCButton3" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">364</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">334</key>
-</mapproperties>
-</object>
-<object id="RCButton4" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">450</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">145</key>
-</mapproperties>
-</object>
-<object id="RCButton5" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">450</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCButton6" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">450</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">340</key>
-</mapproperties>
-</object>
-<object id="RCButton7" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">530</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">145</key>
-</mapproperties>
-</object>
-<object id="RCButton8" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">530</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCButton9" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">530</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">340</key>
-</mapproperties>
-</object>
-<object id="RCButton0" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">620</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCWrongButton2" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">364</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">240</key>
-</mapproperties>
-</object>
-<object id="RCImpreciseButton3" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">385</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">320</key>
-</mapproperties>
-</object>
-<object id="RCWrongButton6" type="ingenias.editor.entities.TapXYTask">
-<objectproperty id="TargetSmartphone">
-</objectproperty>
-<mapproperties>
-<key id="CanBeInterruptedField">Yes</key>
-<key id="YPosOnScreen">460</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-<key id="XPosOnScreen">332</key>
-</mapproperties>
-</object>
-<object id="At 7:00" type="ingenias.editor.entities.ClockTime">
-<mapproperties>
-<key id="SecondsField">0</key>
-<key id="MinutesField">0</key>
-<key id="Description"></key>
-<key id="HoursField">7</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="At 13:00" type="ingenias.editor.entities.ClockTime">
-<mapproperties>
-<key id="SecondsField">0</key>
-<key id="MinutesField">0</key>
-<key id="Description"></key>
-<key id="HoursField">13</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="At 19:00" type="ingenias.editor.entities.ClockTime">
-<mapproperties>
-<key id="SecondsField">0</key>
-<key id="MinutesField">0</key>
-<key id="Description"></key>
-<key id="HoursField">19</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="At 23:00" type="ingenias.editor.entities.ClockTime">
-<mapproperties>
-<key id="SecondsField">0</key>
-<key id="MinutesField">0</key>
-<key id="Description"></key>
-<key id="HoursField">23</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<object id="CProb40Percent" type="ingenias.editor.entities.CProb">
-<mapproperties>
-<key id="ProbVarField">0.4</key>
+<key id="MessageField">Here are your medicines</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
@@ -1504,12 +1299,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<object id="Is market day?" type="ingenias.editor.entities.IFFlowControl">
-<mapproperties>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
 <object id="Alzheimer" type="ingenias.editor.entities.PDDiseaseStage">
 <objectproperty id="MedicationTimeSpecField">
 <object id="0" type="ingenias.editor.entities.MedicationTimeDiagramModelEntity">
@@ -1550,19 +1339,6 @@
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 <key id="ActiveWorkerField">No</key>
-</mapproperties>
-</object>
-<object id="InitialSimDate" type="ingenias.editor.entities.SDate">
-<mapproperties>
-<key id="Description"></key>
-<key id="HourField">8</key>
-<key id="HoursField"></key>
-<key id="MonthField">1</key>
-<key id="SecondField">50</key>
-<key id="YearField">2014</key>
-<key id="_view_type">INGENIAS</key>
-<key id="MinuteField">29</key>
-<key id="DayField">1</key>
 </mapproperties>
 </object>
 <object id="SDate0" type="ingenias.editor.entities.SDate">
@@ -3065,7 +2841,7 @@
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="GiveMediciness" class="ingenias.editor.entities.SayTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="377111408">
+</role><role idEntity="GiveMedicines" class="ingenias.editor.entities.SayTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="377111408">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
@@ -3078,7 +2854,7 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="GiveMediciness" class="ingenias.editor.entities.SayTask" roleName="ProducesEventsource" type="ingenias.editor.entities.ProducesEventsourceRole" dgcid="377111408">
+<role idEntity="GiveMedicines" class="ingenias.editor.entities.SayTask" roleName="ProducesEventsource" type="ingenias.editor.entities.ProducesEventsourceRole" dgcid="377111408">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -3596,7 +3372,7 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="SayTask1" class="ingenias.editor.entities.SayTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="527550960">
+<role idEntity="SayHi" class="ingenias.editor.entities.SayTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="527550960">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
@@ -3879,17 +3655,20 @@
 		<attr name="bounds">
 			<rectangle x="489" y="205" width="67" height="47"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="Daughter1" nid="node1" type="Human">
 		<attr name="bounds">
 			<rectangle x="594" y="204" width="67" height="54"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="Wife" nid="node2" type="Human">
 		<attr name="bounds">
 			<rectangle x="783" y="39" width="32" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -3899,6 +3678,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	<connected id="node6">
@@ -3916,6 +3696,7 @@
 
 
 
+
 	</connected>
 	<connected id="node7">
 
@@ -3925,6 +3706,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -3942,6 +3724,7 @@
 		</attr>
 
 
+
 	<connected id="node7">
 
 
@@ -3950,6 +3733,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -3972,6 +3756,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -3979,11 +3764,13 @@
 		<attr name="bounds">
 			<rectangle x="209" y="193" width="198" height="81"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="Daughter2" nid="node4" type="Human">
 		<attr name="bounds">
 			<rectangle x="694" y="209" width="67" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -3995,6 +3782,7 @@
 		</attr>
 
 
+
 	<connected id="node7">
 
 
@@ -4003,6 +3791,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -4025,6 +3814,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -4036,6 +3826,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -4044,6 +3835,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -4066,12 +3858,14 @@
 
 
 
+
 	</connected>
 	</node>
 			
 	<node id="PatientPersonalInfo" nid="node7" type="PersonalInfo">
 		<attr name="bounds">
 			<rectangle x="237" y="9" width="137" height="111"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4083,6 +3877,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -4091,6 +3886,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -4113,6 +3909,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -4124,6 +3921,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -4132,6 +3930,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -4154,12 +3953,14 @@
 
 
 
+
 	</connected>
 	</node>
 			
 	<node id="House" nid="node3" type="SBuilding">
 		<attr name="bounds">
 			<rectangle x="63" y="43" width="40" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4171,6 +3972,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -4179,6 +3981,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -4201,12 +4004,14 @@
 
 
 
+
 	</connected>
 	</node>
 			
 	<node id="PatientSocialNetwork" nid="node0" type="SocialNetwork">
 		<attr name="bounds">
 			<rectangle x="531" y="38" width="133" height="47"></rectangle>		</attr>
+
 
 	</node><parentship>
 </parentship>
@@ -4223,17 +4028,20 @@
 		<attr name="bounds">
 			<rectangle x="489" y="205" width="67" height="47"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node1">
 		<attr name="bounds">
 			<rectangle x="594" y="204" width="67" height="54"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node2">
 		<attr name="bounds">
 			<rectangle x="783" y="39" width="32" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4243,6 +4051,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	</node>
@@ -4255,17 +4064,20 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node6">
 		<attr name="bounds">
 			<rectangle x="209" y="193" width="198" height="81"></rectangle>		</attr>
 
+
 	</node>
 			
 	<node id="node4">
 		<attr name="bounds">
 			<rectangle x="694" y="209" width="67" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4275,6 +4087,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	</node>
@@ -4287,11 +4100,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node7">
 		<attr name="bounds">
 			<rectangle x="237" y="9" width="137" height="111"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4301,6 +4116,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	</node>
@@ -4313,11 +4129,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node3">
 		<attr name="bounds">
 			<rectangle x="63" y="43" width="40" height="47"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -4329,11 +4147,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node0">
 		<attr name="bounds">
 			<rectangle x="531" y="38" width="133" height="47"></rectangle>		</attr>
+
 
 	</node>
 	</layout>
@@ -8435,7 +8255,7 @@
 	</connected>
 	</node>
 			
-	<node id="GiveMediciness" nid="node4" type="SayTask">
+	<node id="GiveMedicines" nid="node4" type="SayTask">
 		<attr name="bounds">
 			<rectangle x="330" y="48" width="209" height="66"></rectangle>		</attr>
 		<attr name="view">
@@ -11046,7 +10866,7 @@
 
 	</node>
 			
-	<node id="SayTask1" nid="node1" type="SayTask">
+	<node id="SayHi" nid="node1" type="SayTask">
 		<attr name="bounds">
 			<rectangle x="306" y="71" width="210" height="78"></rectangle>		</attr>
 		<attr name="view">
