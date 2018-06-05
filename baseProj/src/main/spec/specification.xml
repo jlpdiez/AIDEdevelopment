@@ -1407,13 +1407,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<object id="CProb03" type="ingenias.editor.entities.CProb">
-<mapproperties>
-<key id="ProbVarField">0.3</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
 <object id="CProb02" type="ingenias.editor.entities.CProb">
 <mapproperties>
 <key id="ProbVarField">0.2</key>
@@ -1424,6 +1417,13 @@
 <object id="CProb05" type="ingenias.editor.entities.CProb">
 <mapproperties>
 <key id="ProbVarField">0.5</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="CProb03" type="ingenias.editor.entities.CProb">
+<mapproperties>
+<key id="ProbVarField">0.3</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
@@ -1683,7 +1683,17 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">The 10 signs of Alzheimers are:
+1. Memory loss that disrupts daily life.
+2. Challenges in planning or solving problems.
+3. Difficulty completing familiar tasks at home, work or leisure.
+4. Confusion with time or place.
+5. Trouble understanding visual images and spatial relationships
+6. New problems with words in speaking or writing.
+7. Misplacing things and losing the ability to retrace steps.
+8. Decreased or poor judgement.
+9. Withdrawal from work or social activities.
+10. Changes in mood and personality.</key>
 <key id="_view_type">INGENIAS</key>
 <key id="NamePDStageField"></key>
 </mapproperties>
@@ -2741,60 +2751,6 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="82" type="ingenias.editor.entities.NextFilter">
-<object id="82" type="ingenias.editor.entities.NextFilter">
-<mapproperties>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter3" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="2135080686">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FDelayFilter200" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="524607617">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="76" type="ingenias.editor.entities.AllowedTask">
-<object id="76" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter3" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="2135080686">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericSay" class="ingenias.editor.entities.SayTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1782982922">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="77" type="ingenias.editor.entities.AllowedTask">
-<object id="77" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter4" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1910932433">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericSay" class="ingenias.editor.entities.SayTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1782982922">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
 <relationship id="84" type="ingenias.editor.entities.NextFilter">
 <object id="84" type="ingenias.editor.entities.NextFilter">
 <mapproperties>
@@ -2815,18 +2771,72 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
+<relationship id="77" type="ingenias.editor.entities.AllowedTask">
+<object id="77" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter4" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1910932433">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericSay" class="ingenias.editor.entities.SayTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1782982922">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="76" type="ingenias.editor.entities.AllowedTask">
+<object id="76" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter3" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="2135080686">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericSay" class="ingenias.editor.entities.SayTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1782982922">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="82" type="ingenias.editor.entities.NextFilter">
+<object id="82" type="ingenias.editor.entities.NextFilter">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter3" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="2135080686">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FDelayFilter200" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="524607617">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
 <relationship id="85" type="ingenias.editor.entities.FPrecondition">
 <object id="85" type="ingenias.editor.entities.FPrecondition">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="CProb03" class="ingenias.editor.entities.CProb" roleName="FPreconditiontarget" type="ingenias.editor.entities.FPreconditiontargetRole" dgcid="173522752">
+<role idEntity="FUnableFilter1" class="ingenias.editor.entities.FUnableFilter" roleName="FPreconditionsource" type="ingenias.editor.entities.FPreconditionsourceRole" dgcid="381777907">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="FUnableFilter1" class="ingenias.editor.entities.FUnableFilter" roleName="FPreconditionsource" type="ingenias.editor.entities.FPreconditionsourceRole" dgcid="381777907">
+</role><role idEntity="CProb03" class="ingenias.editor.entities.CProb" roleName="FPreconditiontarget" type="ingenias.editor.entities.FPreconditiontargetRole" dgcid="630099141">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -3434,223 +3444,13 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="120" type="ingenias.editor.entities.AllowedTask">
-<object id="120" type="ingenias.editor.entities.AllowedTask">
+<relationship id="121" type="ingenias.editor.entities.AllowedTask">
+<object id="121" type="ingenias.editor.entities.AllowedTask">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="GenericGoIntoBed" class="ingenias.editor.entities.GoIntoBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="501102126">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="118" type="ingenias.editor.entities.AllowedTask">
-<object id="118" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="GenericSitDown" class="ingenias.editor.entities.SitDown" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="500813752">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="114" type="ingenias.editor.entities.AllowedTask">
-<object id="114" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="GenericGoTo" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="655301526">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="112" type="ingenias.editor.entities.AllowedTask">
-<object id="112" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="GenericGoIntoBed" class="ingenias.editor.entities.GoIntoBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="501102126">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="110" type="ingenias.editor.entities.AllowedTask">
-<object id="110" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="GenericSitDown" class="ingenias.editor.entities.SitDown" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="500813752">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="108" type="ingenias.editor.entities.AllowedTask">
-<object id="108" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericGoTo" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="655301526">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="101" type="ingenias.editor.entities.NextFilter">
-<object id="101" type="ingenias.editor.entities.NextFilter">
-<mapproperties>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FDelayFilter200" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="1693748541">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="106" type="ingenias.editor.entities.NextFilter">
-<object id="106" type="ingenias.editor.entities.NextFilter">
-<mapproperties>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FUnableFilter2" class="ingenias.editor.entities.FUnableFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="566700925">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="1515078346">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="Description"></key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="107" type="ingenias.editor.entities.FPrecondition">
-<object id="107" type="ingenias.editor.entities.FPrecondition">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FUnableFilter2" class="ingenias.editor.entities.FUnableFilter" roleName="FPreconditionsource" type="ingenias.editor.entities.FPreconditionsourceRole" dgcid="566700925">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="CProb02" class="ingenias.editor.entities.CProb" roleName="FPreconditiontarget" type="ingenias.editor.entities.FPreconditiontargetRole" dgcid="1356673050">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="109" type="ingenias.editor.entities.AllowedTask">
-<object id="109" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericGoToBodyLoc" class="ingenias.editor.entities.GoToBodyLoc" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1492792662">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="111" type="ingenias.editor.entities.AllowedTask">
-<object id="111" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericStandUp" class="ingenias.editor.entities.StandUp" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1161283519">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="113" type="ingenias.editor.entities.AllowedTask">
-<object id="113" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="GenericGetUpFromBed" class="ingenias.editor.entities.BGetUpFromBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1000870533">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="117" type="ingenias.editor.entities.AllowedTask">
-<object id="117" type="ingenias.editor.entities.AllowedTask">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="GenericGoToBodyLoc" class="ingenias.editor.entities.GoToBodyLoc" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1492792662">
+<role idEntity="GenericGetUpFromBed" class="ingenias.editor.entities.BGetUpFromBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1000870533">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -3678,13 +3478,223 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="121" type="ingenias.editor.entities.AllowedTask">
-<object id="121" type="ingenias.editor.entities.AllowedTask">
+<relationship id="117" type="ingenias.editor.entities.AllowedTask">
+<object id="117" type="ingenias.editor.entities.AllowedTask">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="GenericGetUpFromBed" class="ingenias.editor.entities.BGetUpFromBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1000870533">
+<role idEntity="GenericGoToBodyLoc" class="ingenias.editor.entities.GoToBodyLoc" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1492792662">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="113" type="ingenias.editor.entities.AllowedTask">
+<object id="113" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericGetUpFromBed" class="ingenias.editor.entities.BGetUpFromBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1000870533">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="111" type="ingenias.editor.entities.AllowedTask">
+<object id="111" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericStandUp" class="ingenias.editor.entities.StandUp" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1161283519">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="109" type="ingenias.editor.entities.AllowedTask">
+<object id="109" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericGoToBodyLoc" class="ingenias.editor.entities.GoToBodyLoc" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1492792662">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="107" type="ingenias.editor.entities.FPrecondition">
+<object id="107" type="ingenias.editor.entities.FPrecondition">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FUnableFilter2" class="ingenias.editor.entities.FUnableFilter" roleName="FPreconditionsource" type="ingenias.editor.entities.FPreconditionsourceRole" dgcid="566700925">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="CProb02" class="ingenias.editor.entities.CProb" roleName="FPreconditiontarget" type="ingenias.editor.entities.FPreconditiontargetRole" dgcid="1356673050">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="106" type="ingenias.editor.entities.NextFilter">
+<object id="106" type="ingenias.editor.entities.NextFilter">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FUnableFilter2" class="ingenias.editor.entities.FUnableFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="566700925">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="1515078346">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="101" type="ingenias.editor.entities.NextFilter">
+<object id="101" type="ingenias.editor.entities.NextFilter">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FDelayFilter200" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="1693748541">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="108" type="ingenias.editor.entities.AllowedTask">
+<object id="108" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="GenericGoTo" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="655301526">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="110" type="ingenias.editor.entities.AllowedTask">
+<object id="110" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="GenericSitDown" class="ingenias.editor.entities.SitDown" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="500813752">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="112" type="ingenias.editor.entities.AllowedTask">
+<object id="112" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="GenericGoIntoBed" class="ingenias.editor.entities.GoIntoBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="501102126">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter6" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="525657659">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="114" type="ingenias.editor.entities.AllowedTask">
+<object id="114" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="GenericGoTo" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="655301526">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="118" type="ingenias.editor.entities.AllowedTask">
+<object id="118" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="GenericSitDown" class="ingenias.editor.entities.SitDown" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="500813752">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter7" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1515078346">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="120" type="ingenias.editor.entities.AllowedTask">
+<object id="120" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="GenericGoIntoBed" class="ingenias.editor.entities.GoIntoBed" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="501102126">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -7134,7 +7144,7 @@
 
 	<graph>
 			
-	<node id="76" nid="node6" type="AllowedTask">
+	<node id="76" nid="node3" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -7143,7 +7153,7 @@
 			<rectangle x="258" y="157" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node3"><attr name="extraLabels">
+	<connected id="node6"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -7155,7 +7165,7 @@
 
 
 	</connected>
-	<connected id="node4">
+	<connected id="node5">
 
 
 
@@ -7165,87 +7175,25 @@
 	</connected>
 	</node>
 			
-	<node id="FTaskSelectorFilter4" nid="node5" type="FTaskSelectorFilter">
+	<node id="CProb03" nid="node9" type="CProb">
+		<attr name="bounds">
+			<rectangle x="808" y="223" width="67" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="FTaskSelectorFilter4" nid="node4" type="FTaskSelectorFilter">
 		<attr name="bounds">
 			<rectangle x="357" y="222" width="127" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="FDelayFilter200" nid="node2" type="FDelayFilter">
+	<node id="FDelayFilter200" nid="node7" type="FDelayFilter">
 		<attr name="bounds">
-			<rectangle x="567" y="105" width="162" height="66"></rectangle>		</attr>
+			<rectangle x="582" y="100" width="162" height="66"></rectangle>		</attr>
 
 
-	</node>
-			
-	<node id="84" nid="node9" type="NextFilter">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="537" y="241" width="16" height="31"></rectangle>		</attr>
-
-
-	<connected id="node5"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node8">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="GenericSay" nid="node4" type="SayTask">
-		<attr name="bounds">
-			<rectangle x="178" y="158" width="70" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="77" nid="node7" type="AllowedTask">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="267" y="211" width="71" height="15"></rectangle>		</attr>
-
-
-	<connected id="node5"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node4">
-
-
-
-
-
-
-	</connected>
 	</node>
 			
 	<node id="85" nid="node10" type="FPrecondition">
@@ -7254,10 +7202,10 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="724" y="251" width="79" height="15"></rectangle>		</attr>
+			<rectangle x="713" y="249" width="79" height="15"></rectangle>		</attr>
 
 
-	<connected id="node8"><attr name="extraLabels">
+	<connected id="node1"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -7269,7 +7217,7 @@
 
 
 	</connected>
-	<connected id="node0">
+	<connected id="node9">
 
 
 
@@ -7279,52 +7227,114 @@
 	</connected>
 	</node>
 			
-	<node id="CProb03" nid="node0" type="CProb">
+	<node id="84" nid="node0" type="NextFilter">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="830" y="226" width="67" height="66"></rectangle>		</attr>
+			<rectangle x="537" y="241" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="GenericSay" nid="node5" type="SayTask">
+		<attr name="bounds">
+			<rectangle x="178" y="158" width="70" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="FUnableFilter1" nid="node8" type="FUnableFilter">
+	<node id="77" nid="node2" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="267" y="211" width="71" height="15"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="82" nid="node8" type="NextFilter">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="516" y="115" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="FUnableFilter1" nid="node1" type="FUnableFilter">
 		<attr name="bounds">
 			<rectangle x="607" y="234" width="90" height="47"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="82" nid="node1" type="NextFilter">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="508" y="117" width="16" height="31"></rectangle>		</attr>
-
-
-	<connected id="node3"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node2">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="FTaskSelectorFilter3" nid="node3" type="FTaskSelectorFilter">
+	<node id="FTaskSelectorFilter3" nid="node6" type="FTaskSelectorFilter">
 		<attr name="bounds">
 			<rectangle x="339" y="95" width="127" height="66"></rectangle>		</attr>
 
@@ -7340,7 +7350,7 @@
 
 	<layout>
 			
-	<node id="node6">
+	<node id="node3">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -7351,45 +7361,23 @@
 
 	</node>
 			
-	<node id="node5">
-		<attr name="bounds">
-			<rectangle x="357" y="222" width="127" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node2">
-		<attr name="bounds">
-			<rectangle x="567" y="105" width="162" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
 	<node id="node9">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
 		<attr name="bounds">
-			<rectangle x="537" y="241" width="16" height="31"></rectangle>		</attr>
+			<rectangle x="808" y="223" width="67" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node4">
 		<attr name="bounds">
-			<rectangle x="178" y="158" width="70" height="66"></rectangle>		</attr>
+			<rectangle x="357" y="222" width="127" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node7">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
 		<attr name="bounds">
-			<rectangle x="267" y="211" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="582" y="100" width="162" height="66"></rectangle>		</attr>
 
 
 	</node>
@@ -7400,37 +7388,59 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="724" y="251" width="79" height="15"></rectangle>		</attr>
+			<rectangle x="713" y="249" width="79" height="15"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="830" y="226" width="67" height="66"></rectangle>		</attr>
+			<rectangle x="537" y="241" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="178" y="158" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="267" y="211" width="71" height="15"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="516" y="115" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
 		<attr name="bounds">
 			<rectangle x="607" y="234" width="90" height="47"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="508" y="117" width="16" height="31"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node3">
+	<node id="node6">
 		<attr name="bounds">
 			<rectangle x="339" y="95" width="127" height="66"></rectangle>		</attr>
 
@@ -9521,23 +9531,23 @@
 
 	<graph>
 			
-	<node id="GenericStandUp" nid="node8" type="StandUp">
+	<node id="GenericStandUp" nid="node17" type="StandUp">
 		<attr name="bounds">
 			<rectangle x="71" y="267" width="102" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="107" nid="node19" type="FPrecondition">
+	<node id="107" nid="node6" type="FPrecondition">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="696" y="321" width="79" height="15"></rectangle>		</attr>
+			<rectangle x="696" y="326" width="79" height="15"></rectangle>		</attr>
 
 
-	<connected id="node16"><attr name="extraLabels">
+	<connected id="node9"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9549,7 +9559,7 @@
 
 
 	</connected>
-	<connected id="node18">
+	<connected id="node7">
 
 
 
@@ -9559,7 +9569,7 @@
 	</connected>
 	</node>
 			
-	<node id="114" nid="node2" type="AllowedTask">
+	<node id="114" nid="node23" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9568,7 +9578,7 @@
 			<rectangle x="256" y="146" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node14"><attr name="extraLabels">
+	<connected id="node11"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9580,7 +9590,7 @@
 
 
 	</connected>
-	<connected id="node10">
+	<connected id="node15">
 
 
 
@@ -9590,7 +9600,7 @@
 	</connected>
 	</node>
 			
-	<node id="113" nid="node22" type="AllowedTask">
+	<node id="113" nid="node3" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9599,7 +9609,7 @@
 			<rectangle x="328" y="248" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
+	<connected id="node18"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9611,7 +9621,7 @@
 
 
 	</connected>
-	<connected id="node11">
+	<connected id="node14">
 
 
 
@@ -9621,28 +9631,28 @@
 	</connected>
 	</node>
 			
-	<node id="GenericSitDown" nid="node12" type="SitDown">
+	<node id="GenericSitDown" nid="node13" type="SitDown">
 		<attr name="bounds">
 			<rectangle x="47" y="177" width="98" height="81"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="GenericGetUpFromBed" nid="node11" type="BGetUpFromBed">
+	<node id="GenericGetUpFromBed" nid="node14" type="BGetUpFromBed">
 		<attr name="bounds">
 			<rectangle x="211" y="387" width="142" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="GenericGoTo" nid="node10" type="BGoToTask">
+	<node id="GenericGoTo" nid="node15" type="BGoToTask">
 		<attr name="bounds">
 			<rectangle x="107" y="6" width="80" height="81"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="119" nid="node24" type="AllowedTask">
+	<node id="119" nid="node1" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9651,7 +9661,7 @@
 			<rectangle x="249" y="282" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node14"><attr name="extraLabels">
+	<connected id="node11"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9663,7 +9673,7 @@
 
 
 	</connected>
-	<connected id="node8">
+	<connected id="node17">
 
 
 
@@ -9673,38 +9683,7 @@
 	</connected>
 	</node>
 			
-	<node id="117" nid="node23" type="AllowedTask">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="251" y="197" width="71" height="15"></rectangle>		</attr>
-
-
-	<connected id="node14"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node13">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="108" nid="node5" type="AllowedTask">
+	<node id="108" nid="node20" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9713,7 +9692,7 @@
 			<rectangle x="249" y="59" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
+	<connected id="node18"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9725,7 +9704,7 @@
 
 
 	</connected>
-	<connected id="node10">
+	<connected id="node15">
 
 
 
@@ -9735,16 +9714,16 @@
 	</connected>
 	</node>
 			
-	<node id="110" nid="node4" type="AllowedTask">
+	<node id="117" nid="node2" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="228" y="149" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="251" y="197" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
+	<connected id="node11"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9766,44 +9745,137 @@
 	</connected>
 	</node>
 			
-	<node id="FTaskSelectorFilter6" nid="node7" type="FTaskSelectorFilter">
+	<node id="110" nid="node21" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="228" y="149" width="71" height="15"></rectangle>		</attr>
+
+
+	<connected id="node18"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node13">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="FTaskSelectorFilter6" nid="node18" type="FTaskSelectorFilter">
 		<attr name="bounds">
 			<rectangle x="382" y="58" width="127" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="FTaskSelectorFilter7" nid="node14" type="FTaskSelectorFilter">
+	<node id="FTaskSelectorFilter7" nid="node11" type="FTaskSelectorFilter">
 		<attr name="bounds">
 			<rectangle x="395" y="245" width="127" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="FUnableFilter2" nid="node16" type="FUnableFilter">
+	<node id="FUnableFilter2" nid="node9" type="FUnableFilter">
 		<attr name="bounds">
-			<rectangle x="682" y="242" width="90" height="47"></rectangle>		</attr>
+			<rectangle x="683" y="253" width="90" height="47"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="GenericGoIntoBed" nid="node9" type="GoIntoBed">
+	<node id="GenericGoIntoBed" nid="node16" type="GoIntoBed">
 		<attr name="bounds">
 			<rectangle x="107" y="331" width="113" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="106" nid="node17" type="NextFilter">
+	<node id="106" nid="node8" type="NextFilter">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="590" y="256" width="24" height="31"></rectangle>		</attr>
+			<rectangle x="590" y="262" width="24" height="31"></rectangle>		</attr>
 
 
-	<connected id="node14"><attr name="extraLabels">
+	<connected id="node11"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node9">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="101" nid="node10" type="NextFilter">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="557" y="79" width="24" height="31"></rectangle>		</attr>
+
+
+	<connected id="node18"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node19">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="120" nid="node25" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="272" y="315" width="71" height="15"></rectangle>		</attr>
+
+
+	<connected id="node11"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9825,69 +9897,7 @@
 	</connected>
 	</node>
 			
-	<node id="101" nid="node15" type="NextFilter">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="557" y="79" width="24" height="31"></rectangle>		</attr>
-
-
-	<connected id="node7"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node6">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="120" nid="node0" type="AllowedTask">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="272" y="315" width="71" height="15"></rectangle>		</attr>
-
-
-	<connected id="node14"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node9">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="112" nid="node3" type="AllowedTask">
+	<node id="112" nid="node22" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9896,7 +9906,7 @@
 			<rectangle x="269" y="220" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
+	<connected id="node18"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9908,7 +9918,7 @@
 
 
 	</connected>
-	<connected id="node9">
+	<connected id="node16">
 
 
 
@@ -9918,7 +9928,7 @@
 	</connected>
 	</node>
 			
-	<node id="121" nid="node25" type="AllowedTask">
+	<node id="121" nid="node0" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9927,7 +9937,7 @@
 			<rectangle x="324" y="351" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node14"><attr name="extraLabels">
+	<connected id="node11"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9939,7 +9949,7 @@
 
 
 	</connected>
-	<connected id="node11">
+	<connected id="node14">
 
 
 
@@ -9949,7 +9959,7 @@
 	</connected>
 	</node>
 			
-	<node id="111" nid="node21" type="AllowedTask">
+	<node id="111" nid="node4" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9958,7 +9968,7 @@
 			<rectangle x="242" y="192" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
+	<connected id="node18"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -9970,7 +9980,7 @@
 
 
 	</connected>
-	<connected id="node8">
+	<connected id="node17">
 
 
 
@@ -9980,7 +9990,7 @@
 	</connected>
 	</node>
 			
-	<node id="109" nid="node20" type="AllowedTask">
+	<node id="109" nid="node5" type="AllowedTask">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -9989,45 +9999,7 @@
 			<rectangle x="244" y="103" width="71" height="15"></rectangle>		</attr>
 
 
-	<connected id="node7"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node13">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="CProb02" nid="node18" type="CProb">
-		<attr name="bounds">
-			<rectangle x="710" y="367" width="67" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="118" nid="node1" type="AllowedTask">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="235" y="239" width="71" height="15"></rectangle>		</attr>
-
-
-	<connected id="node14"><attr name="extraLabels">
+	<connected id="node18"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -10049,16 +10021,54 @@
 	</connected>
 	</node>
 			
-	<node id="GenericGoToBodyLoc" nid="node13" type="GoToBodyLoc">
+	<node id="118" nid="node24" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="46" y="90" width="131" height="81"></rectangle>		</attr>
+			<rectangle x="235" y="239" width="71" height="15"></rectangle>		</attr>
+
+
+	<connected id="node11"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node13">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="CProb02" nid="node7" type="CProb">
+		<attr name="bounds">
+			<rectangle x="710" y="367" width="67" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="FDelayFilter200" nid="node6" type="FDelayFilter">
+	<node id="FDelayFilter200" nid="node19" type="FDelayFilter">
 		<attr name="bounds">
 			<rectangle x="629" y="65" width="162" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="GenericGoToBodyLoc" nid="node12" type="GoToBodyLoc">
+		<attr name="bounds">
+			<rectangle x="46" y="90" width="131" height="81"></rectangle>		</attr>
 
 
 	</node><parentship>
@@ -10072,74 +10082,20 @@
 
 	<layout>
 			
-	<node id="node8">
+	<node id="node17">
 		<attr name="bounds">
 			<rectangle x="71" y="267" width="102" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node19">
+	<node id="node6">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="696" y="321" width="79" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node2">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="256" y="146" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node22">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="328" y="248" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node12">
-		<attr name="bounds">
-			<rectangle x="47" y="177" width="98" height="81"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node11">
-		<attr name="bounds">
-			<rectangle x="211" y="387" width="142" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node10">
-		<attr name="bounds">
-			<rectangle x="107" y="6" width="80" height="81"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node24">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="249" y="282" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="696" y="326" width="79" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -10150,90 +10106,7 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="251" y="197" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node5">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="249" y="59" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node4">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="228" y="149" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node7">
-		<attr name="bounds">
-			<rectangle x="382" y="58" width="127" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node14">
-		<attr name="bounds">
-			<rectangle x="395" y="245" width="127" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node16">
-		<attr name="bounds">
-			<rectangle x="682" y="242" width="90" height="47"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node9">
-		<attr name="bounds">
-			<rectangle x="107" y="331" width="113" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node17">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="590" y="256" width="24" height="31"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node15">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="557" y="79" width="24" height="31"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node0">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="272" y="315" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="256" y="146" width="71" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -10244,47 +10117,28 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="269" y="220" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="328" y="248" width="71" height="15"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node25">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+	<node id="node13">
 		<attr name="bounds">
-			<rectangle x="324" y="351" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="47" y="177" width="98" height="81"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node21">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+	<node id="node14">
 		<attr name="bounds">
-			<rectangle x="242" y="192" width="71" height="15"></rectangle>		</attr>
+			<rectangle x="211" y="387" width="142" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node20">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
+	<node id="node15">
 		<attr name="bounds">
-			<rectangle x="244" y="103" width="71" height="15"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node18">
-		<attr name="bounds">
-			<rectangle x="710" y="367" width="67" height="66"></rectangle>		</attr>
+			<rectangle x="107" y="6" width="80" height="81"></rectangle>		</attr>
 
 
 	</node>
@@ -10295,21 +10149,177 @@
 		</attr>
 
 		<attr name="bounds">
+			<rectangle x="249" y="282" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node20">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="249" y="59" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="251" y="197" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node21">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="228" y="149" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node18">
+		<attr name="bounds">
+			<rectangle x="382" y="58" width="127" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="395" y="245" width="127" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="683" y="253" width="90" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="107" y="331" width="113" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="590" y="262" width="24" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="557" y="79" width="24" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node25">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="272" y="315" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node22">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="269" y="220" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="324" y="351" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="242" y="192" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="244" y="103" width="71" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node24">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
 			<rectangle x="235" y="239" width="71" height="15"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node13">
+	<node id="node7">
 		<attr name="bounds">
-			<rectangle x="46" y="90" width="131" height="81"></rectangle>		</attr>
+			<rectangle x="710" y="367" width="67" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node6">
+	<node id="node19">
 		<attr name="bounds">
 			<rectangle x="629" y="65" width="162" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="46" y="90" width="131" height="81"></rectangle>		</attr>
 
 
 	</node>
@@ -12148,6 +12158,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="Wander20secs" nid="node4" type="WaitTask">
@@ -12156,6 +12167,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12168,6 +12180,7 @@
 		</attr>
 
 
+
 	<connected id="node4">
 
 
@@ -12176,6 +12189,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12198,6 +12212,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12207,6 +12222,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12219,6 +12235,7 @@
 		</attr>
 
 
+
 	<connected id="node3">
 
 
@@ -12227,6 +12244,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12249,6 +12267,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12260,6 +12279,7 @@
 		</attr>
 
 
+
 	<connected id="node6">
 
 
@@ -12268,6 +12288,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12290,6 +12311,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12301,6 +12323,7 @@
 		</attr>
 
 
+
 	<connected id="node1">
 
 
@@ -12309,6 +12332,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12331,6 +12355,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12342,6 +12367,7 @@
 		</attr>
 
 
+
 	<connected id="node5">
 
 
@@ -12350,6 +12376,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12372,6 +12399,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12381,6 +12409,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12393,11 +12422,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="GoToKitchen" nid="node3" type="BGoToTask">
 		<attr name="bounds">
 			<rectangle x="208" y="27" width="84" height="81"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -12409,6 +12440,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -12417,6 +12449,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -12439,6 +12472,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -12448,6 +12482,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node><parentship>
@@ -12469,6 +12504,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node4">
@@ -12477,6 +12513,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12489,6 +12526,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node0">
@@ -12497,6 +12535,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12509,6 +12548,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node7">
@@ -12517,6 +12557,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12529,6 +12570,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node10">
@@ -12537,6 +12579,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -12549,6 +12592,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node6">
@@ -12559,11 +12603,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node3">
 		<attr name="bounds">
 			<rectangle x="208" y="27" width="84" height="81"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -12575,6 +12621,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node1">
@@ -12583,6 +12630,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -13707,6 +13755,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="17" nid="node9" type="NextSeqTask">
@@ -13715,6 +13764,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	<connected id="node1">
@@ -13731,6 +13781,7 @@
 
 
 
+
 	</connected>
 	<connected id="node0">
 
@@ -13741,6 +13792,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13758,6 +13810,7 @@
 		</attr>
 
 
+
 	<connected id="node0">
 
 
@@ -13766,6 +13819,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13782,6 +13836,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13799,11 +13854,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="EatSomething60secs" nid="node1" type="Eat">
 		<attr name="bounds">
 			<rectangle x="306" y="31" width="97" height="81"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -13813,6 +13870,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -13825,6 +13883,7 @@
 		</attr>
 
 
+
 	<connected id="node3">
 
 
@@ -13833,6 +13892,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13855,6 +13915,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -13864,6 +13925,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -13876,6 +13938,7 @@
 		</attr>
 
 
+
 	<connected id="node4">
 
 
@@ -13884,6 +13947,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13906,6 +13970,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -13917,6 +13982,7 @@
 		</attr>
 
 
+
 	<connected id="node5">
 
 
@@ -13925,6 +13991,7 @@
 		<attr name="labelposition">
 			<point x="500.0" y="-20.0"></point>
 		</attr>
+
 
 
 
@@ -13947,6 +14014,7 @@
 
 
 
+
 	</connected>
 	</node>
 			
@@ -13956,6 +14024,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node><parentship>
@@ -13977,6 +14046,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node9">
@@ -13985,6 +14055,7 @@
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
+
 
 
 	</node>
@@ -13997,6 +14068,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node2">
@@ -14007,11 +14079,13 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node1">
 		<attr name="bounds">
 			<rectangle x="306" y="31" width="97" height="81"></rectangle>		</attr>
+
 
 	</node>
 			
@@ -14021,6 +14095,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -14033,6 +14108,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node4">
@@ -14041,6 +14117,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
@@ -14053,6 +14130,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node8">
@@ -14063,6 +14141,7 @@
 		</attr>
 
 
+
 	</node>
 			
 	<node id="node3">
@@ -14071,6 +14150,7 @@
 		<attr name="view">
 			<string>INGENIAS</string>
 		</attr>
+
 
 
 	</node>
