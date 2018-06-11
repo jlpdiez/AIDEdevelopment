@@ -7,9 +7,9 @@
 </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>baseModel</artifactId>
+  <artifactId>e6Model</artifactId>
   <packaging>jar</packaging>
-  <name>Base empty project</name>
+  <name>Model from interview E6</name>
   <description>A project from which to build others</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
