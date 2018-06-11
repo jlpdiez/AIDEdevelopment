@@ -19,3 +19,7 @@
 
 * Simulation diagrams do not accept GSympton type objects
 * Add an alltasks to Filter diagrams
+
+# Critical stuff:
+* When fragging folders in project view they sometimes vanish with all its contents
+* Sim doesn't seem to take into accound any of the timed actions
