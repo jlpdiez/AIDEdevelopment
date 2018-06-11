@@ -1,0 +1,17 @@
+Other
+
+compile
+edit
+generateclasspathfrommaven
+getclasspathfrommaven
+init
+packageSimTest
+runSimTest
+runSimTestNoDevices
+runSimTestNoDevicesRecord
+runSimTestOnlyDevices
+runSimTwoCameras1
+rungeneratedide
+rungeneratedidespec
+test
+testgui

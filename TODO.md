@@ -19,6 +19,7 @@
 
 * Simulation diagrams do not accept GSympton type objects
 * Add an alltasks to Filter diagrams
+* SDate for SimulationDiagrams have two similar fields: HoursField & HourField
 
 # Critical stuff:
 * When fragging folders in project view they sometimes vanish with all its contents
