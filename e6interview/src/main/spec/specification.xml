@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project cid="145" version="1.2">
+<project cid="13" version="1.2">
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
-</projectproperties>
+ <openeddiagram>social profiles</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>symptoms specification</openeddiagram> <openeddiagram>Low filter</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -17,6 +17,12 @@
    <path>
     <package id="Project"/>
     <package id="illness"/>
+    <package id="symptoms specification"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="illness"/>
+    <package id="Low filter"/>
    </path>
    <path>
     <package id="Project"/>
@@ -74,6 +80,108 @@
    </path>
 </leafpackages>
 <objects>
+<object id="BGoToTask0" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BGoToTask1" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="FDelayFilter0" type="ingenias.editor.entities.FDelayFilter">
+<mapproperties>
+<key id="DelayPercentageField"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="FTaskSelectorFilter0" type="ingenias.editor.entities.FTaskSelectorFilter">
+<mapproperties>
+<key id="ByType"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="ParkinsonsProfile0" type="ingenias.editor.entities.ParkinsonsProfile">
+<objectproperty id="BeginningDateField">
+</objectproperty>
+<objectproperty id="ParkinsonSpecDiag">
+<object id="13" type="ingenias.editor.entities.ParkinsonSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ParkinsonSpecDiagram</key>
+<key id="ModelID">symptoms specification</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="SocialProfile0" type="ingenias.editor.entities.SocialProfile">
+<objectproperty id="SocialSpecDiagField">
+<object id="6" type="ingenias.editor.entities.SocialSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SocialSpecDiagram</key>
+<key id="ModelID">social profiles</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="PDDiseaseStage0" type="ingenias.editor.entities.PDDiseaseStage">
+<objectproperty id="MedicationTimeSpecField">
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="NamePDStageField"></key>
+</mapproperties>
+</object>
+<object id="PDSymtom0" type="ingenias.editor.entities.PDSymtom">
+<objectproperty id="SymptomEvoField">
+</objectproperty>
+<mapproperties>
+<key id="PDSymptomTypeField"></key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="PatientInfo" type="ingenias.editor.entities.PersonalInfo">
+<mapproperties>
+<key id="SocialClassField">MEDIUM</key>
+<key id="StudiesLevelFied">LOW</key>
+<key id="AgeField">90</key>
+<key id="SexField">Female</key>
+<key id="Description">The patient is a 90 year old female. She had basic education only.</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="PatientProfession" type="ingenias.editor.entities.Profession">
+<mapproperties>
+<key id="ProfessionNameField">Housecare</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="ActiveWorkerField">No</key>
+</mapproperties>
+</object>
 <object id="BedRoom1RightSide" type="ingenias.editor.entities.SArea">
 <mapproperties>
 <key id="Description"></key>
@@ -340,6 +448,24 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="Patient" type="ingenias.editor.entities.Human">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Daughter0" type="ingenias.editor.entities.Human">
+<mapproperties>
+<key id="Description">The main caregiver is her daughter which is 56 years old and has gone through university</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Daughter1" type="ingenias.editor.entities.Human">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="ERemoteControl0" type="ingenias.editor.entities.ERemoteControl">
 <mapproperties>
 <key id="WidthField"></key>
@@ -418,8 +544,271 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="SocialNetwork0" type="ingenias.editor.entities.SocialNetwork">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="LOWTaskFilterR0" type="ingenias.editor.entities.LOWTaskFilterR">
+<objectproperty id="TaskAllowed" collection="true">
+<object id="10" type="ingenias.editor.entities.FilterDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">FilterDiagram</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="10" type="ingenias.editor.entities.FilterDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">FilterDiagram</key>
+<key id="ModelID">Low filter</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 </objects>
 <relationships>
+<relationship id="4" type="ingenias.editor.entities.isParentOf">
+<object id="4" type="ingenias.editor.entities.isParentOf">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Daughter1" class="ingenias.editor.entities.Human" roleName="SocialTargetMRtarget" type="ingenias.editor.entities.SocialTargetMRtargetRole" dgcid="1019577256">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialNetwork0" class="ingenias.editor.entities.SocialNetwork" roleName="SocialSourceMRsource" type="ingenias.editor.entities.SocialSourceMRsourceRole" dgcid="465264446">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="3" type="ingenias.editor.entities.isCaregiverOf">
+<object id="3" type="ingenias.editor.entities.isCaregiverOf">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Daughter0" class="ingenias.editor.entities.Human" roleName="SocialTargetMRtarget" type="ingenias.editor.entities.SocialTargetMRtargetRole" dgcid="641334889">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialNetwork0" class="ingenias.editor.entities.SocialNetwork" roleName="SocialSourceMRsource" type="ingenias.editor.entities.SocialSourceMRsourceRole" dgcid="465264446">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="2" type="ingenias.editor.entities.socialRelations">
+<object id="2" type="ingenias.editor.entities.socialRelations">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PatientInfo" class="ingenias.editor.entities.PersonalInfo" roleName="socialRelationssource" type="ingenias.editor.entities.socialRelationssourceRole" dgcid="394172584">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialNetwork0" class="ingenias.editor.entities.SocialNetwork" roleName="socialRelationstarget" type="ingenias.editor.entities.socialRelationstargetRole" dgcid="465264446">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="0" type="ingenias.editor.entities.LiveIn">
+<object id="0" type="ingenias.editor.entities.LiveIn">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="House" class="ingenias.editor.entities.SBuilding" roleName="LiveIntarget" type="ingenias.editor.entities.LiveIntargetRole" dgcid="786747116">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="PatientInfo" class="ingenias.editor.entities.PersonalInfo" roleName="LiveInsource" type="ingenias.editor.entities.LiveInsourceRole" dgcid="394172584">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="1" type="ingenias.editor.entities.WorkAs">
+<object id="1" type="ingenias.editor.entities.WorkAs">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PatientInfo" class="ingenias.editor.entities.PersonalInfo" roleName="WorkAssource" type="ingenias.editor.entities.WorkAssourceRole" dgcid="394172584">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="PatientProfession" class="ingenias.editor.entities.Profession" roleName="WorkAstarget" type="ingenias.editor.entities.WorkAstargetRole" dgcid="1725028695">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="12" type="ingenias.editor.entities.ProfileOf">
+<object id="12" type="ingenias.editor.entities.ProfileOf">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Patient" class="ingenias.editor.entities.Human" roleName="ProfileOftarget" type="ingenias.editor.entities.ProfileOftargetRole" dgcid="819821407">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="ParkinsonsProfile0" class="ingenias.editor.entities.ParkinsonsProfile" roleName="ProfileOfsource" type="ingenias.editor.entities.ProfileOfsourceRole" dgcid="131909189">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="6" type="ingenias.editor.entities.ProfileOf">
+<object id="6" type="ingenias.editor.entities.ProfileOf">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SocialProfile0" class="ingenias.editor.entities.SocialProfile" roleName="ProfileOfsource" type="ingenias.editor.entities.ProfileOfsourceRole" dgcid="1514698162">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Daughter0" class="ingenias.editor.entities.Human" roleName="ProfileOftarget" type="ingenias.editor.entities.ProfileOftargetRole" dgcid="1794345593">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="5" type="ingenias.editor.entities.ProfileOf">
+<object id="5" type="ingenias.editor.entities.ProfileOf">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Patient" class="ingenias.editor.entities.Human" roleName="ProfileOftarget" type="ingenias.editor.entities.ProfileOftargetRole" dgcid="819821407">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialProfile0" class="ingenias.editor.entities.SocialProfile" roleName="ProfileOfsource" type="ingenias.editor.entities.ProfileOfsourceRole" dgcid="1514698162">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="7" type="ingenias.editor.entities.ProfileOf">
+<object id="7" type="ingenias.editor.entities.ProfileOf">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SocialProfile0" class="ingenias.editor.entities.SocialProfile" roleName="ProfileOfsource" type="ingenias.editor.entities.ProfileOfsourceRole" dgcid="1514698162">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Daughter1" class="ingenias.editor.entities.Human" roleName="ProfileOftarget" type="ingenias.editor.entities.ProfileOftargetRole" dgcid="1912215342">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="9" type="ingenias.editor.entities.Limitations">
+<object id="9" type="ingenias.editor.entities.Limitations">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PDSymtom0" class="ingenias.editor.entities.PDSymtom" roleName="SymptomMRsource" type="ingenias.editor.entities.SymptomMRsourceRole" dgcid="1403771611">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="LOWTaskFilterR0" class="ingenias.editor.entities.LOWTaskFilterR" roleName="TaskFilterMRtarget" type="ingenias.editor.entities.TaskFilterMRtargetRole" dgcid="2003319420">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="8" type="ingenias.editor.entities.Symptoms">
+<object id="8" type="ingenias.editor.entities.Symptoms">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PDDiseaseStage0" class="ingenias.editor.entities.PDDiseaseStage" roleName="DStageMRsource" type="ingenias.editor.entities.DStageMRsourceRole" dgcid="1480744006">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="PDSymtom0" class="ingenias.editor.entities.PDSymtom" roleName="SymptomMRtarget" type="ingenias.editor.entities.SymptomMRtargetRole" dgcid="1403771611">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="11" type="ingenias.editor.entities.AllowedTask">
+<object id="11" type="ingenias.editor.entities.AllowedTask">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BGoToTask1" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="1117161829">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter0" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1137458551">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="10" type="ingenias.editor.entities.NextFilter">
+<object id="10" type="ingenias.editor.entities.NextFilter">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FDelayFilter0" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="493750359">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FTaskSelectorFilter0" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="1137458551">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
 <relationship id="162" type="ingenias.editor.entities.SBhasFloor">
 <object id="162" type="ingenias.editor.entities.SBhasFloor">
 <mapproperties>
@@ -589,7 +978,8 @@
  <model id="social profiles" type="ingenias.editor.models.SocialSpecDiagramModelJGraph">
 <object id="social profiles" type="ingenias.editor.entities.SocialSpecDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">The patient has 90 years of age. She is female, had only basic education and is now a widow.
+Three people live at home: the patient and two daughters, one of which is the main caregiver.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -599,7 +989,204 @@
    </path>
 <gxl>
 
-	<graph><parentship>
+	<graph>
+			
+	<node id="SocialNetwork0" nid="node4" type="SocialNetwork">
+		<attr name="bounds">
+			<rectangle x="580" y="42" width="96" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Daughter1" nid="node10" type="Human">
+		<attr name="bounds">
+			<rectangle x="697" y="187" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="0" nid="node5" type="LiveIn">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="154" y="56" width="42" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="PatientProfession" nid="node8" type="Profession">
+		<attr name="bounds">
+			<rectangle x="277" y="199" width="144" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="4" nid="node0" type="isParentOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="663" y="115" width="32" height="47"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node10">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Daughter0" nid="node2" type="Human">
+		<attr name="bounds">
+			<rectangle x="522" y="192" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="PatientInfo" nid="node6" type="PersonalInfo">
+		<attr name="bounds">
+			<rectangle x="282" y="10" width="129" height="111"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="House" nid="node7" type="SBuilding">
+		<attr name="bounds">
+			<rectangle x="29" y="39" width="40" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="2" nid="node3" type="socialRelations">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="454" y="58" width="83" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="3" nid="node1" type="isCaregiverOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="575" y="117" width="32" height="47"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node2">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="1" nid="node9" type="WorkAs">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="323" y="153" width="49" height="15"></rectangle>		</attr>
+
+
+	<connected id="node8">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node6">
+
+
+
+
+
+	</connected>
+	</node><parentship>
 </parentship>
 <entityconstraints>
 </entityconstraints>
@@ -609,6 +1196,103 @@
 
 
 	<layout>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="580" y="42" width="96" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="697" y="187" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="154" y="56" width="42" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="277" y="199" width="144" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="663" y="115" width="32" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="522" y="192" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="282" y="10" width="129" height="111"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="29" y="39" width="40" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="454" y="58" width="83" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="575" y="117" width="32" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="323" y="153" width="49" height="15"></rectangle>		</attr>
+
+
+	</node>
 	</layout>
 </gxl> </model>
  <model id="human profiles" type="ingenias.editor.models.HumanProfileSpecDiagramModelJGraph">
@@ -624,7 +1308,166 @@
    </path>
 <gxl>
 
-	<graph><parentship>
+	<graph>
+			
+	<node id="6" nid="node2" type="ProfileOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="335" y="48" width="56" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SocialProfile0" nid="node6" type="SocialProfile">
+		<attr name="bounds">
+			<rectangle x="188" y="25" width="86" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Daughter0" nid="node4" type="Human">
+		<attr name="bounds">
+			<rectangle x="452" y="29" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="12" nid="node0" type="ProfileOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="47" y="98" width="56" height="15"></rectangle>		</attr>
+
+
+	<connected id="node8"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Daughter1" nid="node1" type="Human">
+		<attr name="bounds">
+			<rectangle x="447" y="99" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="5" nid="node3" type="ProfileOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="115" y="51" width="56" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="ParkinsonsProfile0" nid="node8" type="ParkinsonsProfile">
+		<attr name="bounds">
+			<rectangle x="16" y="128" width="146" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="7" nid="node7" type="ProfileOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="332" y="84" width="56" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Patient" nid="node5" type="Human">
+		<attr name="bounds">
+			<rectangle x="54" y="36" width="45" height="47"></rectangle>		</attr>
+
+
+	</node><parentship>
 </parentship>
 <entityconstraints>
 </entityconstraints>
@@ -634,6 +1477,387 @@
 
 
 	<layout>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="335" y="48" width="56" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="188" y="25" width="86" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="452" y="29" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="47" y="98" width="56" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="447" y="99" width="67" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="115" y="51" width="56" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="16" y="128" width="146" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="332" y="84" width="56" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="54" y="36" width="45" height="47"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="symptoms specification" type="ingenias.editor.models.ParkinsonSpecDiagramModelJGraph">
+<object id="symptoms specification" type="ingenias.editor.entities.ParkinsonSpecDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="illness"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="8" nid="node4" type="Symptoms">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="192" y="90" width="67" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node2">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="PDDiseaseStage0" nid="node2" type="PDDiseaseStage">
+		<attr name="bounds">
+			<rectangle x="169" y="16" width="112" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="LOWTaskFilterR0" nid="node1" type="LOWTaskFilterR">
+		<attr name="bounds">
+			<rectangle x="176" y="211" width="102" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="9" nid="node0" type="Limitations">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="191" y="188" width="66" height="15"></rectangle>		</attr>
+
+
+	<connected id="node1">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="PDSymtom0" nid="node3" type="PDSymtom">
+		<attr name="bounds">
+			<rectangle x="189" y="115" width="74" height="66"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="192" y="90" width="67" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="169" y="16" width="112" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="176" y="211" width="102" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="191" y="188" width="66" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="189" y="115" width="74" height="66"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="Low filter" type="ingenias.editor.models.FilterDiagramModelJGraph">
+<object id="Low filter" type="ingenias.editor.entities.FilterDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="illness"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="FTaskSelectorFilter0" nid="node3" type="FTaskSelectorFilter">
+		<attr name="bounds">
+			<rectangle x="224" y="85" width="127" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="10" nid="node4" type="NextFilter">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="395" y="107" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node2">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="11" nid="node0" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="122" y="110" width="78" height="17"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="FDelayFilter0" nid="node2" type="FDelayFilter">
+		<attr name="bounds">
+			<rectangle x="455" y="94" width="138" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BGoToTask1" nid="node1" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="21" y="77" width="77" height="81"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="224" y="85" width="127" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="395" y="107" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="122" y="110" width="78" height="17"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="455" y="94" width="138" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="21" y="77" width="77" height="81"></rectangle>		</attr>
+
+
+	</node>
 	</layout>
 </gxl> </model>
  <model id="E3Devices" type="ingenias.editor.models.DeviceDiagramModelJGraph">
