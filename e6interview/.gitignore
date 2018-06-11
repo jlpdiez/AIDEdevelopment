@@ -1,0 +1,10 @@
+*.so
+*.SO
+*.dll
+*.DLL
+.project
+.classpath
+.settings
+*~
+target
+assets/*

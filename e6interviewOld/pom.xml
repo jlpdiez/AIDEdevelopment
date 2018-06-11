@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
+    <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>7</version>
-</parent>
+    </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>e3interviewModel</artifactId>
+  <artifactId>movementDifficulties</artifactId>
   <packaging>jar</packaging>
-  <name>Model of day to day difficulties based on patient E3</name>
-  <description>Patient has low senility symptoms. Reported symptoms include forgetting words, low energy drive and problems with decision-making</description>
+  <name>E6 Interview</name>
+  <description>Model of E6 interview</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
-<properties>
+  <properties>
         <vendor>GRASIA Research Group</vendor>
         <developername>Pablo Campillo-Sanchez</developername>
         <developeremail>pabcampi@ucm.es</developeremail>
         <jme.version>3.0.1</jme.version>
         <jali.version>1.0.9</jali.version>
         <jdos.version>1.0.8</jdos.version>
-	<sociaalml.version>1.0.11</sociaalml.version>
+		    <sociaalml.version>1.0.11</sociaalml.version>
         <platform.version>4.1.1.4</platform.version>
-	<phat.version>1.0.11</phat.version>
-	<java.version>1.7</java.version>
+	    <phat.version>1.0.11</phat.version>
+	    <java.version>1.7</java.version>
 </properties>
 
   <licenses>
@@ -289,11 +289,7 @@
 		</artifactItems>
 		<!-- configure the plugin here -->
 		</configuration>
-	      </execution>
-
-				
-	
-					
+	      </execution>		
 	    </executions>
 	  </plugin>
 	</plugins>
