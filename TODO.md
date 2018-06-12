@@ -24,3 +24,4 @@
 # Critical stuff:
 * When fragging folders in project view they sometimes vanish with all its contents
 * Sim doesn't seem to take into accound any of the timed actions
+* Last PHAT version in Github has pathing problems. b100e06 commit is OK.
