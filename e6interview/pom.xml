@@ -22,7 +22,7 @@
         <jdos.version>1.0.8</jdos.version>
 		<sociaalml.version>1.0.12-SNAPSHOT</sociaalml.version>
         <platform.version>4.1.1.4</platform.version>
-	<phat.version>1.0.11</phat.version>
+	<phat.version>1.0.12-SNAPSHOT</phat.version>
 	<java.version>1.7</java.version>
 </properties>
 
