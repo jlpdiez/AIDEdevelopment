@@ -7697,7 +7697,25 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="symptoms specification" type="ingenias.editor.models.ParkinsonSpecDiagramModelJGraph">
 <object id="symptoms specification" type="ingenias.editor.entities.ParkinsonSpecDiagramDataEntity">
 <mapproperties>
-<key id="Description">She was diagnosed 4 years ago of senile dementia when the family noticed her memory problems. The symptoms advance quite slowly as the patient is pretty active, takes her medicines and does therapy.</key>
+<key id="Description">She was diagnosed 4 years ago of senile dementia when the family noticed her memory problems. The symptoms advance quite slowly as the patient is pretty active, takes her medicines and does therapy.
+
+Specific problems reported:
+* Equilibrium problems. She once fell in the bathroom.
+* Needs help walking. Someone who holds her by the arm as she stumbles quite a lot and sometimes falls when left alone.
+* Needs help getting dressed.
+* Her short-term memory fails.
+* Can follow a conversation but forgets words on occasion.
+* Forgets the date and time.
+* Is not able to use money.
+* Has problems with decision-making.
+* Sometimes, when contradicted, she gets upset and even borders violence so the caregiver avoids direct confrontation.
+* Other times she just gets sad about the fact.
+* Slowness of movement.
+* Hand tremors.
+* Gets tired a lot.
+* Eats well but the food needs to be well cooked so it is soft.
+* Sometimes gets lost on her thoughts and can be in this state 5 minutes.
+* Has problems when swallowing. Talking or breathing while swallowing is a problem.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -18450,7 +18468,7 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="SimNoSymptoms" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimNoSymptoms" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">Simulation with no symptoms attached</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -18862,7 +18880,7 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="SimMovement" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimMovement" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">Simulates low movement  problems.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -19321,7 +19339,7 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="SimDisorient" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimDisorient" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">Simulates disorientation with a low probability.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -19780,7 +19798,7 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="SimTremors" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimTremors" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">Simulates tremors.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -20239,7 +20257,7 @@ Three people live at home: the patient and two daughters, one of which is the ma
  <model id="SimAll" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimAll" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description"></key>
+<key id="Description">Simulation in which all symptoms get combined.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
