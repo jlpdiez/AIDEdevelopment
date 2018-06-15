@@ -1,9 +1,0 @@
-compile
-edit
-generateclasspathfrommaven
-getclasspathfrommaven
-init
-rungeneratedide
-rungeneratedidespec
-test
-testgui
