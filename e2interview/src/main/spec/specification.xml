@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project cid="13" version="1.2">
+<project cid="46" version="1.2">
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
- <openeddiagram>social profiles</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>symptoms specs</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>morning activities</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>morning bathroom</openeddiagram></projectproperties>
+ <openeddiagram>social profiles</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>symptoms specs</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>morning activities</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>filter</openeddiagram> <openeddiagram>mid morning activities</openeddiagram> <openeddiagram>watch tv</openeddiagram> <openeddiagram>cook breakfast</openeddiagram> <openeddiagram>eat breakfast</openeddiagram> <openeddiagram>go to church</openeddiagram> <openeddiagram>go to daycare</openeddiagram> <openeddiagram>afternoon activities</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -47,6 +47,54 @@
     <package id="behaviour"/>
     <package id="patient"/>
     <package id="morning bathroom"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="cook breakfast"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="eat breakfast"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="watch tv"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="mid morning activities"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="go to church"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="go to daycare"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="wait"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+    <package id="afternoon activities"/>
    </path>
    <path>
     <package id="Project"/>
@@ -121,6 +169,126 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="BActivity1" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="19" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">morning bathroom</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity3" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="30" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">cook breakfast</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity4" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="35" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">eat breakfast</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity5" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="35" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">watch tv</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity2" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="38" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">go to church</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity6" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="39" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">go to daycare</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity7" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="41" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">wait</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity8" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="44" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">watch tv</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="BGoToTask0" type="ingenias.editor.entities.BGoToTask">
 <objectproperty id="SpaceToGoField">
 <object id="BathRoom1" type="ingenias.editor.entities.SBathroom">
@@ -155,6 +323,116 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="BGoToTask1" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BGoToTask2" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+<object id="LivingRoom" type="ingenias.editor.entities.SLivingroom">
+<objectproperty id="RoomSpecField">
+<object id="0" type="ingenias.editor.entities.RoomSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">RoomSpecDiagram</key>
+<key id="ModelID">LivingRoomSpecDiag</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="RoomSpecField">
+<object id="0" type="ingenias.editor.entities.RoomSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">RoomSpecDiagram</key>
+<key id="ModelID">LivingRoomSpecDiag</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BGoToTask3" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+<object id="Kitchen" type="ingenias.editor.entities.SKitchen">
+<objectproperty id="RoomSpecField">
+<object id="0" type="ingenias.editor.entities.RoomSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">RoomSpecDiagram</key>
+<key id="ModelID">KitchenSpecDiag</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="RoomSpecField">
+<object id="0" type="ingenias.editor.entities.RoomSpecDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">RoomSpecDiagram</key>
+<key id="ModelID">KitchenSpecDiag</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BGoToTask4" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+<object id="MainDoorArea" type="ingenias.editor.entities.SArea">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BGoToTask5" type="ingenias.editor.entities.BGoToTask">
+<objectproperty id="SpaceToGoField">
+<object id="MainDoorArea" type="ingenias.editor.entities.SArea">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="SpeedField"></key>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="BGetUpFromBed0" type="ingenias.editor.entities.BGetUpFromBed">
 <mapproperties>
 <key id="CanBeInterruptedField">Yes</key>
@@ -163,12 +441,132 @@
 <key id="BTaskDuration">1</key>
 </mapproperties>
 </object>
-<object id="FallSleep0" type="ingenias.editor.entities.FallSleep">
+<object id="BUseTask1" type="ingenias.editor.entities.BUseTask">
+<objectproperty id="BUseObjectField">
+<object id="Shower1" type="ingenias.editor.entities.Shower">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">300</key>
+</mapproperties>
+</object>
+<object id="BUseTask0" type="ingenias.editor.entities.BUseTask">
+<objectproperty id="BUseObjectField">
+<object id="WC1" type="ingenias.editor.entities.FOWater">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">150</key>
+</mapproperties>
+</object>
+<object id="BUseTask2" type="ingenias.editor.entities.BUseTask">
+<objectproperty id="BUseObjectField">
+<object id="LcdTV1" type="ingenias.editor.entities.DTV">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
 <mapproperties>
 <key id="CanBeInterruptedField">Yes</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 <key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="BUseTask3" type="ingenias.editor.entities.BUseTask">
+<objectproperty id="BUseObjectField">
+<object id="Extractor1" type="ingenias.editor.entities.Extractor">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">300</key>
+</mapproperties>
+</object>
+<object id="BUseTask4" type="ingenias.editor.entities.BUseTask">
+<objectproperty id="BUseObjectField">
+<object id="LcdTV1" type="ingenias.editor.entities.DTV">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="Drink0" type="ingenias.editor.entities.Drink">
+<objectproperty id="DrinkItemField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">30</key>
+</mapproperties>
+</object>
+<object id="Drink1" type="ingenias.editor.entities.Drink">
+<objectproperty id="DrinkItemField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">120</key>
+</mapproperties>
+</object>
+<object id="Eat0" type="ingenias.editor.entities.Eat">
+<objectproperty id="EatableItemField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">60</key>
+</mapproperties>
+</object>
+<object id="Eat1" type="ingenias.editor.entities.Eat">
+<objectproperty id="EatableItemField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">30</key>
+</mapproperties>
+</object>
+<object id="FallSleep0" type="ingenias.editor.entities.FallSleep">
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">10</key>
 </mapproperties>
 </object>
 <object id="GoIntoBed0" type="ingenias.editor.entities.GoIntoBed">
@@ -177,6 +575,129 @@
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 <key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="PutOnTask0" type="ingenias.editor.entities.PutOnTask">
+<objectproperty id="WearableObjField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">60</key>
+</mapproperties>
+</object>
+<object id="SitDown0" type="ingenias.editor.entities.SitDown">
+<objectproperty id="SeatField">
+<object id="Sofa3Seats" type="ingenias.editor.entities.FSofa">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="SitDown1" type="ingenias.editor.entities.SitDown">
+<objectproperty id="SeatField">
+<object id="Chair2" type="ingenias.editor.entities.FChair">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="StandUp0" type="ingenias.editor.entities.StandUp">
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">1</key>
+</mapproperties>
+</object>
+<object id="TakeOffTask0" type="ingenias.editor.entities.TakeOffTask">
+<objectproperty id="WearableObjField">
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">60</key>
+</mapproperties>
+</object>
+<object id="WaitTask0" type="ingenias.editor.entities.WaitTask">
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">5</key>
+</mapproperties>
+</object>
+<object id="WaitTask1" type="ingenias.editor.entities.WaitTask">
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">10</key>
+</mapproperties>
+</object>
+<object id="WaitTask2" type="ingenias.editor.entities.WaitTask">
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="BTaskDuration">3600</key>
+</mapproperties>
+</object>
+<object id="CloseTask0" type="ingenias.editor.entities.CloseTask">
+<objectproperty id="OpenCloseObjField">
+<object id="Fridge1" type="ingenias.editor.entities.Bridge">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="OpenTask0" type="ingenias.editor.entities.OpenTask">
+<objectproperty id="OpenCloseObjField">
+<object id="Fridge1" type="ingenias.editor.entities.Bridge">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="CanBeInterruptedField">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="ClockTime2" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">30</key>
+<key id="Description"></key>
+<key id="HoursField">10</key>
+<key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
 <object id="ClockTime0" type="ingenias.editor.entities.ClockTime">
@@ -188,11 +709,57 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="ClockTime1" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">0</key>
+<key id="Description"></key>
+<key id="HoursField">17</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="ClockTime3" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">0</key>
+<key id="Description"></key>
+<key id="HoursField">21</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="CDayOfTheWeek0" type="ingenias.editor.entities.CDayOfTheWeek">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="DayOfTheWeekField">Monday</key>
+</mapproperties>
+</object>
+<object id="CDayOfTheWeek1" type="ingenias.editor.entities.CDayOfTheWeek">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="DayOfTheWeekField">Thursday</key>
+</mapproperties>
+</object>
+<object id="FDelayFilter0" type="ingenias.editor.entities.FDelayFilter">
+<mapproperties>
+<key id="DelayPercentageField">120</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="FTaskSelectorFilter0" type="ingenias.editor.entities.FTaskSelectorFilter">
+<mapproperties>
+<key id="ByType">Yes</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="HumanInitialization0" type="ingenias.editor.entities.HumanInitialization">
 <mapproperties>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
-<key id="ShowName">Yes</key>
+<key id="ShowName">No</key>
 </mapproperties>
 </object>
 <object id="ADLProfile0" type="ingenias.editor.entities.ADLProfile">
@@ -242,6 +809,12 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="IFFlowControl0" type="ingenias.editor.entities.IFFlowControl">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="PDDiseaseStage0" type="ingenias.editor.entities.PDDiseaseStage">
 <objectproperty id="MedicationTimeSpecField">
 </objectproperty>
@@ -273,8 +846,8 @@
 <object id="SDate0" type="ingenias.editor.entities.SDate">
 <mapproperties>
 <key id="Description"></key>
-<key id="HourField">7</key>
-<key id="HoursField">7</key>
+<key id="HourField">8</key>
+<key id="HoursField">-1</key>
 <key id="MonthField">1</key>
 <key id="SecondField">0</key>
 <key id="YearField">2018</key>
@@ -660,9 +1233,32 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="TimeInterval2" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+<object id="44" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ActivityDiagram</key>
+<key id="ModelID">mid morning activities</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="DefaultActivityField">
+<object id="44" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="TimeInterval0" type="ingenias.editor.entities.TimeInterval">
 <objectproperty id="ActivitySpecField">
-<object id="10" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<object id="9" type="ingenias.editor.entities.ActivityDiagramModelEntity">
 <mapproperties>
 <key id="ModelType">ActivityDiagram</key>
 <key id="ModelID">morning activities</key>
@@ -671,12 +1267,46 @@
 </object>
 </objectproperty>
 <objectproperty id="DefaultActivityField">
-<object id="10" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<object id="9" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">wait</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="TimeInterval1" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+<object id="46" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ActivityDiagram</key>
+<key id="ModelID">afternoon activities</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="DefaultActivityField">
+<object id="46" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
 <mapproperties>
 <key id="ModelType">SequentialTaskDiagram</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="TimeInterval3" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+</objectproperty>
+<objectproperty id="DefaultActivityField">
 </objectproperty>
 <mapproperties>
 <key id="Description"></key>
@@ -838,20 +1468,248 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="9" type="ingenias.editor.entities.TIStartTime">
-<object id="9" type="ingenias.editor.entities.TIStartTime">
+<relationship id="16" type="ingenias.editor.entities.NextFilter">
+<object id="16" type="ingenias.editor.entities.NextFilter">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="FTaskSelectorFilter0" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="SFiltersource" type="ingenias.editor.entities.SFiltersourceRole" dgcid="1766541749">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="FDelayFilter0" class="ingenias.editor.entities.FDelayFilter" roleName="TFiltertarget" type="ingenias.editor.entities.TFiltertargetRole" dgcid="1937461166">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="15" type="ingenias.editor.entities.AllowedTask">
+<object id="15" type="ingenias.editor.entities.AllowedTask">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="ClockTime0" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="485781810">
+<role idEntity="BGoToTask1" class="ingenias.editor.entities.BGoToTask" roleName="AllowedTasktarget" type="ingenias.editor.entities.AllowedTasktargetRole" dgcid="22906244">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="TimeInterval0" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="44544742">
+</role><role idEntity="FTaskSelectorFilter0" class="ingenias.editor.entities.FTaskSelectorFilter" roleName="AllowedTasksource" type="ingenias.editor.entities.AllowedTasksourceRole" dgcid="1766541749">
 <mapproperties>
 <key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="46" type="ingenias.editor.entities.TIStartTime">
+<object id="46" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="ClockTime3" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="1703643214">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval3" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="1028173851">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="45" type="ingenias.editor.entities.TIStartTime">
+<object id="45" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="ClockTime1" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="996683179">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval1" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="708178453">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="19" type="ingenias.editor.entities.TIStartTime">
+<object id="19" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval2" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="1180253875">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="ClockTime2" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="265939037">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="9" type="ingenias.editor.entities.NextTI">
+<object id="9" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval2" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="1180253875">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval0" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="2003082536">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="25" type="ingenias.editor.entities.TIStartTime">
+<object id="25" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="ClockTime0" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="173003501">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval0" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="2003082536">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="44" type="ingenias.editor.entities.NextTI">
+<object id="44" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval2" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="1180253875">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval1" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="708178453">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="47" type="ingenias.editor.entities.NextTI">
+<object id="47" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval1" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="708178453">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval3" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="1028173851">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="34" type="ingenias.editor.entities.NextActivity">
+<object id="34" type="ingenias.editor.entities.NextActivity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity4" class="ingenias.editor.entities.BActivity" roleName="TActivityNodetarget" type="ingenias.editor.entities.TActivityNodetargetRole" dgcid="22532733">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BActivity3" class="ingenias.editor.entities.BActivity" roleName="SActivityNodesource" type="ingenias.editor.entities.SActivityNodesourceRole" dgcid="948306841">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="24" type="ingenias.editor.entities.NextActivity">
+<object id="24" type="ingenias.editor.entities.NextActivity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity3" class="ingenias.editor.entities.BActivity" roleName="TActivityNodetarget" type="ingenias.editor.entities.TActivityNodetargetRole" dgcid="948306841">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BActivity1" class="ingenias.editor.entities.BActivity" roleName="SActivityNodesource" type="ingenias.editor.entities.SActivityNodesourceRole" dgcid="167314710">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="18" type="ingenias.editor.entities.NextActivity">
+<object id="18" type="ingenias.editor.entities.NextActivity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity0" class="ingenias.editor.entities.BActivity" roleName="SActivityNodesource" type="ingenias.editor.entities.SActivityNodesourceRole" dgcid="208548706">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BActivity1" class="ingenias.editor.entities.BActivity" roleName="TActivityNodetarget" type="ingenias.editor.entities.TActivityNodetargetRole" dgcid="167314710">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="35" type="ingenias.editor.entities.NextActivity">
+<object id="35" type="ingenias.editor.entities.NextActivity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity4" class="ingenias.editor.entities.BActivity" roleName="SActivityNodesource" type="ingenias.editor.entities.SActivityNodesourceRole" dgcid="22532733">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BActivity5" class="ingenias.editor.entities.BActivity" roleName="TActivityNodetarget" type="ingenias.editor.entities.TActivityNodetargetRole" dgcid="213513834">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
@@ -892,6 +1750,440 @@
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="21" type="ingenias.editor.entities.NextSeqTask">
+<object id="21" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BUseTask0" class="ingenias.editor.entities.BUseTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="1633582683">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TakeOffTask0" class="ingenias.editor.entities.TakeOffTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="716671115">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="14" type="ingenias.editor.entities.NextSeqTask">
+<object id="14" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BUseTask1" class="ingenias.editor.entities.BUseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="260929709">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TakeOffTask0" class="ingenias.editor.entities.TakeOffTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="716671115">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="17" type="ingenias.editor.entities.NextSeqTask">
+<object id="17" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PutOnTask0" class="ingenias.editor.entities.PutOnTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="1505914197">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BUseTask1" class="ingenias.editor.entities.BUseTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="260929709">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="20" type="ingenias.editor.entities.NextSeqTask">
+<object id="20" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BGoToTask0" class="ingenias.editor.entities.BGoToTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="970928349">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BUseTask0" class="ingenias.editor.entities.BUseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="1633582683">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="29" type="ingenias.editor.entities.NextSeqTask">
+<object id="29" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="CloseTask0" class="ingenias.editor.entities.CloseTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="215821538">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BUseTask3" class="ingenias.editor.entities.BUseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="361856820">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="28" type="ingenias.editor.entities.NextSeqTask">
+<object id="28" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WaitTask1" class="ingenias.editor.entities.WaitTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="296588576">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="CloseTask0" class="ingenias.editor.entities.CloseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="215821538">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="27" type="ingenias.editor.entities.NextSeqTask">
+<object id="27" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WaitTask1" class="ingenias.editor.entities.WaitTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="296588576">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="OpenTask0" class="ingenias.editor.entities.OpenTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="1062539414">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="26" type="ingenias.editor.entities.NextSeqTask">
+<object id="26" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BGoToTask3" class="ingenias.editor.entities.BGoToTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="385447428">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="OpenTask0" class="ingenias.editor.entities.OpenTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="1062539414">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="33" type="ingenias.editor.entities.NextSeqTask">
+<object id="33" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Drink1" class="ingenias.editor.entities.Drink" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="693917537">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Eat1" class="ingenias.editor.entities.Eat" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="1270169215">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="30" type="ingenias.editor.entities.NextSeqTask">
+<object id="30" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SitDown1" class="ingenias.editor.entities.SitDown" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="1515608230">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Eat0" class="ingenias.editor.entities.Eat" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="694837450">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="31" type="ingenias.editor.entities.NextSeqTask">
+<object id="31" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Eat0" class="ingenias.editor.entities.Eat" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="694837450">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Drink0" class="ingenias.editor.entities.Drink" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="83419764">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="32" type="ingenias.editor.entities.NextSeqTask">
+<object id="32" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Eat1" class="ingenias.editor.entities.Eat" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="1270169215">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Drink0" class="ingenias.editor.entities.Drink" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="83419764">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="43" type="ingenias.editor.entities.NextSeqTask">
+<object id="43" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="StandUp0" class="ingenias.editor.entities.StandUp" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="919717259">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WaitTask2" class="ingenias.editor.entities.WaitTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="1747378944">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="22" type="ingenias.editor.entities.NextSeqTask">
+<object id="22" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BUseTask2" class="ingenias.editor.entities.BUseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="412824711">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BGoToTask2" class="ingenias.editor.entities.BGoToTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="348763353">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="23" type="ingenias.editor.entities.NextSeqTask">
+<object id="23" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SitDown0" class="ingenias.editor.entities.SitDown" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="549252872">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BUseTask2" class="ingenias.editor.entities.BUseTask" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="412824711">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="41" type="ingenias.editor.entities.NextSeqTask">
+<object id="41" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BUseTask4" class="ingenias.editor.entities.BUseTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="727663479">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="StandUp0" class="ingenias.editor.entities.StandUp" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="919717259">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="42" type="ingenias.editor.entities.NextSeqTask">
+<object id="42" type="ingenias.editor.entities.NextSeqTask">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SitDown0" class="ingenias.editor.entities.SitDown" roleName="TaskNodesource" type="ingenias.editor.entities.TaskNodesourceRole" dgcid="549252872">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="WaitTask2" class="ingenias.editor.entities.WaitTask" roleName="TaskNodetarget" type="ingenias.editor.entities.TaskNodetargetRole" dgcid="1747378944">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="40" type="ingenias.editor.entities.NextActivity">
+<object id="40" type="ingenias.editor.entities.NextActivity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity7" class="ingenias.editor.entities.BActivity" roleName="SActivityNodesource" type="ingenias.editor.entities.SActivityNodesourceRole" dgcid="1919218092">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="IFFlowControl0" class="ingenias.editor.entities.IFFlowControl" roleName="TActivityNodetarget" type="ingenias.editor.entities.TActivityNodetargetRole" dgcid="239357156">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="39" type="ingenias.editor.entities.FalseFlow">
+<object id="39" type="ingenias.editor.entities.FalseFlow">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity6" class="ingenias.editor.entities.BActivity" roleName="TargetFlowControltarget" type="ingenias.editor.entities.TargetFlowControltargetRole" dgcid="26036101">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="IFFlowControl0" class="ingenias.editor.entities.IFFlowControl" roleName="FlowControlMRsource" type="ingenias.editor.entities.FlowControlMRsourceRole" dgcid="239357156">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="38" type="ingenias.editor.entities.TrueFlow">
+<object id="38" type="ingenias.editor.entities.TrueFlow">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="BActivity2" class="ingenias.editor.entities.BActivity" roleName="TargetFlowControltarget" type="ingenias.editor.entities.TargetFlowControltargetRole" dgcid="33757257">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="IFFlowControl0" class="ingenias.editor.entities.IFFlowControl" roleName="FlowControlMRsource" type="ingenias.editor.entities.FlowControlMRsourceRole" dgcid="239357156">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="37" type="ingenias.editor.entities.cond">
+<object id="37" type="ingenias.editor.entities.cond">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="CDayOfTheWeek1" class="ingenias.editor.entities.CDayOfTheWeek" roleName="condtarget" type="ingenias.editor.entities.condtargetRole" dgcid="1647313178">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="IFFlowControl0" class="ingenias.editor.entities.IFFlowControl" roleName="condsource" type="ingenias.editor.entities.condsourceRole" dgcid="239357156">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="36" type="ingenias.editor.entities.cond">
+<object id="36" type="ingenias.editor.entities.cond">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="CDayOfTheWeek0" class="ingenias.editor.entities.CDayOfTheWeek" roleName="condtarget" type="ingenias.editor.entities.condtargetRole" dgcid="1282787074">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="IFFlowControl0" class="ingenias.editor.entities.IFFlowControl" roleName="condsource" type="ingenias.editor.entities.condsourceRole" dgcid="239357156">
+<mapproperties>
+<key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
@@ -1690,7 +2982,90 @@
    </path>
 <gxl>
 
-	<graph><parentship>
+	<graph>
+			
+	<node id="BGoToTask1" nid="node4" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="62" y="70" width="101" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="15" nid="node2" type="AllowedTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="169" y="99" width="78" height="17"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="16" nid="node0" type="NextFilter">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="413" y="89" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="FTaskSelectorFilter0" nid="node3" type="FTaskSelectorFilter">
+		<attr name="bounds">
+			<rectangle x="254" y="72" width="127" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="FDelayFilter0" nid="node1" type="FDelayFilter">
+		<attr name="bounds">
+			<rectangle x="462" y="71" width="138" height="66"></rectangle>		</attr>
+
+
+	</node><parentship>
 </parentship>
 <entityconstraints>
 </entityconstraints>
@@ -1700,6 +3075,49 @@
 
 
 	<layout>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="62" y="70" width="101" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="169" y="99" width="78" height="17"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="413" y="89" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="254" y="72" width="127" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="462" y="71" width="138" height="66"></rectangle>		</attr>
+
+
+	</node>
 	</layout>
 </gxl> </model>
  <model id="patient adl" type="ingenias.editor.models.ADLSpecDiagramModelJGraph">
@@ -1718,20 +3136,189 @@
 
 	<graph>
 			
-	<node id="ClockTime0" nid="node0" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="101" y="8" width="70" height="66"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="9" nid="node2" type="TIStartTime">
+	<node id="47" nid="node14" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="105" y="89" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="739" y="171" width="45" height="15"></rectangle>		</attr>
+
+
+	<connected id="node11"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="TimeInterval3" nid="node1" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="800" y="143" width="83" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TimeInterval2" nid="node7" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="354" y="132" width="136" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime2" nid="node6" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="384" y="12" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="19" nid="node5" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="386" y="98" width="69" height="15"></rectangle>		</attr>
+
+
+	<connected id="node7"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node6">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="44" nid="node12" type="NextTI">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="524" y="165" width="45" height="15"></rectangle>		</attr>
+
+
+	<connected id="node7"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node11">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="25" nid="node10" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="105" y="104" width="69" height="15"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node9">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="45" nid="node2" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="623" y="105" width="69" height="15"></rectangle>		</attr>
+
+
+	<connected id="node11"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="46" nid="node0" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="801" y="109" width="69" height="15"></rectangle>		</attr>
 
 
 	<connected id="node1"><attr name="extraLabels">
@@ -1746,7 +3333,7 @@
 
 
 	</connected>
-	<connected id="node0">
+	<connected id="node13">
 
 
 
@@ -1756,9 +3343,68 @@
 	</connected>
 	</node>
 			
-	<node id="TimeInterval0" nid="node1" type="TimeInterval">
+	<node id="TimeInterval1" nid="node11" type="TimeInterval">
 		<attr name="bounds">
-			<rectangle x="87" y="119" width="110" height="81"></rectangle>		</attr>
+			<rectangle x="602" y="140" width="121" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime0" nid="node9" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="102" y="30" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="9" nid="node8" type="NextTI">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="253" y="162" width="45" height="15"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="ClockTime1" nid="node3" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="618" y="19" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime3" nid="node13" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="794" y="23" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TimeInterval0" nid="node4" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="86" y="126" width="110" height="81"></rectangle>		</attr>
 
 
 	</node><parentship>
@@ -1772,9 +3418,67 @@
 
 	<layout>
 			
-	<node id="node0">
+	<node id="node14">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="101" y="8" width="70" height="66"></rectangle>		</attr>
+			<rectangle x="739" y="171" width="45" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="800" y="143" width="83" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="354" y="132" width="136" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="384" y="12" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="386" y="98" width="69" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node12">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="524" y="165" width="45" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="105" y="104" width="69" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -1785,14 +3489,64 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="105" y="89" width="69" height="15"></rectangle>		</attr>
+			<rectangle x="623" y="105" width="69" height="15"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="87" y="119" width="110" height="81"></rectangle>		</attr>
+			<rectangle x="801" y="109" width="69" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="602" y="140" width="121" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="102" y="30" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="253" y="162" width="45" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="618" y="19" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="794" y="23" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="86" y="126" width="110" height="81"></rectangle>		</attr>
 
 
 	</node>
@@ -1814,11 +3568,163 @@
 
 	<graph>
 			
-	<node id="BActivity0" nid="node0" type="BActivity">
+	<node id="18" nid="node5" type="NextActivity">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="145" y="116" width="73" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BActivity1" nid="node3" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="252" y="176" width="116" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="24" nid="node1" type="NextActivity">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="370" y="122" width="73" height="15"></rectangle>		</attr>
+
+
+	<connected id="node2">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="35" nid="node8" type="NextActivity">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="691" y="120" width="73" height="15"></rectangle>		</attr>
+
+
+	<connected id="node7">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node6">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BActivity3" nid="node2" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="445" y="26" width="94" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BActivity5" nid="node7" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="764" y="38" width="59" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BActivity0" nid="node4" type="BActivity">
 		<attr name="bounds">
 			<rectangle x="52" y="24" width="59" height="66"></rectangle>		</attr>
 
 
+	</node>
+			
+	<node id="BActivity4" nid="node6" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="606" y="171" width="85" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="34" nid="node0" type="NextActivity">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="536" y="129" width="73" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node2">
+
+
+
+
+
+	</connected>
 	</node><parentship>
 </parentship>
 <entityconstraints>
@@ -1830,9 +3736,81 @@
 
 	<layout>
 			
-	<node id="node0">
+	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="145" y="116" width="73" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="252" y="176" width="116" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="370" y="122" width="73" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="691" y="120" width="73" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="445" y="26" width="94" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="764" y="38" width="59" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
 		<attr name="bounds">
 			<rectangle x="52" y="24" width="59" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="606" y="171" width="85" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="536" y="129" width="73" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -1856,21 +3834,21 @@
 			
 	<node id="FallSleep0" nid="node2" type="FallSleep">
 		<attr name="bounds">
-			<rectangle x="258" y="80" width="81" height="66"></rectangle>		</attr>
+			<rectangle x="275" y="95" width="97" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="GoIntoBed0" nid="node1" type="GoIntoBed">
 		<attr name="bounds">
-			<rectangle x="71" y="93" width="81" height="66"></rectangle>		</attr>
+			<rectangle x="53" y="87" width="89" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="BGetUpFromBed0" nid="node3" type="BGetUpFromBed">
 		<attr name="bounds">
-			<rectangle x="445" y="83" width="110" height="66"></rectangle>		</attr>
+			<rectangle x="518" y="94" width="110" height="66"></rectangle>		</attr>
 
 
 	</node>
@@ -1881,7 +3859,7 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="346" y="115" width="82" height="17"></rectangle>		</attr>
+			<rectangle x="407" y="120" width="77" height="15"></rectangle>		</attr>
 
 
 	<connected id="node2">
@@ -1934,7 +3912,7 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="167" y="112" width="77" height="15"></rectangle>		</attr>
+			<rectangle x="166" y="117" width="77" height="15"></rectangle>		</attr>
 
 
 	<connected id="node1"><attr name="extraLabels">
@@ -1970,21 +3948,21 @@
 			
 	<node id="node2">
 		<attr name="bounds">
-			<rectangle x="258" y="80" width="81" height="66"></rectangle>		</attr>
+			<rectangle x="275" y="95" width="97" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node1">
 		<attr name="bounds">
-			<rectangle x="71" y="93" width="81" height="66"></rectangle>		</attr>
+			<rectangle x="53" y="87" width="89" height="66"></rectangle>		</attr>
 
 
 	</node>
 			
 	<node id="node3">
 		<attr name="bounds">
-			<rectangle x="445" y="83" width="110" height="66"></rectangle>		</attr>
+			<rectangle x="518" y="94" width="110" height="66"></rectangle>		</attr>
 
 
 	</node>
@@ -1995,7 +3973,7 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="346" y="115" width="82" height="17"></rectangle>		</attr>
+			<rectangle x="407" y="120" width="77" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -2006,7 +3984,7 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="167" y="112" width="77" height="15"></rectangle>		</attr>
+			<rectangle x="166" y="117" width="77" height="15"></rectangle>		</attr>
 
 
 	</node>
@@ -2028,9 +4006,1507 @@
 
 	<graph>
 			
-	<node id="BGoToTask0" nid="node0" type="BGoToTask">
+	<node id="BUseTask1" nid="node3" type="BUseTask">
 		<attr name="bounds">
-			<rectangle x="71" y="37" width="110" height="81"></rectangle>		</attr>
+			<rectangle x="642" y="161" width="105" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="21" nid="node0" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="346" y="128" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node7"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node2">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="TakeOffTask0" nid="node2" type="TakeOffTask">
+		<attr name="bounds">
+			<rectangle x="436" y="38" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="17" nid="node6" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="739" y="136" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="14" nid="node1" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="549" y="131" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node2"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="20" nid="node8" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="158" y="128" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node4"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="PutOnTask0" nid="node5" type="PutOnTask">
+		<attr name="bounds">
+			<rectangle x="807" y="54" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BGoToTask0" nid="node4" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="48" y="34" width="110" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BUseTask0" nid="node7" type="BUseTask">
+		<attr name="bounds">
+			<rectangle x="235" y="139" width="105" height="81"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="642" y="161" width="105" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="346" y="128" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="436" y="38" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="739" y="136" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="549" y="131" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="158" y="128" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="807" y="54" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="48" y="34" width="110" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="235" y="139" width="105" height="81"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="cook breakfast" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="cook breakfast" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="OpenTask0" nid="node7" type="OpenTask">
+		<attr name="bounds">
+			<rectangle x="248" y="141" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BGoToTask3" nid="node6" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="34" y="33" width="84" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="26" nid="node8" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="153" y="116" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="29" nid="node0" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="599" y="111" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="WaitTask1" nid="node5" type="WaitTask">
+		<attr name="bounds">
+			<rectangle x="384" y="31" width="97" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="28" nid="node2" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="454" y="109" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node5"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BUseTask3" nid="node1" type="BUseTask">
+		<attr name="bounds">
+			<rectangle x="683" y="21" width="115" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="CloseTask0" nid="node3" type="CloseTask">
+		<attr name="bounds">
+			<rectangle x="520" y="139" width="71" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="27" nid="node4" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="313" y="114" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node7"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="248" y="141" width="70" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="34" y="33" width="84" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="153" y="116" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="599" y="111" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="384" y="31" width="97" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="454" y="109" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="683" y="21" width="115" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="520" y="139" width="71" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="313" y="114" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="eat breakfast" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="eat breakfast" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="Eat0" nid="node3" type="Eat">
+		<attr name="bounds">
+			<rectangle x="242" y="81" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="33" nid="node0" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="621" y="91" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node1"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Drink1" nid="node7" type="Drink">
+		<attr name="bounds">
+			<rectangle x="692" y="17" width="81" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="32" nid="node8" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="484" y="92" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node5"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Eat1" nid="node1" type="Eat">
+		<attr name="bounds">
+			<rectangle x="546" y="98" width="81" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="30" nid="node4" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="155" y="84" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node2"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="Drink0" nid="node5" type="Drink">
+		<attr name="bounds">
+			<rectangle x="402" y="16" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="SitDown1" nid="node2" type="SitDown">
+		<attr name="bounds">
+			<rectangle x="63" y="20" width="89" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="31" nid="node6" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="324" y="82" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+
+	</connected>
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="242" y="81" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="621" y="91" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="692" y="17" width="81" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="484" y="92" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="546" y="98" width="81" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="155" y="84" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="402" y="16" width="97" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="63" y="20" width="89" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="324" y="82" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="watch tv" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="watch tv" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="StandUp0" nid="node8" type="StandUp">
+		<attr name="bounds">
+			<rectangle x="688" y="51" width="89" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="41" nid="node9" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="753" y="132" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node8">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="997.5" y="87.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="754.5" y="92.0"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="997.5" y="87.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="1119.0" y="82.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+	</connected>
+	</node>
+			
+	<node id="SitDown0" nid="node5" type="SitDown">
+		<attr name="bounds">
+			<rectangle x="362" y="37" width="111" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="WaitTask2" nid="node1" type="WaitTask">
+		<attr name="bounds">
+			<rectangle x="519" y="187" width="81" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BUseTask4" nid="node7" type="BUseTask">
+		<attr name="bounds">
+			<rectangle x="806" y="157" width="94" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BUseTask2" nid="node3" type="BUseTask">
+		<attr name="bounds">
+			<rectangle x="205" y="175" width="94" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="43" nid="node0" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="606" y="146" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node1"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node8">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="23" nid="node6" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="292" y="143" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node3">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="418.5" y="84.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="312.0" y="80.5"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node5">
+
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="418.5" y="84.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="533.5" y="88.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+	</connected>
+	</node>
+			
+	<node id="42" nid="node10" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="458" y="149" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node5"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BGoToTask2" nid="node4" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="27" y="34" width="107" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="22" nid="node2" type="NextSeqTask">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="131" y="140" width="77" height="15"></rectangle>		</attr>
+
+
+	<connected id="node4">
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="199.5" y="77.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="80.5" y="74.5"></point>
+		</attr>
+
+</list>
+		</attr>
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node3">
+
+
+
+
+
+		<attr name="points">
+			<list>
+		<attr name="points0">
+			<point x="199.5" y="77.5"></point>
+		</attr>
+		<attr name="points1">
+			<point x="312.0" y="80.5"></point>
+		</attr>
+
+</list>
+		</attr>
+
+	</connected>
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="688" y="51" width="89" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="753" y="132" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="bounds">
+			<rectangle x="362" y="37" width="111" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="519" y="187" width="81" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="806" y="157" width="94" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="bounds">
+			<rectangle x="205" y="175" width="94" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="606" y="146" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="292" y="143" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="458" y="149" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="27" y="34" width="107" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="131" y="140" width="77" height="15"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="mid morning activities" type="ingenias.editor.models.ActivityDiagramModelJGraph">
+<object id="mid morning activities" type="ingenias.editor.entities.ActivityDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BActivity7" nid="node1" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="80" y="140" width="59" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="IFFlowControl0" nid="node6" type="IFFlowControl">
+		<attr name="bounds">
+			<rectangle x="260" y="151" width="32" height="32"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="BActivity2" nid="node4" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="488" y="77" width="80" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="40" nid="node0" type="NextActivity">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="163" y="159" width="73" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6">
+
+
+
+
+
+<attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+	</connected>
+	<connected id="node1">
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="37" nid="node5" type="cond">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="290" y="110" width="36" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node8">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="38" nid="node3" type="TrueFlow">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="382" y="126" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BActivity6" nid="node10" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="497" y="164" width="87" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="39" nid="node2" type="FalseFlow">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="386" y="165" width="16" height="31"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node10">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="36" nid="node9" type="cond">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="222" y="110" width="36" height="15"></rectangle>		</attr>
+
+
+	<connected id="node6"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="CDayOfTheWeek1" nid="node8" type="CDayOfTheWeek">
+		<attr name="bounds">
+			<rectangle x="291" y="26" width="109" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="CDayOfTheWeek0" nid="node7" type="CDayOfTheWeek">
+		<attr name="bounds">
+			<rectangle x="144" y="27" width="109" height="66"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node1">
+		<attr name="bounds">
+			<rectangle x="80" y="140" width="59" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="260" y="151" width="32" height="32"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="488" y="77" width="80" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="163" y="159" width="73" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="290" y="110" width="36" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="382" y="126" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="497" y="164" width="87" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="386" y="165" width="16" height="31"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="222" y="110" width="36" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="291" y="26" width="109" height="66"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="144" y="27" width="109" height="66"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="go to church" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="go to church" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BGoToTask4" nid="node0" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="40" y="21" width="101" height="81"></rectangle>		</attr>
 
 
 	</node><parentship>
@@ -2046,7 +5522,127 @@
 			
 	<node id="node0">
 		<attr name="bounds">
-			<rectangle x="71" y="37" width="110" height="81"></rectangle>		</attr>
+			<rectangle x="40" y="21" width="101" height="81"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="go to daycare" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="go to daycare" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BGoToTask5" nid="node0" type="BGoToTask">
+		<attr name="bounds">
+			<rectangle x="131" y="43" width="126" height="81"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="131" y="43" width="126" height="81"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="wait" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="wait" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="WaitTask0" nid="node0" type="WaitTask">
+		<attr name="bounds">
+			<rectangle x="142" y="57" width="81" height="66"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="142" y="57" width="81" height="66"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="afternoon activities" type="ingenias.editor.models.ActivityDiagramModelJGraph">
+<object id="afternoon activities" type="ingenias.editor.entities.ActivityDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="patient"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BActivity8" nid="node0" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="116" y="59" width="59" height="66"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="116" y="59" width="59" height="66"></rectangle>		</attr>
 
 
 	</node>
