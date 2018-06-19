@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
+  <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>7</version>
-    </parent>
+</parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>movementDifficulties</artifactId>
+  <artifactId>baseModel</artifactId>
   <packaging>jar</packaging>
-  <name>E6 Interview</name>
-  <description>Model of E6 interview</description>
+  <name>Base empty project</name>
+  <description>A project from which to build others</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
-  <properties>
-	<vendor>GRASIA Research Group</vendor>
-	<developername>Pablo Campillo-Sanchez</developername>
-	<developeremail>pabcampi@ucm.es</developeremail>
-	<jme.version>3.0.1</jme.version>
-	<jali.version>1.0.9</jali.version>
-	<jdos.version>1.0.8</jdos.version>
+<properties>
+    <vendor>GRASIA Research Group</vendor>
+    <developername>Pablo Campillo-Sanchez</developername>
+    <developeremail>pabcampi@ucm.es</developeremail>
+    <jme.version>3.0.1</jme.version>
+    <jali.version>1.0.9</jali.version>
+    <jdos.version>1.0.8</jdos.version>
 	<sociaalml.version>1.0.12-SNAPSHOT</sociaalml.version>
-	<platform.version>4.1.1.4</platform.version>
+    <platform.version>4.1.1.4</platform.version>
 	<phat.version>1.0.9</phat.version>
 	<java.version>1.7</java.version>
 </properties>
@@ -289,7 +289,11 @@
 		</artifactItems>
 		<!-- configure the plugin here -->
 		</configuration>
-	      </execution>		
+	      </execution>
+
+				
+	
+					
 	    </executions>
 	  </plugin>
 	</plugins>
