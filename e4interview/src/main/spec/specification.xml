@@ -2,7 +2,7 @@
 <project cid="57" version="1.2">
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
- <openeddiagram>social profiles</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>daughter adl</openeddiagram> <openeddiagram>housecare adl</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>wait</openeddiagram> <openeddiagram>wait act</openeddiagram> <openeddiagram>wakeup act</openeddiagram> <openeddiagram>make breakfast</openeddiagram> <openeddiagram>make breakfast act</openeddiagram> <openeddiagram>washup</openeddiagram> <openeddiagram>washup act</openeddiagram> <openeddiagram>daughter morning</openeddiagram> <openeddiagram>breakfast chair 1</openeddiagram> <openeddiagram>sleep</openeddiagram> <openeddiagram>sleep act</openeddiagram></projectproperties>
+ <openeddiagram>social profiles</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>daughter adl</openeddiagram> <openeddiagram>housecare adl</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>wait</openeddiagram> <openeddiagram>wait act</openeddiagram> <openeddiagram>wakeup act</openeddiagram> <openeddiagram>make breakfast</openeddiagram> <openeddiagram>make breakfast act</openeddiagram> <openeddiagram>washup</openeddiagram> <openeddiagram>washup act</openeddiagram> <openeddiagram>daughter morning</openeddiagram> <openeddiagram>breakfast chair 1</openeddiagram> <openeddiagram>sleep</openeddiagram> <openeddiagram>sleep act</openeddiagram> <openeddiagram>read at armchair</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -97,6 +97,11 @@
     <package id="Project"/>
     <package id="behaviour"/>
     <package id="sleep act"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="read at armchair"/>
    </path>
    <path>
     <package id="Project"/>
@@ -6597,6 +6602,31 @@
 
 
 	</node>
+	</layout>
+</gxl> </model>
+ <model id="read at armchair" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
+<object id="read at armchair" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+   </path>
+<gxl>
+
+	<graph><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
 	</layout>
 </gxl> </model>
  <model id="Devices" type="ingenias.editor.models.DeviceDiagramModelJGraph">
