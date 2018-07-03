@@ -140,11 +140,19 @@
 <object id="PersonalInfo0" type="ingenias.editor.entities.PersonalInfo">
 <mapproperties>
 <key id="SocialClassField">MEDIUM</key>
-<key id="StudiesLevelFied">MEDIUM</key>
+<key id="StudiesLevelFied">HIGH</key>
 <key id="AgeField">78</key>
 <key id="SexField">Female</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="Profession0" type="ingenias.editor.entities.Profession">
+<mapproperties>
+<key id="ProfessionNameField">English to spanish translator</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+<key id="ActiveWorkerField">No</key>
 </mapproperties>
 </object>
 <object id="SDate0" type="ingenias.editor.entities.SDate">
@@ -438,6 +446,12 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="Son" type="ingenias.editor.entities.Human">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="ERemoteControl0" type="ingenias.editor.entities.ERemoteControl">
 <mapproperties>
 <key id="WidthField"></key>
@@ -532,6 +546,43 @@
 </object>
 </objects>
 <relationships>
+<relationship id="11" type="ingenias.editor.entities.isParentOf">
+<object id="11" type="ingenias.editor.entities.isParentOf">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="Son" class="ingenias.editor.entities.Human" roleName="SocialTargetMRtarget" type="ingenias.editor.entities.SocialTargetMRtargetRole" dgcid="286137437">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SocialNetwork0" class="ingenias.editor.entities.SocialNetwork" roleName="SocialSourceMRsource" type="ingenias.editor.entities.SocialSourceMRsourceRole" dgcid="1268707498">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="10" type="ingenias.editor.entities.WorkAs">
+<object id="10" type="ingenias.editor.entities.WorkAs">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PersonalInfo0" class="ingenias.editor.entities.PersonalInfo" roleName="WorkAssource" type="ingenias.editor.entities.WorkAssourceRole" dgcid="1167724632">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Profession0" class="ingenias.editor.entities.Profession" roleName="WorkAstarget" type="ingenias.editor.entities.WorkAstargetRole" dgcid="1535576359">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
 <relationship id="0" type="ingenias.editor.entities.LiveIn">
 <object id="0" type="ingenias.editor.entities.LiveIn">
 <mapproperties>
@@ -889,7 +940,58 @@
 
 	<graph>
 			
-	<node id="9" nid="node7" type="isCaregiverOf">
+	<node id="0" nid="node2" type="LiveIn">
+		<attr name="bounds">
+			<rectangle x="121" y="75" width="42" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node4">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node7">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="House" nid="node7" type="SBuilding">
+		<attr name="bounds">
+			<rectangle x="38" y="57" width="40" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="9" nid="node9" type="isCaregiverOf">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -898,7 +1000,7 @@
 			<rectangle x="670" y="47" width="32" height="47"></rectangle>		</attr>
 
 
-	<connected id="node3"><attr name="extraLabels">
+	<connected id="node5"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -910,7 +1012,7 @@
 
 
 	</connected>
-	<connected id="node4">
+	<connected id="node6">
 
 
 
@@ -920,16 +1022,68 @@
 	</connected>
 	</node>
 			
-	<node id="0" nid="node0" type="LiveIn">
+	<node id="11" nid="node0" type="isParentOf">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="121" y="75" width="42" height="15"></rectangle>		</attr>
+			<rectangle x="503" y="151" width="32" height="47"></rectangle>		</attr>
+
+
+	<connected id="node5"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node11">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="SocialNetwork0" nid="node5" type="SocialNetwork">
+		<attr name="bounds">
+			<rectangle x="476" y="65" width="96" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Husband" nid="node6" type="Human">
+		<attr name="bounds">
+			<rectangle x="794" y="78" width="56" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Profession0" nid="node10" type="Profession">
+		<attr name="bounds">
+			<rectangle x="152" y="266" width="257" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="1" nid="node3" type="socialRelations">
+		<attr name="bounds">
+			<rectangle x="369" y="79" width="83" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 
 
-	<connected id="node2">
+	<connected id="node4">
 
 
 
@@ -964,56 +1118,29 @@
 	</connected>
 	</node>
 			
-	<node id="Husband" nid="node4" type="Human">
-		<attr name="bounds">
-			<rectangle x="794" y="78" width="59" height="47"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="PersonalInfo0" nid="node2" type="PersonalInfo">
-		<attr name="bounds">
-			<rectangle x="207" y="29" width="137" height="111"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="1" nid="node1" type="socialRelations">
-		<attr name="bounds">
-			<rectangle x="369" y="79" width="83" height="15"></rectangle>		</attr>
+	<node id="10" nid="node1" type="WorkAs">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
+		<attr name="bounds">
+			<rectangle x="252" y="196" width="49" height="15"></rectangle>		</attr>
 
 
-	<connected id="node2">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
+	<connected id="node10">
 
 
 
 
 
+<attr name="extraLabels">
+			<array>
 
+</array>
+</attr>
 
 	</connected>
-	<connected id="node3">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
+	<connected id="node4">
 
 
 
@@ -1022,7 +1149,7 @@
 	</connected>
 	</node>
 			
-	<node id="2" nid="node6" type="isSpouseOf">
+	<node id="2" nid="node8" type="isSpouseOf">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -1031,7 +1158,7 @@
 			<rectangle x="663" y="96" width="32" height="47"></rectangle>		</attr>
 
 
-	<connected id="node3"><attr name="extraLabels">
+	<connected id="node5"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -1043,7 +1170,7 @@
 
 
 	</connected>
-	<connected id="node4">
+	<connected id="node6">
 
 
 
@@ -1053,16 +1180,16 @@
 	</connected>
 	</node>
 			
-	<node id="SocialNetwork0" nid="node3" type="SocialNetwork">
+	<node id="PersonalInfo0" nid="node4" type="PersonalInfo">
 		<attr name="bounds">
-			<rectangle x="476" y="65" width="96" height="47"></rectangle>		</attr>
+			<rectangle x="207" y="29" width="129" height="111"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="House" nid="node5" type="SBuilding">
+	<node id="Son" nid="node11" type="Human">
 		<attr name="bounds">
-			<rectangle x="38" y="57" width="40" height="47"></rectangle>		</attr>
+			<rectangle x="489" y="236" width="52" height="47"></rectangle>		</attr>
 
 
 	</node><parentship>
@@ -1076,7 +1203,25 @@
 
 	<layout>
 			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="121" y="75" width="42" height="15"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
 	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="38" y="57" width="40" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -1088,31 +1233,38 @@
 	</node>
 			
 	<node id="node0">
-		<attr name="bounds">
-			<rectangle x="121" y="75" width="42" height="15"></rectangle>		</attr>
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
-
-
-	</node>
-			
-	<node id="node4">
 		<attr name="bounds">
-			<rectangle x="794" y="78" width="59" height="47"></rectangle>		</attr>
+			<rectangle x="503" y="151" width="32" height="47"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node2">
+	<node id="node5">
 		<attr name="bounds">
-			<rectangle x="207" y="29" width="137" height="111"></rectangle>		</attr>
+			<rectangle x="476" y="65" width="96" height="47"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="794" y="78" width="56" height="47"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="152" y="266" width="257" height="81"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
 		<attr name="bounds">
 			<rectangle x="369" y="79" width="83" height="15"></rectangle>		</attr>
 		<attr name="view">
@@ -1123,7 +1275,18 @@
 
 	</node>
 			
-	<node id="node6">
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="252" y="196" width="49" height="15"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -1134,16 +1297,16 @@
 
 	</node>
 			
-	<node id="node3">
+	<node id="node4">
 		<attr name="bounds">
-			<rectangle x="476" y="65" width="96" height="47"></rectangle>		</attr>
+			<rectangle x="207" y="29" width="129" height="111"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node5">
+	<node id="node11">
 		<attr name="bounds">
-			<rectangle x="38" y="57" width="40" height="47"></rectangle>		</attr>
+			<rectangle x="489" y="236" width="52" height="47"></rectangle>		</attr>
 
 
 	</node>
