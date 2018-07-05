@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
+  <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>7</version>
-    </parent>
+</parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>movementDifficulties</artifactId>
+  <artifactId>baseModel</artifactId>
   <packaging>jar</packaging>
-  <name>E6 Interview</name>
-  <description>Model of E6 interview</description>
+  <name>Base project</name>
+  <description>A project from which to build others</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
-  <properties>
+<properties>
     <vendor>GRASIA Research Group</vendor>
     <developername>Pablo Campillo-Sanchez</developername>
     <developeremail>pabcampi@ucm.es</developeremail>
@@ -289,7 +289,11 @@
 		</artifactItems>
 		<!-- configure the plugin here -->
 		</configuration>
-	      </execution>		
+	      </execution>
+
+				
+	
+					
 	    </executions>
 	  </plugin>
 	</plugins>
