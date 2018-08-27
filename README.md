@@ -30,12 +30,19 @@ sudo update-alternatives --config java
 #### Maven 3.1.1+ at least (set variable M2_HOME).
 
 ```
-$ sudo apt intall maven
+$ sudo apt install maven
+```
+If you need to set M2 variables add the following lines to your .bashrc or .zshrc or whatever you use:
+```
+export M2_HOME="/usr/share/maven"
+export M2="$M2_HOME/bin"
+export PATH="$M2:$PATH"
 ```
 
 #### Ant (set variable ANT_HOME)
+
 ```
-$ sudo apt intall ant
+$ sudo apt install ant
 ```
 
 ## USAGE:
