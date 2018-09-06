@@ -64,3 +64,11 @@ $ sudo apt install ant
     **$ ant runSimName**
 
 *NOTE:* Bash completion for ant is useful when searching for simulations: http://ingenias.sourceforge.net/blog/2012/12/04/a-useful-bashcompletion-extension-for-ant/
+
+## Acknowledgements
+
+This development is part of [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project which is funded by Spain's Ministerio de Economía y Competitividad. Developed at Universidad Complutense de Madrid.
+
+![logo saal](http://grasia.fdi.ucm.es/colosaal/img/logo_colosaal.png)
+![logo ucm](https://biblioteca.ucm.es/data/cont/docs/60-2016-09-20-Marca%20UCM%20Secundaria%20Monocromo%20Negro.jpg)
+![logo min](http://grasia.fdi.ucm.es/colosaal/img/gobspain.png)
