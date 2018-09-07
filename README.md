@@ -70,5 +70,5 @@ $ sudo apt install ant
 This development is part of [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project which is funded by Spain's Ministerio de Economía y Competitividad. Developed at Universidad Complutense de Madrid.
 
 ![logo saal](http://grasia.fdi.ucm.es/colosaal/img/logo_colosaal.png)
-![logo ucm](https://biblioteca.ucm.es/data/cont/docs/60-2016-09-20-Marca%20UCM%20Secundaria%20Monocromo%20Negro.jpg)
+![logo ucm](http://grasiagroup.fdi.ucm.es/dementia/wp-content/uploads/UCM-logo-blanco-300x78.png)
 ![logo min](http://grasia.fdi.ucm.es/colosaal/img/gobspain.png)
