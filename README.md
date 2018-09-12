@@ -1,8 +1,10 @@
-# AIDE Development from real-life interviews
+# AIDE for Dementia Patients from Real-life Interviews
+
+This is a set of simulations modelled after real-life interviews with dementia patients (Alzheimer included) using PHAT Framework / AIDE.
+
+From the interview data given by the patient or caregiver a 24-hour period was modelled which represents a typical day in their life. 
 
 **AIDE** stands for **A**mbient **I**ntelligence **D**evelopment **E**nvironment and is a set of tools to model, simulate and rapid prototype Ambient Intelligence systems. For more information please visit [this link.](http://grasia.fdi.ucm.es/aide/)
-
-This is a set of examples modelled after real-life interviews with dementia patients (Alzheimer included) using PHAT Framework which is part of AIDE.
 
 PHAT Framework is a set of tools (coded using Java) to model and simulate activities of daily living.
 The main components are:
