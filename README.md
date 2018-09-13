@@ -1,8 +1,9 @@
 # AIDE for Dementia Patients from Real-life Interviews
 
-This is a set of simulations modelled after real-life interviews with dementia patients (Alzheimer included) using PHAT Framework / AIDE.
+This is a set of simulations modeled after real-life interviews with dementia patients (Alzheimer included) using PHAT Framework / AIDE.
 
-From the interview data given by the patient or caregiver a 24-hour period was modelled which represents a typical day in their life. 
+From the interview data given by the patient or caregiver a 24-hour period was modeled which represents a typical day in their life. Once this was done the next task was to analyse and recreate the problems they encounter daily. For these, filters were applied that try to mimick their troubles. 
+Afterwards, simulations were run and analysed, and videos were generated.
 
 **AIDE** stands for **A**mbient **I**ntelligence **D**evelopment **E**nvironment and is a set of tools to model, simulate and rapid prototype Ambient Intelligence systems. For more information please visit [this link.](http://grasia.fdi.ucm.es/aide/)
 
@@ -10,8 +11,8 @@ PHAT Framework is a set of tools (coded using Java) to model and simulate activi
 The main components are:
 
 - **[SociAALML Editor](https://github.com/Grasia/sociaalml)** is a graphical editor to model the elements for the simulation. The editor is based on [INGENME](https://github.com/Grasia/ingenme) framework.
-- **PHAT Simulator** is a simulator developed from scratch using jMonkeyEngine.
-- **PHAT Generator** is a tool that transforms the model defined with SociAALML in java code. The code extends PHAT Simulator and can be simulated.
+- **PHAT Generator** is a tool that transforms the model defined with SociAALML into java code which can then be executed to see the simulations in action.
+- **PHAT Simulator** is a simulator developed from scratch using jMonkeyEngine, which makes the entire framework [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software).
 *Note:* Both PHAT components can be found [here](https://github.com/Grasia/phatsim)
 
 ![activities](http://grasia.fdi.ucm.es/aide/img/activities.png)
@@ -57,7 +58,7 @@ $ sudo apt install ant
 
     **$ ant edit**
 
-2. To generate the java code of the simulation using the model:
+2. To generate the java code of the simulation from the model:
     
     **$ mvn clean compile**
 
@@ -65,7 +66,7 @@ $ sudo apt install ant
     
     **$ ant runSimName**
 
-*NOTE:* Bash completion for ant is useful when searching for simulations: http://ingenias.sourceforge.net/blog/2012/12/04/a-useful-bashcompletion-extension-for-ant/
+*NOTE:* Bash completion for ant is useful when searching for simulations with "ab" key: http://ingenias.sourceforge.net/blog/2012/12/04/a-useful-bashcompletion-extension-for-ant/
 
 ## Acknowledgements
 
