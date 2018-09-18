@@ -67,7 +67,7 @@ Func getSimNames()
 	Local $fileFullName = "*Record.java"
 	; Assign a Local variable the search handle of all files in the current directory.
 	Local $fullRoute = $workingDir & "\" & $dirs[0] & $routeToSims & $fileFullName
-	ToolTip($fullRoute, 50, 50, "Route:")
+	;ToolTip($fullRoute, 50, 50, "Route:")
 	Local $hSearch = FileFindFirstFile($fullRoute)
 
     ; Check if the search was successful, if not display a message and return False.
@@ -96,7 +96,11 @@ Func getSimNames()
     ; Close the search handle.
     FileClose($hSearch)
 
-	$iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $fileNames[0] & " " & $fileNames[1])
+	;$iMax = UBound($arr); get array size
+	Local $tmp = $fileNames[0]
+	$tmp = StringReplace($fileNames[0], "PHATSimulationNoDevicesRecord.java", "")
+	ToolTip($tmp, 50, 50)
+	$iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $tmp & " " & $fileNames[1])
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
