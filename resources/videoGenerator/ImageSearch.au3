@@ -27,14 +27,18 @@
 ;       a desktop region to search
 ;
 ;===============================================================================
-Func _ImageSearch($findImage, $resultPosition, ByRef $x, ByRef $y, $tolerance)
-   return _ImageSearchArea($findImage,$resultPosition,0,0,@DesktopWidth,@DesktopHeight,$x,$y,$tolerance)
+Func _ImageSearch($findImage, $resultPosition, ByRef $x, ByRef $y, $tolerance, $HBMP=0)
+   return _ImageSearchArea($findImage,$resultPosition,0,0,@DesktopWidth,@DesktopHeight,$x,$y,$tolerance,$HBMP)
 EndFunc
 
-Func _ImageSearchArea($findImage, $resultPosition, $x1, $y1, $right, $bottom, ByRef $x, ByRef $y, $tolerance)
+Func _ImageSearchArea($findImage, $resultPosition, $x1, $y1, $right, $bottom, ByRef $x, ByRef $y, $tolerance,$HBMP=0)
 	;MsgBox(0,"asd","" & $x1 & " " & $y1 & " " & $right & " " & $bottom)
 	if $tolerance>0 then $findImage = "*" & $tolerance & " " & $findImage
-	$result = DllCall("ImageSearchDLL.dll","str","ImageSearch","int",$x1,"int",$y1,"int",$right,"int",$bottom,"str",$findImage)
+If IsString($findImage) Then
+	$result = DllCall("ImageSearchDLL.dll","str","ImageSearch","int",$x1,"int",$y1,"int",$right,"int",$bottom,"str",$findImage,"ptr",$HBMP)
+Else
+	$result = DllCall("ImageSearchDLL.dll","str","ImageSearch","int",$x1,"int",$y1,"int",$right,"int",$bottom,"ptr",$findImage,"ptr",$HBMP)
+EndIf
 
 	; If error exit
     if $result[0]="0" then return 0
@@ -71,12 +75,12 @@ EndFunc
 ;
 ;
 ;===============================================================================
-Func _WaitForImageSearch($findImage, $waitSecs, $resultPosition, ByRef $x, ByRef $y, $tolerance)
+Func _WaitForImageSearch($findImage, $waitSecs, $resultPosition, ByRef $x, ByRef $y, $tolerance, $HBMP=0)
 	$waitSecs = $waitSecs * 1000
 	$startTime=TimerInit()
 	While TimerDiff($startTime) < $waitSecs
 		sleep(100)
-		$result=_ImageSearch($findImage, $resultPosition, $x, $y, $tolerance)
+		$result=_ImageSearch($findImage,$resultPosition,$x, $y,$tolerance,$HBMP)
 		if $result > 0 Then
 			return 1
 		EndIf
@@ -106,13 +110,13 @@ EndFunc
 ;
 ;
 ;===============================================================================
-Func _WaitForImagesSearch($findImage, $waitSecs, $resultPosition, ByRef $x, ByRef $y, $tolerance)
+Func _WaitForImagesSearch($findImage, $waitSecs, $resultPosition, ByRef $x, ByRef $y, $tolerance,$HBMP=0)
 	$waitSecs = $waitSecs * 1000
 	$startTime=TimerInit()
 	While TimerDiff($startTime) < $waitSecs
 		for $i = 1 to $findImage[0]
 		    sleep(100)
-		    $result=_ImageSearch($findImage[$i],$resultPosition,$x, $y,$tolerance)
+		    $result=_ImageSearch($findImage[$i],$resultPosition,$x, $y,$tolerance,$HBMP)
 		    if $result > 0 Then
 			    return $i
 		    EndIf
