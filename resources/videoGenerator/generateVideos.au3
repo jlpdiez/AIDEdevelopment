@@ -33,9 +33,9 @@ For $i = 0 To $dirSize - 1
 	;sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
-	While Not buildSuccess()
+	;While Not searchImage('buildSuccess.png')
 		Sleep(500)
-	WEnd
+	;WEnd
 
 	;Go up one level in directory structure
 	;sendCommand("cd..")
@@ -58,16 +58,11 @@ Func searchImage($img)
 	Return _ImageSearch($img, 1, $x, $y, 0)
 EndFunc
 
-Func buildSuccess()
-	Return searchImage('buildSuccess.png')
-EndFunc
-
 Func getSimNames()
-	Local $routeToSims = "\target\classes\phat\sim\"
-	Local $fileFullName = "*Record.java"
-	; Assign a Local variable the search handle of all files in the current directory.
-	Local $fullRoute = $workingDir & "\" & $dirs[0] & $routeToSims & $fileFullName
-	;ToolTip($fullRoute, 50, 50, "Route:")
+	Local $routeToSims = "\target\classes\phat\sim\*Record.java"
+	Local $fullRoute = $workingDir & "\" & $dirs[0] & $routeToSims
+
+	;Assign a Local variable the search handle of all files in the current directory.
 	Local $hSearch = FileFindFirstFile($fullRoute)
 
     ; Check if the search was successful, if not display a message and return False.
@@ -96,11 +91,14 @@ Func getSimNames()
     ; Close the search handle.
     FileClose($hSearch)
 
-	;$iMax = UBound($arr); get array size
-	Local $tmp = $fileNames[0]
-	$tmp = StringReplace($fileNames[0], "PHATSimulationNoDevicesRecord.java", "")
-	ToolTip($tmp, 50, 50)
-	$iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $tmp & " " & $fileNames[1])
+	;Gets a list of files and transforms them to ant commands to run the simulations
+	;Transforms "MainSimNamePHATSimulationNoDevicesRecord.java" to "ant runSimName"
+	For $i = 0 To UBound($dirs) - 1
+		$fileNames[$i] = StringReplace($fileNames[$i], "PHATSimulationNoDevicesRecord.java", "")
+		$fileNames[$i] = StringReplace($fileNames[$i], "Main", "ant run")
+	Next
+
+	$iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $fileNames[0] & " | " & $fileNames[1] & " | " & $fileNames[2] )
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
