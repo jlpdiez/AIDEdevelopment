@@ -6,7 +6,7 @@
 ; HOTKEYS
 ;*************************************
 HotKeySet('{F2}', 'quitScript')
-;HotKeySet('{F3}', 'getSimNames')
+HotKeySet('{F3}', 'record')
 HotKeySet('{F4}', 'getNumberOfInterviews')
 
 ;*************************************
@@ -38,27 +38,27 @@ WinWaitActive($winName)
 ;Cycle through folders
 For $folderNum = 0 To $dirSize - 1
 	;Enter directory
-	sendCommand("cd " & $dirs[$folderNum])
+	;sendCommand("cd " & $dirs[$folderNum])
 	;Compile
-	sendCommand("mvn clean compile -Dfile.encoding=UTF8")
+	;sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
-	While Not searchImage('buildSuccess.png')
+	;While Not searchImage('buildSuccess.png')
 		Sleep(500)
-	WEnd
+	;WEnd
 
 	;Search folders & get commands
-	$retunedCommands = getAntCommands($folderNum)
+	;$retunedCommands = getAntCommands($folderNum)
 	;Cycle through simulations
-	For $i = 0 To UBound($retunedCommands) - 1
+	;For $i = 0 To UBound($retunedCommands) - 1
 		;Run simulation
-		sendCommand($retunedCommands[$i])
+		;sendCommand($retunedCommands[$i])
 		;Wait
-		Sleep(60000)
+		;Sleep(60000)
 		;Accelerate simulation
 		;Record
 		;Stop simulation
-	Next
+	;Next
 
 	;Go up one level in directory structure
 	sendCommand("cd..")
@@ -67,6 +67,12 @@ Next
 ;*************************************
 ; AUXILIARY FUNCTIONS
 ;*************************************
+;Exits the program
+Func quitScript()
+	WinClose($winName)
+	Exit
+EndFunc
+
 ;Types into console input command + "Enter" key
 Func sendCommand($cmd)
 	SendKeepActive($winPID)
@@ -150,8 +156,15 @@ Func getAntCommands(ByRef $simNum)
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
-;Exit the program
-Func quitScript()
-	WinClose($winName)
-	Exit
+Func record()
+	Local $swPath = "C:\Program Files\CamStudio 2.7\Recorder.exe"
+	Local $swName = "CamStudio"
+	;Run SW if needed, bring to focus otherwise
+	If Not ProcessExists("Recorder.exe") Then
+		Run($swPath)
+	Else
+		WinActivate($swName)
+	EndIf
+
+	WinWaitActive($swName)
 EndFunc
