@@ -1,21 +1,31 @@
 #include <AutoItConstants.au3>
-#include <MsgBoxConstants.au3>
+;#include <MsgBoxConstants.au3>
 #include <ImageSearch.au3>
 
-;Assign hotkeys
+;*************************************
+; HOTKEYS
+;*************************************
 HotKeySet('{F2}', 'quitScript')
-HotKeySet('{F3}', 'getSimNames')
+;HotKeySet('{F3}', 'getSimNames')
+HotKeySet('{F4}', 'getNumberOfInterviews')
 
-;Variables
+;*************************************
+; GLOBAL VARIABLES
+;*************************************
 Const $winName = "C:\WINDOWS\SYSTEM32\cmd.exe"
 Const $workingDir = "C:\Users\Jlperez\Documents\GitHub\AIDEdevelopment"
-Const $dirSize = 7
+
+Global $dirSize = getNumberOfInterviews()
 ;Assign directory names
 Global $dirs[$dirSize]
+;Assigns proper names to directory list
 For $i = 0 To $dirSize - 1
 	$dirs[$i] = "e" & $i + 1 & "interview"
 Next
 
+;*************************************
+; MAIN PROGRAM LOGIC
+;*************************************
 ;Open console at working directory
 Global $winPID = Run("cmd", $workingDir)
 ;Wait for it to open
@@ -26,21 +36,37 @@ WinWaitActive($winName)
 ;sendCommand("echo %JAVA_TOOL_OPTIONS%")
 
 ;Cycle through folders
-For $i = 0 To $dirSize - 1
+For $folderNum = 0 To $dirSize - 1
 	;Enter directory
-	;sendCommand("cd " & $dirs[$i])
+	sendCommand("cd " & $dirs[$folderNum])
 	;Compile
-	;sendCommand("mvn clean compile -Dfile.encoding=UTF8")
+	sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
-	;While Not searchImage('buildSuccess.png')
+	While Not searchImage('buildSuccess.png')
 		Sleep(500)
-	;WEnd
+	WEnd
+
+	;Search folders & get commands
+	$retunedCommands = getAntCommands($folderNum)
+	;Cycle through simulations
+	For $i = 0 To UBound($retunedCommands) - 1
+		;Run simulation
+		sendCommand($retunedCommands[$i])
+		;Wait
+		Sleep(60000)
+		;Accelerate simulation
+		;Record
+		;Stop simulation
+	Next
 
 	;Go up one level in directory structure
-	;sendCommand("cd..")
+	sendCommand("cd..")
 Next
 
+;*************************************
+; AUXILIARY FUNCTIONS
+;*************************************
 ;Types into console input command + "Enter" key
 Func sendCommand($cmd)
 	SendKeepActive($winPID)
@@ -48,57 +74,79 @@ Func sendCommand($cmd)
 	Send("{ENTER}")
 EndFunc
 
+;Searchs for a given image and returns true or false
 Func searchImage($img)
-	Local $x
-	Local $y
-	;Get coords & size of window
-	Local $winPos = WinGetPos($winName)
-	;_ImageSearchArea(imageToSearch, xIni, yIni, xSize, ySize, returnedXcoord, returnedYcoord, tolerance)
-	;Return _ImageSearchArea($img, 1, $winPos[0], $winPos[1], $winPos[2], $winPos[3], $x, $y, 25)
+	Local $x, $y
 	Return _ImageSearch($img, 1, $x, $y, 0)
 EndFunc
 
-Func getSimNames()
-	Local $routeToSims = "\target\classes\phat\sim\*Record.java"
-	Local $fullRoute = $workingDir & "\" & $dirs[0] & $routeToSims
-
+;Searchs working directory for interviews and returns the number of them found
+Func getNumberOfInterviews()
+	Local $counter = 0
 	;Assign a Local variable the search handle of all files in the current directory.
-	Local $hSearch = FileFindFirstFile($fullRoute)
-
-    ; Check if the search was successful, if not display a message and return False.
+	Local $hSearch = FileFindFirstFile($workingDir & "\e*interview")
+    ; Check if the search was successful
     If $hSearch = -1 Then
-        MsgBox($MB_SYSTEMMODAL, "", "Error: No files/directories matched the search pattern.")
-        Return False
+        Return 0
     EndIf
 
-    ; Assign a Local variable the empty string which will contain the files names found.
-    Local $sFileName = "", $iResult = 0
+    While 1
+		FileFindNextFile($hSearch)
+        ; If there is no more file matching the search.
+        If @error Then
+			ExitLoop
+		Else
+			$counter += 1
+		EndIf
+    WEnd
+	FileClose($hSearch)
+	Return $counter
+EndFunc
+
+;Returns an array with the commands needed to execute the simulations
+Func getAntCommands(ByRef $simNum)
 	Local $fileNames[15]
+	Local $fullRoute = $workingDir & "\" & $dirs[$simNum] & "\target\classes\phat\sim\*Record.java"
+	;Assign a Local variable the search handle of all files in the current directory.
+	Local $hSearch = FileFindFirstFile($fullRoute)
+    ; Check if the search was successful
+    If $hSearch = -1 Then
+        Return -1
+    EndIf
 	Local $i = 0
     While 1
-        $sFileName = FileFindNextFile($hSearch)
-		$fileNames[$i] = $sFileName
+		$fileNames[$i] = FileFindNextFile($hSearch)
         ; If there is no more file matching the search.
-        If @error Then ExitLoop
-
-        ; Display the file name.
-        $iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $sFileName)
-        If $iResult <> $IDOK Then ExitLoop ; If the user clicks on the cancel/close button.
-
-		$i += 1
+        If @error Then
+			ExitLoop
+		Else
+			$i += 1
+		EndIf
     WEnd
-
     ; Close the search handle.
     FileClose($hSearch)
 
-	;Gets a list of files and transforms them to ant commands to run the simulations
-	;Transforms "MainSimNamePHATSimulationNoDevicesRecord.java" to "ant runSimName"
-	For $i = 0 To UBound($dirs) - 1
-		$fileNames[$i] = StringReplace($fileNames[$i], "PHATSimulationNoDevicesRecord.java", "")
-		$fileNames[$i] = StringReplace($fileNames[$i], "Main", "ant run")
+	;Prepare arrays for returning them with the appropriate size
+	Local $length = 0
+	Local $stop = False
+	While Not $stop
+		If $fileNames[$length] <> "" Then
+			$length += 1
+		Else
+			$stop = True
+		EndIf
+	WEnd
+	;ToolTip("Sim: " & $simNum & " | Length: " & $length, 50, 50, "NumSims", 4)
+	;Sleep(2500)
+	Local $commandNames[$length]
+	For $i = 0 To $length - 1
+		$commandNames[$i] = $fileNames[$i]
+		;Transforms "MainSimNamePHATSimulationNoDevicesRecord.java" to "ant runSimName"
+		$commandNames[$i] = StringReplace($commandNames[$i], "PHATSimulationNoDevicesRecord.java", "")
+		$commandNames[$i] = StringReplace($commandNames[$i], "Main", "ant run")
 	Next
 
-	$iResult = MsgBox(BitOR($MB_SYSTEMMODAL, $MB_OKCANCEL), "", "File: " & $fileNames[0] & " | " & $fileNames[1] & " | " & $fileNames[2] )
+	Return $commandNames
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
