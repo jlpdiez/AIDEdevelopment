@@ -167,4 +167,16 @@ Func record()
 	EndIf
 
 	WinWaitActive($swName)
+	startRecording()
+EndFunc
+
+;PHATSIM Window size:
+;width = 1233
+;height = 810
+Func startRecording()
+	Send("^!r")
+EndFunc
+
+Func stopRecording()
+	Send("^!r")
 EndFunc
