@@ -5,7 +5,7 @@ for i in range(7):
     print(i+1)
     data.append("/home/ender/Desktop/AIDEdevelopment/e" + str(i + 1) + "interview/src/main/spec/specification.xml")
 
-    tree = ET.parse(data[0])
+    tree = ET.parse(data[i])
     root = tree.getroot()
     keys = root.findall("./objects/object/mapproperties/key")
 
