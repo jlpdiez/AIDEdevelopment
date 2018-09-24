@@ -9,3 +9,5 @@ assets/*
 *.log
 *.log.lck
 */assets/*
+*/OpenAL64.dll
+*/lwjgl64.dll
