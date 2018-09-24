@@ -105,5 +105,5 @@ This should launch a PHATSIM window with the simulation. It should be similar to
 This development is part of [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project (TIN2014-57028-R) which is funded by Spain's Ministerio de Economía y Competitividad. Developed at Universidad Complutense de Madrid.
 
 ![logo saal](http://grasia.fdi.ucm.es/colosaal/img/logo_colosaal.png)
-![logo ucm](http://grasiagroup.fdi.ucm.es/aidendd/wp-content/uploads/UCM-logo-blanco-300x78.png)
+![logo ucm](http://grasiagroup.fdi.ucm.es/aidendd/wp-content/uploads/logo_ucm-e1537792345349.jpg)
 ![logo min](http://grasia.fdi.ucm.es/colosaal/img/gobspain.png)
