@@ -67,13 +67,13 @@ $ sudo apt install ant
 ```
 
 ### Usage:
-1. To open SociAALML Editor you go to a project's folder and type:
-
-    **$ ant edit**
-
-2. To generate the java code of the simulation from the model:
+1. To generate the java code for the editor and simulations:
     
     **$ mvn clean compile**
+    
+2. To open SociAALML Editor you go to a project's folder and type:
+
+    **$ ant edit**
 
 3. To run a simulation
     
@@ -99,6 +99,15 @@ $ mvn clean compile -Dfile.encoding=UTF8
 ```
 This should launch a PHATSIM window with the simulation. It should be similar to this one:
 ![phatsim example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/phatExample.png)
+
+If you are interested in the modelling part:
+```
+$ cd e6interview
+$ mvn clean compile 
+$ ant edit
+```
+This will laund the SociAALML editor, which is similar to this capture:
+![sociaalml example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/sociaalExample.png)
 
 ## Acknowledgements
 
