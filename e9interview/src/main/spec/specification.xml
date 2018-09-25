@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project cid="80" version="1.2">
+<project cid="84" version="1.2">
 <projectproperties>
 <projectproperty id="extfolder" module="IDK"  name="Extension Module Folder" value="ext"  tooltip="Folder where the IDE will find its new modules" />
- <openeddiagram>social profiles</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>symptoms specs</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>caregiver adl</openeddiagram> <openeddiagram>wait</openeddiagram> <openeddiagram>wait act</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>poo</openeddiagram> <openeddiagram>pee</openeddiagram> <openeddiagram>shower</openeddiagram> <openeddiagram>use armchair</openeddiagram> <openeddiagram>use sofa</openeddiagram> <openeddiagram>sleep left</openeddiagram> <openeddiagram>sleep left act</openeddiagram> <openeddiagram>sleep right</openeddiagram> <openeddiagram>sleep right act</openeddiagram> <openeddiagram>short eat chair 1</openeddiagram> <openeddiagram>eat chair 1</openeddiagram> <openeddiagram>go out</openeddiagram> <openeddiagram>short eat chair 2</openeddiagram> <openeddiagram>eat chair 2</openeddiagram> <openeddiagram>short cook food</openeddiagram> <openeddiagram>use fridge</openeddiagram> <openeddiagram>cook food</openeddiagram> <openeddiagram>patient morning </openeddiagram> <openeddiagram>call caregiver</openeddiagram> <openeddiagram>caregiver help patient</openeddiagram> <openeddiagram>interactions</openeddiagram> <openeddiagram>wait for caregiver</openeddiagram> <openeddiagram>get dressed</openeddiagram> <openeddiagram>breakfast patient</openeddiagram> <openeddiagram>caregiver morning</openeddiagram></projectproperties>
+ <openeddiagram>social profiles</openeddiagram> <openeddiagram>human profiles</openeddiagram> <openeddiagram>symptoms specs</openeddiagram> <openeddiagram>patient adl</openeddiagram> <openeddiagram>SimNoSymptoms</openeddiagram> <openeddiagram>caregiver adl</openeddiagram> <openeddiagram>wait</openeddiagram> <openeddiagram>wait act</openeddiagram> <openeddiagram>wake up</openeddiagram> <openeddiagram>poo</openeddiagram> <openeddiagram>pee</openeddiagram> <openeddiagram>shower</openeddiagram> <openeddiagram>use armchair</openeddiagram> <openeddiagram>use sofa</openeddiagram> <openeddiagram>sleep left</openeddiagram> <openeddiagram>sleep left act</openeddiagram> <openeddiagram>sleep right</openeddiagram> <openeddiagram>sleep right act</openeddiagram> <openeddiagram>short eat chair 1</openeddiagram> <openeddiagram>eat chair 1</openeddiagram> <openeddiagram>go out</openeddiagram> <openeddiagram>short eat chair 2</openeddiagram> <openeddiagram>eat chair 2</openeddiagram> <openeddiagram>short cook food</openeddiagram> <openeddiagram>use fridge</openeddiagram> <openeddiagram>cook food</openeddiagram> <openeddiagram>patient morning </openeddiagram> <openeddiagram>call caregiver</openeddiagram> <openeddiagram>caregiver help patient</openeddiagram> <openeddiagram>interactions</openeddiagram> <openeddiagram>wait for caregiver</openeddiagram> <openeddiagram>get dressed</openeddiagram> <openeddiagram>breakfast patient</openeddiagram> <openeddiagram>caregiver morning</openeddiagram> <openeddiagram>have breakfast caregiver</openeddiagram> <openeddiagram>walk activity</openeddiagram></projectproperties>
 <leafpackages>
    <path>
     <package id="Project"/>
@@ -118,6 +118,12 @@
    <path>
     <package id="Project"/>
     <package id="behaviour"/>
+    <package id="caregiver"/>
+    <package id="have breakfast caregiver"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
     <package id="wait"/>
    </path>
    <path>
@@ -154,6 +160,11 @@
     <package id="Project"/>
     <package id="behaviour"/>
     <package id="use sofa"/>
+   </path>
+   <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="walk activity"/>
    </path>
    <path>
     <package id="Project"/>
@@ -491,6 +502,36 @@
 </objectproperty>
 <mapproperties>
 <key id="Description">Getting dressed</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity17" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="76" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">short eat chair 2</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description">Having brakfast</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="BActivity18" type="ingenias.editor.entities.BActivity">
+<objectproperty id="SeqTaskDiagramField">
+<object id="76" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">go out</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description">Going for a walk: -...she was never very fond of walking. But we used to go out for a stroll, or to buy some groceries. You know?-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -1509,6 +1550,33 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="ClockTime7" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">15</key>
+<key id="Description"></key>
+<key id="HoursField">10</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="ClockTime8" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">30</key>
+<key id="Description"></key>
+<key id="HoursField">11</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="ClockTime9" type="ingenias.editor.entities.ClockTime">
+<mapproperties>
+<key id="SecondsField">0</key>
+<key id="MinutesField">30</key>
+<key id="Description"></key>
+<key id="HoursField">11</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="EventProcessor0" type="ingenias.editor.entities.EventProcessor">
 <mapproperties>
 <key id="Description"></key>
@@ -2138,6 +2206,78 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
+<object id="TimeInterval7" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+<object id="82" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ActivityDiagram</key>
+<key id="ModelID">have breakfast caregiver</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="DefaultActivityField">
+<object id="82" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">wait</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="TimeInterval8" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+<object id="76" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ActivityDiagram</key>
+<key id="ModelID">walk activity</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="DefaultActivityField">
+<object id="76" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">wait</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<object id="TimeInterval9" type="ingenias.editor.entities.TimeInterval">
+<objectproperty id="ActivitySpecField">
+<object id="84" type="ingenias.editor.entities.ActivityDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">ActivityDiagram</key>
+<key id="ModelID">walk activity</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<objectproperty id="DefaultActivityField">
+<object id="84" type="ingenias.editor.entities.SequentialTaskDiagramModelEntity">
+<mapproperties>
+<key id="ModelType">SequentialTaskDiagram</key>
+<key id="ModelID">wait</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+</objectproperty>
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
 <object id="WorldInitialization0" type="ingenias.editor.entities.WorldInitialization">
 <mapproperties>
 <key id="SimulationSeedField">0</key>
@@ -2378,6 +2518,43 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
+<relationship id="81" type="ingenias.editor.entities.TIStartTime">
+<object id="81" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval8" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="1125835487">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="ClockTime8" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="966008820">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="76" type="ingenias.editor.entities.NextTI">
+<object id="76" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval8" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="1125835487">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval5" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="1373752424">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
 <relationship id="73" type="ingenias.editor.entities.NextTI">
 <object id="73" type="ingenias.editor.entities.NextTI">
 <mapproperties>
@@ -2483,6 +2660,26 @@
 </role><role idEntity="ClockTime5" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="110922375">
 <mapproperties>
 <key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="80" type="ingenias.editor.entities.NextTI">
+<object id="80" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval8" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="1125835487">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval1" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="245891513">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
@@ -2823,14 +3020,14 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="76" type="ingenias.editor.entities.NextTI">
-<object id="76" type="ingenias.editor.entities.NextTI">
+<relationship id="84" type="ingenias.editor.entities.NextTI">
+<object id="84" type="ingenias.editor.entities.NextTI">
 <mapproperties>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="TimeInterval6" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="1340663206">
+<role idEntity="TimeInterval9" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="708973537">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
@@ -2840,6 +3037,40 @@
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="82" type="ingenias.editor.entities.TIStartTime">
+<object id="82" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="ClockTime9" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="1276298762">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval9" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="708973537">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="24" type="ingenias.editor.entities.TIStartTime">
+<object id="24" type="ingenias.editor.entities.TIStartTime">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval7" class="ingenias.editor.entities.TimeInterval" roleName="TIStartTimesource" type="ingenias.editor.entities.TIStartTimesourceRole" dgcid="575154983">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="ClockTime7" class="ingenias.editor.entities.ClockTime" roleName="TIStartTimetarget" type="ingenias.editor.entities.TIStartTimetargetRole" dgcid="63112012">
+<mapproperties>
+<key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
@@ -2908,6 +3139,46 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role><role idEntity="TimeInterval2" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="142077311">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="25" type="ingenias.editor.entities.NextTI">
+<object id="25" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval6" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="1340663206">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval7" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="575154983">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="83" type="ingenias.editor.entities.NextTI">
+<object id="83" type="ingenias.editor.entities.NextTI">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="TimeInterval9" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodetarget" type="ingenias.editor.entities.ListTimeIntervalNodetargetRole" dgcid="708973537">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="TimeInterval7" class="ingenias.editor.entities.TimeInterval" roleName="ListTimeIntervalNodesource" type="ingenias.editor.entities.ListTimeIntervalNodesourceRole" dgcid="575154983">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="Description"></key>
@@ -4728,28 +4999,14 @@
 
 	<graph>
 			
-	<node id="ClockTime5" nid="node12" type="ClockTime">
+	<node id="TimeInterval5" nid="node3" type="TimeInterval">
 		<attr name="bounds">
-			<rectangle x="406" y="24" width="66" height="68"></rectangle>		</attr>
+			<rectangle x="397" y="141" width="74" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="ClockTime0" nid="node8" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="22" y="11" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="ClockTime1" nid="node7" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="1416" y="9" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="73" nid="node0" type="NextTI">
+	<node id="73" nid="node2" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -4758,7 +5015,7 @@
 			<rectangle x="323" y="169" width="44" height="16"></rectangle>		</attr>
 
 
-	<connected id="node11"><attr name="extraLabels">
+	<connected id="node13"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -4770,7 +5027,7 @@
 
 
 	</connected>
-	<connected id="node1">
+	<connected id="node3">
 
 
 
@@ -4780,170 +5037,23 @@
 	</connected>
 	</node>
 			
-	<node id="13" nid="node5" type="TIStartTime">
+	<node id="ClockTime0" nid="node10" type="ClockTime">
 		<attr name="bounds">
-			<rectangle x="25" y="98" width="70" height="16"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node10">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node8">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="ClockTime4" nid="node4" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="212" y="19" width="66" height="68"></rectangle>		</attr>
+			<rectangle x="22" y="11" width="66" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="TimeInterval0" nid="node10" type="TimeInterval">
-		<attr name="bounds">
-			<rectangle x="21" y="134" width="74" height="84"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="TimeInterval1" nid="node9" type="TimeInterval">
-		<attr name="bounds">
-			<rectangle x="1408" y="117" width="74" height="84"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="TimeInterval5" nid="node1" type="TimeInterval">
-		<attr name="bounds">
-			<rectangle x="397" y="141" width="74" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="12" nid="node6" type="TIStartTime">
-		<attr name="bounds">
-			<rectangle x="1412" y="88" width="70" height="16"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	<connected id="node9">
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	<connected id="node7">
-
-
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="74" nid="node13" type="TIStartTime">
+	<node id="80" nid="node18" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="401" y="108" width="70" height="16"></rectangle>		</attr>
+			<rectangle x="1013" y="158" width="44" height="16"></rectangle>		</attr>
 
 
-	<connected id="node1"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node12">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="TimeInterval4" nid="node11" type="TimeInterval">
-		<attr name="bounds">
-			<rectangle x="205" y="138" width="89" height="84"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="14" nid="node3" type="NextTI">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="132" y="165" width="44" height="16"></rectangle>		</attr>
-
-
-	<connected id="node10"><attr name="extraLabels">
+	<connected id="node17"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -4965,16 +5075,30 @@
 	</connected>
 	</node>
 			
-	<node id="28" nid="node2" type="TIStartTime">
+	<node id="TimeInterval4" nid="node13" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="205" y="138" width="89" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TimeInterval0" nid="node12" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="21" y="134" width="74" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="14" nid="node5" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="208" y="104" width="70" height="16"></rectangle>		</attr>
+			<rectangle x="132" y="165" width="44" height="16"></rectangle>		</attr>
 
 
-	<connected id="node11"><attr name="extraLabels">
+	<connected id="node12"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -4986,7 +5110,261 @@
 
 
 	</connected>
-	<connected id="node4">
+	<connected id="node13">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="13" nid="node7" type="TIStartTime">
+		<attr name="bounds">
+			<rectangle x="25" y="98" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node12">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node10">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="TimeInterval8" nid="node17" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="588" y="139" width="74" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime5" nid="node14" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="406" y="24" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="74" nid="node15" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="401" y="108" width="70" height="16"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node14">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="TimeInterval1" nid="node11" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="1408" y="117" width="74" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="81" nid="node0" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="592" y="106" width="70" height="16"></rectangle>		</attr>
+
+
+	<connected id="node17"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node16">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="76" nid="node1" type="NextTI">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="507" y="166" width="44" height="16"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node17">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="28" nid="node4" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="208" y="104" width="70" height="16"></rectangle>		</attr>
+
+
+	<connected id="node13"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node6">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="ClockTime4" nid="node6" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="212" y="19" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime8" nid="node16" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="596" y="22" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime1" nid="node9" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="1416" y="9" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="12" nid="node8" type="TIStartTime">
+		<attr name="bounds">
+			<rectangle x="1412" y="88" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node11">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node9">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
 
 
 
@@ -5005,28 +5383,14 @@
 
 	<layout>
 			
-	<node id="node12">
+	<node id="node3">
 		<attr name="bounds">
-			<rectangle x="406" y="24" width="66" height="68"></rectangle>		</attr>
+			<rectangle x="397" y="141" width="74" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node8">
-		<attr name="bounds">
-			<rectangle x="22" y="11" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node7">
-		<attr name="bounds">
-			<rectangle x="1416" y="9" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node0">
+	<node id="node2">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -5037,7 +5401,50 @@
 
 	</node>
 			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="22" y="11" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node18">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="1013" y="158" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="205" y="138" width="89" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="21" y="134" width="74" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
 	<node id="node5">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="132" y="165" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
 		<attr name="bounds">
 			<rectangle x="25" y="98" width="70" height="16"></rectangle>		</attr>
 		<attr name="view">
@@ -5048,46 +5455,21 @@
 
 	</node>
 			
-	<node id="node4">
+	<node id="node17">
 		<attr name="bounds">
-			<rectangle x="212" y="19" width="66" height="68"></rectangle>		</attr>
+			<rectangle x="588" y="139" width="74" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node10">
+	<node id="node14">
 		<attr name="bounds">
-			<rectangle x="21" y="134" width="74" height="84"></rectangle>		</attr>
+			<rectangle x="406" y="24" width="66" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node9">
-		<attr name="bounds">
-			<rectangle x="1408" y="117" width="74" height="84"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node1">
-		<attr name="bounds">
-			<rectangle x="397" y="141" width="74" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node6">
-		<attr name="bounds">
-			<rectangle x="1412" y="88" width="70" height="16"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node13">
+	<node id="node15">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -5100,29 +5482,72 @@
 			
 	<node id="node11">
 		<attr name="bounds">
-			<rectangle x="205" y="138" width="89" height="84"></rectangle>		</attr>
+			<rectangle x="1408" y="117" width="74" height="84"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node3">
+	<node id="node0">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="132" y="165" width="44" height="16"></rectangle>		</attr>
+			<rectangle x="592" y="106" width="70" height="16"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node2">
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="507" y="166" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
 			<rectangle x="208" y="104" width="70" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="212" y="19" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="bounds">
+			<rectangle x="596" y="22" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="1416" y="9" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="1412" y="88" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
@@ -6435,23 +6860,16 @@
 
 	<graph>
 			
-	<node id="ClockTime2" nid="node3" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="7" y="30" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="75" nid="node1" type="TIStartTime">
+	<node id="83" nid="node18" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="196" y="106" width="70" height="16"></rectangle>		</attr>
+			<rectangle x="473" y="161" width="44" height="16"></rectangle>		</attr>
 
 
-	<connected id="node9"><attr name="extraLabels">
+	<connected id="node15"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -6463,7 +6881,7 @@
 
 
 	</connected>
-	<connected id="node8">
+	<connected id="node17">
 
 
 
@@ -6473,23 +6891,75 @@
 	</connected>
 	</node>
 			
-	<node id="TimeInterval6" nid="node9" type="TimeInterval">
+	<node id="TimeInterval3" nid="node9" type="TimeInterval">
 		<attr name="bounds">
-			<rectangle x="190" y="138" width="99" height="84"></rectangle>		</attr>
+			<rectangle x="1406" y="160" width="74" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="16" nid="node10" type="NextTI">
+	<node id="ClockTime9" nid="node2" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="555" y="36" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime7" nid="node4" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="405" y="18" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="75" nid="node5" type="TIStartTime">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="115" y="171" width="44" height="16"></rectangle>		</attr>
+			<rectangle x="196" y="106" width="70" height="16"></rectangle>		</attr>
 
 
-	<connected id="node4"><attr name="extraLabels">
+	<connected id="node13"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node12">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="ClockTime3" nid="node6" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="1412" y="11" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="84" nid="node0" type="NextTI">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="990" y="177" width="44" height="16"></rectangle>		</attr>
+
+
+	<connected id="node17"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -6511,14 +6981,21 @@
 	</connected>
 	</node>
 			
-	<node id="TimeInterval2" nid="node4" type="TimeInterval">
+	<node id="TimeInterval2" nid="node8" type="TimeInterval">
 		<attr name="bounds">
 			<rectangle x="1" y="154" width="74" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="15" nid="node7" type="TIStartTime">
+	<node id="ClockTime2" nid="node7" type="ClockTime">
+		<attr name="bounds">
+			<rectangle x="7" y="30" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="15" nid="node11" type="TIStartTime">
 		<attr name="bounds">
 			<rectangle x="8" y="118" width="70" height="16"></rectangle>		</attr>
 		<attr name="view">
@@ -6527,7 +7004,7 @@
 
 
 
-	<connected id="node4">
+	<connected id="node8">
 
 
 
@@ -6543,7 +7020,7 @@
 
 
 	</connected>
-	<connected id="node3">
+	<connected id="node7">
 
 
 
@@ -6562,31 +7039,20 @@
 	</connected>
 	</node>
 			
-	<node id="TimeInterval3" nid="node5" type="TimeInterval">
-		<attr name="bounds">
-			<rectangle x="1406" y="160" width="74" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="17" nid="node6" type="TIStartTime">
-		<attr name="bounds">
-			<rectangle x="1413" y="111" width="70" height="16"></rectangle>		</attr>
+	<node id="82" nid="node1" type="TIStartTime">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
+		<attr name="bounds">
+			<rectangle x="550" y="111" width="70" height="16"></rectangle>		</attr>
 
 
-	<connected id="node5">
+	<connected id="node17"><attr name="extraLabels">
+			<array>
 
-
-
-
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
+</array>
+</attr>
 
 
 
@@ -6600,43 +7066,34 @@
 
 
 
-		<attr name="labelposition">
-			<point x="500.0" y="-20.0"></point>
-		</attr>
-
-
-
-
-
-
 
 	</connected>
 	</node>
 			
-	<node id="ClockTime6" nid="node8" type="ClockTime">
+	<node id="TimeInterval9" nid="node17" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="545" y="135" width="74" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="ClockTime6" nid="node12" type="ClockTime">
 		<attr name="bounds">
 			<rectangle x="203" y="23" width="66" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="ClockTime3" nid="node2" type="ClockTime">
-		<attr name="bounds">
-			<rectangle x="1412" y="11" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="76" nid="node0" type="NextTI">
+	<node id="25" nid="node16" type="NextTI">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="813" y="174" width="44" height="16"></rectangle>		</attr>
+			<rectangle x="308" y="166" width="44" height="16"></rectangle>		</attr>
 
 
-	<connected id="node9"><attr name="extraLabels">
+	<connected id="node13"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -6648,7 +7105,127 @@
 
 
 	</connected>
-	<connected id="node5">
+	<connected id="node15">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="24" nid="node3" type="TIStartTime">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="403" y="103" width="70" height="16"></rectangle>		</attr>
+
+
+	<connected id="node15"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node4">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="16" nid="node14" type="NextTI">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="115" y="171" width="44" height="16"></rectangle>		</attr>
+
+
+	<connected id="node8"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node13">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="TimeInterval7" nid="node15" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="372" y="136" width="133" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="TimeInterval6" nid="node13" type="TimeInterval">
+		<attr name="bounds">
+			<rectangle x="190" y="138" width="99" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="17" nid="node10" type="TIStartTime">
+		<attr name="bounds">
+			<rectangle x="1413" y="111" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	<connected id="node9">
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
+
+
+
+
+
+
+	</connected>
+	<connected id="node6">
+
+
+
+
+
+		<attr name="labelposition">
+			<point x="500.0" y="-20.0"></point>
+		</attr>
+
 
 
 
@@ -6667,14 +7244,39 @@
 
 	<layout>
 			
-	<node id="node3">
+	<node id="node18">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 		<attr name="bounds">
-			<rectangle x="7" y="30" width="66" height="68"></rectangle>		</attr>
+			<rectangle x="473" y="161" width="44" height="16"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
+	<node id="node9">
+		<attr name="bounds">
+			<rectangle x="1406" y="160" width="74" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node2">
+		<attr name="bounds">
+			<rectangle x="555" y="36" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node4">
+		<attr name="bounds">
+			<rectangle x="405" y="18" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node5">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -6685,68 +7287,7 @@
 
 	</node>
 			
-	<node id="node9">
-		<attr name="bounds">
-			<rectangle x="190" y="138" width="99" height="84"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node10">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="115" y="171" width="44" height="16"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node4">
-		<attr name="bounds">
-			<rectangle x="1" y="154" width="74" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node7">
-		<attr name="bounds">
-			<rectangle x="8" y="118" width="70" height="16"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node5">
-		<attr name="bounds">
-			<rectangle x="1406" y="160" width="74" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
 	<node id="node6">
-		<attr name="bounds">
-			<rectangle x="1413" y="111" width="70" height="16"></rectangle>		</attr>
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-
-
-	</node>
-			
-	<node id="node8">
-		<attr name="bounds">
-			<rectangle x="203" y="23" width="66" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node2">
 		<attr name="bounds">
 			<rectangle x="1412" y="11" width="66" height="68"></rectangle>		</attr>
 
@@ -6759,7 +7300,115 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="813" y="174" width="44" height="16"></rectangle>		</attr>
+			<rectangle x="990" y="177" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
+		<attr name="bounds">
+			<rectangle x="1" y="154" width="74" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node7">
+		<attr name="bounds">
+			<rectangle x="7" y="30" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node11">
+		<attr name="bounds">
+			<rectangle x="8" y="118" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+
+
+	</node>
+			
+	<node id="node1">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="550" y="111" width="70" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node17">
+		<attr name="bounds">
+			<rectangle x="545" y="135" width="74" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="203" y="23" width="66" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="308" y="166" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node3">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="403" y="103" width="70" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node14">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="115" y="171" width="44" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="372" y="136" width="133" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node13">
+		<attr name="bounds">
+			<rectangle x="190" y="138" width="99" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node10">
+		<attr name="bounds">
+			<rectangle x="1413" y="111" width="70" height="16"></rectangle>		</attr>
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
 
 
 	</node>
@@ -8438,6 +9087,46 @@
 	</node>
 	</layout>
 </gxl> </model>
+ <model id="have breakfast caregiver" type="ingenias.editor.models.ActivityDiagramModelJGraph">
+<object id="have breakfast caregiver" type="ingenias.editor.entities.ActivityDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+    <package id="caregiver"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BActivity17" nid="node0" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="249" y="119" width="88" height="68"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="249" y="119" width="88" height="68"></rectangle>		</attr>
+
+
+	</node>
+	</layout>
+</gxl> </model>
  <model id="wait" type="ingenias.editor.models.SequentialTaskDiagramModelJGraph">
 <object id="wait" type="ingenias.editor.entities.SequentialTaskDiagramDataEntity">
 <mapproperties>
@@ -9248,6 +9937,45 @@
 	<node id="node0">
 		<attr name="bounds">
 			<rectangle x="330" y="156" width="111" height="81"></rectangle>		</attr>
+
+	</node>
+	</layout>
+</gxl> </model>
+ <model id="walk activity" type="ingenias.editor.models.ActivityDiagramModelJGraph">
+<object id="walk activity" type="ingenias.editor.entities.ActivityDiagramDataEntity">
+<mapproperties>
+<key id="Description"></key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+  <path>
+    <package id="Project"/>
+    <package id="behaviour"/>
+   </path>
+<gxl>
+
+	<graph>
+			
+	<node id="BActivity18" nid="node0" type="BActivity">
+		<attr name="bounds">
+			<rectangle x="91" y="46" width="57" height="68"></rectangle>		</attr>
+
+
+	</node><parentship>
+</parentship>
+<entityconstraints>
+</entityconstraints>
+
+
+	</graph>
+
+
+	<layout>
+			
+	<node id="node0">
+		<attr name="bounds">
+			<rectangle x="91" y="46" width="57" height="68"></rectangle>		</attr>
+
 
 	</node>
 	</layout>
