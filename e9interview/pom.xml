@@ -9,8 +9,8 @@
   <groupId>net.sf.mydevel</groupId>
   <artifactId>baseModel</artifactId>
   <packaging>jar</packaging>
-  <name>Base project</name>
-  <description>A project from which to build others</description>
+  <name>Interview 9</name>
+  <description>Simulations for interview number 9</description>
   <url>http://grasia.fdi.ucm.es/sociaal</url>
 
 <properties>
