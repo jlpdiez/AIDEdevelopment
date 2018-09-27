@@ -5,18 +5,19 @@
         <artifactId>oss-parent</artifactId>
         <version>7</version>
 </parent>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.sf.mydevel</groupId>
-  <artifactId>baseModel</artifactId>
-  <packaging>jar</packaging>
-  <name>Interview number 10</name>
-  <description>Models and simulates E10</description>
-  <url>http://grasia.fdi.ucm.es/sociaal</url>
+
+<modelVersion>4.0.0</modelVersion>
+<groupId>net.sf.mydevel</groupId>
+<artifactId>interview10</artifactId>
+<packaging>jar</packaging>
+<name>Interview number 10</name>
+<description>Models and simulates E10</description>
+<url>http://grasiagroup.fdi.ucm.es/aidendd/</url>
 
 <properties>
     <vendor>GRASIA Research Group</vendor>
-    <developername>Pablo Campillo-Sanchez</developername>
-    <developeremail>pabcampi@ucm.es</developeremail>
+    <developername>Juan L. Perez Diez</developername>
+    <developeremail>jlpdiez@ucm.es</developeremail>
     <jme.version>3.0.1</jme.version>
     <jali.version>1.0.9</jali.version>
     <jdos.version>1.0.8</jdos.version>
