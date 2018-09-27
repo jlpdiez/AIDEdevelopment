@@ -4,7 +4,7 @@ This site shows how to use the [AIDE](http://grasia.fdi.ucm.es/aide/) toolset fo
 
 It first briefly explains what is [AIDE](http://grasia.fdi.ucm.es/aide/), how to install it, and then a set of case studies that illustrate what can be done with it.
 
-This has been developed in the context of the project [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/), whose purpose is to facilitate the co-creation of AAL solutions for people with NDD. 
+This has been developed in the context of the project [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/)(TIN2014-57028-R), whose purpose is to facilitate the co-creation of AAL solutions for people with NDD. 
 
 The [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project proposes a process that involves different actors: end-users, relatives, care-givers, health experts, sociologists, software engineers, and other relevant stakeholders.
 
