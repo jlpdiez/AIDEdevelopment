@@ -350,7 +350,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Waking up: -...esta mujer a las 8, 8.30 se levanta. A las 8.30 se despierta.-</key>
+<key id="Description">Waking up: -...this woman at 8 or 8.3 wakes up. She wakes up at 8.30.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -395,7 +395,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Waking up: -Mi mujer a las 6h o a las...estamos despiertos...-</key>
+<key id="Description">Waking up: - My wife at 6 or so... We wake up... -</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -425,7 +425,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Making breakfast: -...desayunamos...-</key>
+<key id="Description">Making breakfast: -...we have breakfast...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -440,7 +440,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Eating breakfast: -...desayunamos...-</key>
+<key id="Description">Eating breakfast: -...we have breakfast...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -470,7 +470,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Reading at the armchair: -...trabajamos un rato, leemos o tal...-</key>
+<key id="Description">Reading at the armchair: -...we work a while, we read or so...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -515,7 +515,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Out working: -...aunque nosotros nos vayamos a trabajar se queda, algunos dias me he quedado yo-</key>
+<key id="Description">Out working: -...even when we go to work she stays, somedays I am the one who stays-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -620,7 +620,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Watching TV: -Cuando se va a hacer la hora de las 11.30 o las 12. Sole, que es la persona que es como si fuera de la casa, nosotros tenemos una confianza brutal; le pone la television que vea al Arguiñano y hace pasapalabras, digo no, en la ruleta de la fortuna...-</key>
+<key id="Description">Watching TV: -When the time comes around 11.30 or 12, Sole, who is as of the family, we have brutal confidence in her; she turns on the TV so she can see Arguiñano and Pasapalabra, I mean the Wheel of Fortune...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -635,7 +635,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Reading the newspaper: -...algunos dias que me he quedado yo, pues detras del periodico, se sienta a leer el periodico dos o tres veces lo que le interesa, cuando no entiende algo me pregunta a mi: oye ¿Que es el brexit? por ejemplo. Yo le contesto y tal.-</key>
+<key id="Description">Reading the newspaper: -...some days I have stayed, she sits down to read the newspaper, what interests her two or three times. And when she does not understand something she asks me: by the way... What is Brexit? for example. I answer her and such.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -650,7 +650,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Turning on TV: -Cuando se va a hacer la hora de las 11.30 o las 12 Sole ... le pone la television que vea el Arguiñano y hace pasapalabras, digo no, en la ruleta de la fortuna que ademas le viene bien porque a veces juega a las palabras que la he visto yo-</key>
+<key id="Description">Turning on TV: -When the time comes around 11.30 or 12, Sole, who is as of the family, we have brutal confidence in her; she turns on the TV so she can see Arguiñano and Pasapalabra, I mean the Wheel of Fortune...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -695,7 +695,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Dining: -Luego venimos nosotros, comemos...-</key>
+<key id="Description">Dining: -Then we come home, we have dinner...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -830,7 +830,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Goint to sleep: -...por la noche cena y se acuesta. Esa es la actividad-</key>
+<key id="Description">Going to sleep: -...at night she has supper and goes to bed. That is her activity-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>

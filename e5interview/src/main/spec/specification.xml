@@ -397,7 +397,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Waking up: -Pues se levanta...-</key>
+<key id="Description">Waking up: -She wakes up...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -412,7 +412,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Using bathroom: -... va al baño hace sus cositas y se lava los ojos, una cosa curiosa no se lava la cara, se lava las manos y los ojos.-</key>
+<key id="Description">Using bathroom: -... she goes to the bathroom does her things and washes her eyes, a curious thing is that she does not wash her face, she washes her hands and eyes.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -427,7 +427,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Waking up: -... pues me levanto yo...-</key>
+<key id="Description">Waking up: -... then I am the one who wakes up...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -457,7 +457,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Having breakfast: -Se va a la cocina y le ponemos el desayuno, logicamente. Toma sus pastillas porque se las damos, sino no.-</key>
+<key id="Description">Having breakfast: -She goes to the kitchen and we put her breakfast, logically. She takes his pills because we give them to her, if not she would not.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -502,7 +502,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Using armchair: -A continuacion se sienta en el sofa, se cruza de brazos y cierra los ojos. Aunque tenga una revista, un libro o lo que sea, ella cierra los ojos-</key>
+<key id="Description">Using armchair: -Then she sits on the sofa, crosses her arms and closes her eyes. Even if she has a magazine, a book or whatever, she closes her eyes.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -562,7 +562,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Having a shower: -...pues ya, la ducho...-</key>
+<key id="Description">Having a shower: -...then, I shower her...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -592,7 +592,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Using toilet: -Cuando hace sus deposiciones...-</key>
+<key id="Description">Using toilet: -When she uses the toilet...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -607,7 +607,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Using sofa: -... y otra vez se sienta hasta la hora de la comida.-</key>
+<key id="Description">Using sofa: -... and again she sits until lunch.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -637,7 +637,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Eating: -Come...-</key>
+<key id="Description">Eating: -Eats...-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -667,7 +667,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Using armchair: -... al sillón, al sofá y así.-</key>
+<key id="Description">Using armchair: -...to the armchair, to the sofa and so on.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -802,7 +802,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Going out: -Y por las tardes lo que si hago es rme a dar un paseo con mi marido todas las tardes-</key>
+<key id="Description">Going out: -And in the afternoons what I do is go for a walk with my husband every afternoon.-</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
@@ -847,7 +847,7 @@
 </object>
 </objectproperty>
 <mapproperties>
-<key id="Description">Resting &amp; watching  some TV</key>
+<key id="Description">Resting and watching some TV</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>

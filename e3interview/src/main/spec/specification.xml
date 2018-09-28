@@ -830,7 +830,7 @@
 <object id="SayTask6" type="ingenias.editor.entities.SayTask">
 <mapproperties>
 <key id="CanBeInterruptedField"></key>
-<key id="MessageField">I&apos;m not sure what to do</key>
+<key id="MessageField">Im not sure what to do</key>
 <key id="Description"></key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
@@ -4218,7 +4218,7 @@
 * Routinely forgets dates and times for schedules such as doctors.
 * Forgets about tasks she has already done like having breakfast.
 * She forgets about ever having been in places like the hospital where she usually goes.
-* Has difficulties when she has to take decisions. For example at one time her house flooded and she didn&apos;t knew what to do about it.
+* Has difficulties when she has to take decisions. For example at one time her house flooded and she did not knew what to do about it.
 * Has had mood changes. It is reported that before she was more grumpy but now she seems more calmed and relaxed.
 * She has lower energy drive. Nowadays she is more lazy while before she was always doing things.</key>
 <key id="_view_type">INGENIAS</key>
@@ -8419,7 +8419,7 @@
  <model id="SimSpeech" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimSpeech" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description">This simulation models a conversation in which the patient with senility has a chance of &quot;forgetting&quot; a word. The act of forgetting is modeled with a filter that makes her unable to speak with certain probability.</key>
+<key id="Description">This simulation models a conversation in which the patient with senility has a chance of forgetting a word. The act of forgetting is modeled with a filter that makes her unable to speak with certain probability.</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
