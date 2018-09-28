@@ -111,9 +111,8 @@ This will laund the SociAALML editor, which is similar to this capture:
 
 ## Acknowledgements
 
-This development is part of [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project (TIN2014-57028-R) which is funded by Spain's Ministerio de Economía y Competitividad. Developed at [GRASIA](https://grasia.fdi.ucm.es/) research group in the [Universidad Complutense de Madrid](https://ucm.es/).
+This development is part of [ColoSAAL](http://grasia.fdi.ucm.es/colosaal/) project (TIN2014-57028-R) which is funded by Spain's [Ministerio de Economía y Competitividad](http://www.mineco.gob.es). Developed at [GRASIA](https://grasia.fdi.ucm.es/) research group in the [Universidad Complutense de Madrid](https://ucm.es/).
 
 [![logo saal](http://grasia.fdi.ucm.es/colosaal/img/logo_colosaal.png)](http://grasia.fdi.ucm.es/colosaal/)
 [![logo grasia](http://grasiagroup.fdi.ucm.es/aidendd/wp-content/uploads/GRASIA_logotipo2B.png)](https://grasia.fdi.ucm.es/)
 [![logo ucm](http://grasiagroup.fdi.ucm.es/aidendd/wp-content/uploads/logo_ucm-e1537792345349.jpg)](https://ucm.es/)
-[![logo min](http://grasia.fdi.ucm.es/colosaal/img/gobspain.png)](http://www.mineco.gob.es)
