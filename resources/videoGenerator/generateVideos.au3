@@ -6,14 +6,19 @@
 ; HOTKEYS
 ;*************************************
 HotKeySet('{F2}', 'quitScript')
-HotKeySet('{F3}', 'record')
-HotKeySet('{F4}', 'getNumberOfInterviews')
+HotKeySet('{F3}', 'startRecording')
+HotKeySet('{F4}', 'stopRecordingExample')
 
 ;*************************************
 ; GLOBAL VARIABLES
 ;*************************************
-Const $winName = "C:\WINDOWS\SYSTEM32\cmd.exe"
-Const $workingDir = "C:\Users\Jlperez\Documents\GitHub\AIDEdevelopment"
+;Const $consoleWinName = "C:\WINDOWS\SYSTEM32\cmd.exe"
+Const $consolePath = "C:\Program Files\Git\git-bash.exe"
+Const $consoleWinName = "MINGW64:/c/Users/eNDeR/Desktop/AIDEdevelopment"
+Const $workingDir = "C:\Users\eNDeR\Desktop\AIDEdevelopment"
+Const $recordPath = "C:\Program Files\CamStudio 2.7\Recorder.exe"
+Const $recordWinName = "CamStudio"
+Const $phatsimWinName = "PHATSIM"
 
 Global $dirSize = getNumberOfInterviews()
 ;Assign directory names
@@ -27,9 +32,11 @@ Next
 ; MAIN PROGRAM LOGIC
 ;*************************************
 ;Open console at working directory
-Global $winPID = Run("cmd", $workingDir)
+Global $winPID = Run($consolePath, $workingDir)
 ;Wait for it to open
-WinWaitActive($winName)
+WinWaitActive($consoleWinName)
+;Launch CamStudio
+launchRecordingSW()
 
 ;Set environment option not to have java compilation fail
 ;sendCommand("set JAVA_TOOL_OPTIONS = -Dfile.encoding=UTF8")
@@ -38,27 +45,39 @@ WinWaitActive($winName)
 ;Cycle through folders
 For $folderNum = 0 To $dirSize - 1
 	;Enter directory
-	;sendCommand("cd " & $dirs[$folderNum])
+	sendCommand("cd " & $dirs[$folderNum])
 	;Compile
-	;sendCommand("mvn clean compile -Dfile.encoding=UTF8")
+	sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
-	;While Not searchImage('buildSuccess.png')
-		Sleep(500)
-	;WEnd
+	While Not searchImage('buildSuccess.png')
+		Sleep(100)
+	WEnd
 
 	;Search folders & get commands
-	;$retunedCommands = getAntCommands($folderNum)
+	$retunedCommands = getAntCommands($folderNum)
 	;Cycle through simulations
-	;For $i = 0 To UBound($retunedCommands) - 1
+	For $i = 0 To UBound($retunedCommands) - 1
 		;Run simulation
-		;sendCommand($retunedCommands[$i])
-		;Wait
-		;Sleep(60000)
+		sendCommand($retunedCommands[$i])
+		;Wait to sim to start
+		PixelSearch(1220, 500, 1225, 505, 0x00FF00, 5)
+		While @error
+			Sleep(100)
+			PixelSearch(1220, 500, 1225, 505, 0x00FF00, 5)
+		WEnd
 		;Accelerate simulation
 		;Record
+		startRecording()
+		;Wait for sim to finish -> Check clock?
+		Sleep(10000)
+		;Stop recording
+		stopRecording($folderNum + 1, $retunedCommands[$i])
 		;Stop simulation
-	;Next
+		WinActivate($consoleWinName)
+		WinWaitActive($consoleWinName)
+		Send("^c")
+	Next
 
 	;Go up one level in directory structure
 	sendCommand("cd..")
@@ -69,12 +88,15 @@ Next
 ;*************************************
 ;Exits the program
 Func quitScript()
-	WinClose($winName)
+	WinClose($consoleWinName)
+	WinClose($recordWinName)
 	Exit
 EndFunc
 
 ;Types into console input command + "Enter" key
 Func sendCommand($cmd)
+	WinActivate($consoleWinName)
+	WinWaitActive($consoleWinName)
 	SendKeepActive($winPID)
 	Send($cmd)
 	Send("{ENTER}")
@@ -83,7 +105,7 @@ EndFunc
 ;Searchs for a given image and returns true or false
 Func searchImage($img)
 	Local $x, $y
-	Return _ImageSearch($img, 1, $x, $y, 0)
+	Return _ImageSearch($img, 1, $x, $y, 100)
 EndFunc
 
 ;Searchs working directory for interviews and returns the number of them found
@@ -156,27 +178,39 @@ Func getAntCommands(ByRef $simNum)
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
-Func record()
-	Local $swPath = "C:\Program Files\CamStudio 2.7\Recorder.exe"
-	Local $swName = "CamStudio"
+Func launchRecordingSW()
 	;Run SW if needed, bring to focus otherwise
 	If Not ProcessExists("Recorder.exe") Then
-		Run($swPath)
+		Run($recordPath)
 	Else
-		WinActivate($swName)
+		WinActivate($recordWinName)
 	EndIf
-
-	WinWaitActive($swName)
-	startRecording()
+	WinWaitActive($recordWinName)
+	Local $winPos = WinGetPos($recordWinName)
+	MouseClickDrag($MOUSE_CLICK_LEFT, $winPos[0], $winPos[1], $winPos[0] + 1000, $winPos[1])
 EndFunc
 
-;PHATSIM Window size:
-;width = 1233
-;height = 810
+;CamStudio records fixed region:
+;Left 10, Top 0, Width 1227, Height 841
+;Keyboard shortcurts must be as follow:
+;Record key: Ctrl+Alt+R
+;Stop key: Ctrl+Alt+P
 Func startRecording()
 	Send("^!r")
 EndFunc
 
-Func stopRecording()
-	Send("^!r")
+Func stopRecording($folderNum, ByRef $simName)
+	Local $dialogWinName = "Save AVI File"
+	Send("^!p")
+	;WinActivate($dialogWinName)
+	WinWaitActive($dialogWinName)
+	Send("E" & $folderNum & "-" & $simName)
+	Sleep(500)
+	Send("{ENTER}")
+EndFunc
+
+Func stopRecordingExample()
+	Local $num = 1
+	Local $name = "ant runSimNoName"
+	stopRecording($num, $name)
 EndFunc
