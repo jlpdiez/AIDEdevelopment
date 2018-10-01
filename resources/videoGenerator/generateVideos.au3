@@ -1,13 +1,12 @@
 #include <AutoItConstants.au3>
-;#include <MsgBoxConstants.au3>
 #include <ImageSearch.au3>
 
 ;*************************************
 ; HOTKEYS
 ;*************************************
 HotKeySet('{F2}', 'quitScript')
-HotKeySet('{F3}', 'startRecording')
-HotKeySet('{F4}', 'stopRecordingExample')
+;HotKeySet('{F3}', 'startRecording')
+;HotKeySet('{F4}', 'stopRecordingExample')
 
 ;*************************************
 ; GLOBAL VARIABLES
@@ -209,7 +208,6 @@ Func getAntCommands(ByRef $simNum)
 	Next
 
 	Return $commandNames
-	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
 ;*************************************
@@ -244,10 +242,4 @@ Func stopRecording($folderNum, ByRef $simName)
 	Send("E" & $folderNum & "-" & $simName)
 	Sleep(500)
 	Send("{ENTER}")
-EndFunc
-
-Func stopRecordingExample()
-	Local $num = 1
-	Local $name = "ant runSimNoName"
-	stopRecording($num, $name)
 EndFunc
