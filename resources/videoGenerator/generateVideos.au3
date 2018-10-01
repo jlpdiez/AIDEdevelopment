@@ -65,10 +65,10 @@ For $folderNum = 0 To $dirSize - 1
 		;Run simulation
 		sendCommand($retunedCommands[$i])
 		;Wait to sim to start
-		PixelSearch(1220, 500, 1225, 505, 0x00FF00, 5)
+		PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
 		While @error
 			Sleep(100)
-			PixelSearch(1220, 500, 1225, 505, 0x00FF00, 5)
+			PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
 		WEnd
 		;Pause
 		showTooltip("Pausing E" & $folderNum + 1 & " " & $retunedCommands[$i])
@@ -100,8 +100,9 @@ For $folderNum = 0 To $dirSize - 1
 	Next
 
 	;Go up one level in directory structure
-	Sleep(100)
-	sendCommand("cd..")
+	Sleep(500)
+	sendCommand("cd ..")
+	Sleep(500)
 Next
 
 ;*************************************
@@ -131,7 +132,7 @@ EndFunc
 ;Searchs for a given image and returns true or false
 Func searchImage($img)
 	Local $x, $y
-	Return _ImageSearch($img, 1, $x, $y, 100)
+	Return _ImageSearch($img, 1, $x, $y, 250)
 EndFunc
 
 Func showTooltip($message, $title = ".::[ PHATSIM AutoRecorder ]::.")
