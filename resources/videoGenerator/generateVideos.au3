@@ -31,6 +31,7 @@ Next
 ;*************************************
 ; MAIN PROGRAM LOGIC
 ;*************************************
+showTooltip("Starting software")
 ;Open console at working directory
 Global $winPID = Run($consolePath, $workingDir)
 ;Wait for it to open
@@ -44,12 +45,15 @@ launchRecordingSW()
 
 ;Cycle through folders
 For $folderNum = 0 To $dirSize - 1
+	showTooltip("Opening E" & $folderNum + 1)
 	;Enter directory
 	sendCommand("cd " & $dirs[$folderNum])
 	;Compile
+	showTooltip("Compiling E" & $folderNum + 1)
 	sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
+	showTooltip("Waiting for E" & $folderNum + 1 & " to build successfuly")
 	While Not searchImage('buildSuccess.png')
 		Sleep(100)
 	WEnd
@@ -58,6 +62,7 @@ For $folderNum = 0 To $dirSize - 1
 	$retunedCommands = getAntCommands($folderNum)
 	;Cycle through simulations
 	For $i = 0 To UBound($retunedCommands) - 1
+		showTooltip("Running E" & $folderNum + 1 & " " & $retunedCommands[$i])
 		;Run simulation
 		sendCommand($retunedCommands[$i])
 		;Wait to sim to start
@@ -66,20 +71,37 @@ For $folderNum = 0 To $dirSize - 1
 			Sleep(100)
 			PixelSearch(1220, 500, 1225, 505, 0x00FF00, 5)
 		WEnd
-		;Accelerate simulation
+		;Pause
+		showTooltip("Pausing E" & $folderNum + 1 & " " & $retunedCommands[$i])
+		MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+		;Accelerate simulation -> 8 clicks equals 256x
+		showTooltip("Accelerating E" & $folderNum + 1 & " " & $retunedCommands[$i])
+		MouseClick($MOUSE_CLICK_LEFT, 220, 50, 8)
 		;Record
+		showTooltip("Recording E" & $folderNum + 1 & " " & $retunedCommands[$i])
 		startRecording()
-		;Wait for sim to finish -> Check clock?
-		Sleep(10000)
+		;Restart
+		;showTooltip("Restarting E" & $folderNum + 1 & " " & $retunedCommands[$i])
+		MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+		MouseMove(@DesktopWidth, @DesktopHeight)
+		;Wait for sim to finish
+		;At 256 speed 00:00 is at 3m 31s => 211 seconds
+		For $timeRemaining = 211 To 0 Step -1
+			showTooltip("Recording E" & $folderNum + 1 & " " & $retunedCommands[$i] & @CRLF & "Seconds left: " & $timeRemaining)
+			Sleep(1000)
+		Next
 		;Stop recording
 		stopRecording($folderNum + 1, $retunedCommands[$i])
 		;Stop simulation
+		showTooltip("Stopping E" & $folderNum + 1 & " " & $retunedCommands[$i])
 		WinActivate($consoleWinName)
 		WinWaitActive($consoleWinName)
+		Sleep(100)
 		Send("^c")
 	Next
 
 	;Go up one level in directory structure
+	Sleep(100)
 	sendCommand("cd..")
 Next
 
@@ -88,8 +110,13 @@ Next
 ;*************************************
 ;Exits the program
 Func quitScript()
+	showTooltip("Killing processes and exiting program")
 	WinClose($consoleWinName)
 	WinClose($recordWinName)
+	;Close java as it sometimes bugs itself
+	While ProcessExists("java.exe")
+		ProcessClose("java.exe")
+	WEnd
 	Exit
 EndFunc
 
@@ -108,6 +135,13 @@ Func searchImage($img)
 	Return _ImageSearch($img, 1, $x, $y, 100)
 EndFunc
 
+Func showTooltip($message, $title = ".::[ PHATSIM AutoRecorder ]::.")
+	ToolTip($message, @DesktopWidth - 250, @DesktopHeight - 150, $title, $TIP_NOICON, $TIP_BALLOON)
+EndFunc
+
+;*************************************
+; FILESYSTEM FUNCTIONS
+;*************************************
 ;Searchs working directory for interviews and returns the number of them found
 Func getNumberOfInterviews()
 	Local $counter = 0
@@ -178,6 +212,14 @@ Func getAntCommands(ByRef $simNum)
 	;mvn exec:java -Dexec.mainClass=phat.sim.MainSimDisorientPHATSimulationNoDevicesRecord
 EndFunc
 
+;*************************************
+; RECORDING FUNCTIONS
+;*************************************
+;CamStudio must be set to record a fixed region:
+;Left 10, Top 0, Width 1227, Height 841
+;Keyboard shortcurts must be as follow:
+;Record key: Ctrl+Alt+R
+;Stop key: Ctrl+Alt+P
 Func launchRecordingSW()
 	;Run SW if needed, bring to focus otherwise
 	If Not ProcessExists("Recorder.exe") Then
@@ -187,14 +229,9 @@ Func launchRecordingSW()
 	EndIf
 	WinWaitActive($recordWinName)
 	Local $winPos = WinGetPos($recordWinName)
-	MouseClickDrag($MOUSE_CLICK_LEFT, $winPos[0], $winPos[1], $winPos[0] + 1000, $winPos[1])
+	MouseClickDrag($MOUSE_CLICK_LEFT, $winPos[0], $winPos[1], @DesktopWidth - 350, $winPos[1])
 EndFunc
 
-;CamStudio records fixed region:
-;Left 10, Top 0, Width 1227, Height 841
-;Keyboard shortcurts must be as follow:
-;Record key: Ctrl+Alt+R
-;Stop key: Ctrl+Alt+P
 Func startRecording()
 	Send("^!r")
 EndFunc
