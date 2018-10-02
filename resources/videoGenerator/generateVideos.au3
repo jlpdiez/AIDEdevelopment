@@ -166,6 +166,8 @@ Func getNumberOfInterviews()
 EndFunc
 
 ;Returns an array with the commands needed to execute the simulations
+;TODO: If simulation equals one I think this func returns 0 records ¿? -> Test
+;Failed on e8 -> runSimDisorient as it ¿doesn't seem to generate proper classes?
 Func getAntCommands(ByRef $simNum)
 	Local $fileNames[15]
 	Local $fullRoute = $workingDir & "\" & $dirs[$simNum] & "\target\classes\phat\sim\*Record.java"
