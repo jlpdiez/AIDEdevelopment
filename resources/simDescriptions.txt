@@ -1,0 +1,72 @@
+1
+true
+This is the base simulation of a typical day of the patient. No symptoms attached.
+true
+In this simulation the patient has the reported movement problems. His actions are 400% slower and has a 25% chance of being unable to perform them.
+true
+In this simulation the patient faces disorientation problems. He has a 50% chance of losing his thoughts while walking and wandering his home instead.
+2
+true
+This simulation is modeled after the typical day the patient reports in the interview. No symptoms attached.
+true
+In this simulation the patient has a low probability (0.05) of forgetting where he was going and wandering the house instead.
+3
+true
+This simulation models a conversation in which the patient with senility has a chance of forgetting a word. The act of forgetting is modeled with a filter that makes her unable to speak with a probability of 0.075.
+true
+This simulation models a set of movements that the patient has difficulty performing . For this we created a filter in which the acts of walking, sitting and getting in and out of bed are delayed by a percentage of 150.
+true
+This simulation models the situation in which the patient sometimes forgets what is she doing. For this we created a filter in which the task she is about to perform is replaced by another one in which she talks aloud.
+4
+true
+Base simulation with no symptom filters attached. Just the 24-hour schedule described in the interview.
+true
+This simulation models memory problems reported at the interview. The patient has a 0.33 probability of forgetting where she was going with the effect of wandering the house instead.
+5
+true
+This is a base simulation with no symptoms attached to the patient. It covers a 24-hour cycle as described in the interview.
+true
+In this simulation the patient sometimes (probability of 0.3) forgets where she was going, says it out loud and then goes to where his daughter is located to request some help.
+true
+This simulation models the reported mobility problems. The patient walks 300% slower than normal.
+true
+For this simulation a falling filter was created. The patient has a 0.2 chance of falling while walking by herself.
+true
+This simulation combines the three symptom filters into one. Patient walks more slowly, sometimes forgets where she was going and sometimes falls to the ground while walking.
+6
+true
+Simulation with no symptoms attached, just the normal daily tasks are performed with no impairment.
+true
+Simulates low movement  problems. The patient performs tasks such as walking, sitting and getting in and out of bed 120% slower.
+true
+Simulates disorientation with a low probability (0.05). In this case, the filter for disorientation only makes the act of walking 500% slower.
+true
+Simulates tremors. The patient has trembling hands and tasks executed with them are a 150% slower than normal.
+true
+Simulation in which all symptoms get combined. The patient has movement difficulties, sometimes gets disoriented while walking and has hand tremors.
+7
+true
+This is the base simulation which models a typical day as reported in the interview. No symptoms are attached.
+true
+For this simulation a tremor filter was created. Because of this the patient has a 0.2 probability of executing tasks such as drinking, eating or switching lights 130% slower.
+true
+In this simulation the patient has a 0.5 chance of getting disoriented while walking. Because of this these tasks are performed 300% slower.
+true
+This simulation combines both symptoms. The patient has hand tremors and gets disoriented when walking.
+8
+true
+In this simulation the patient wakes up at 4am totally disoriented and goes out into the street just to realise that it's not morning time so she returns to bed. She then proceeds with her normal activities.
+9
+true
+This simulation models the entire patient's day without any symptom attached
+true
+In this simulation the patient has hand tremors. Because of this she has a 30percent chance of performing tasks more slowly.
+true
+This simulation focuses on the reported fact of erratic walking. The patient has a 30percent chance of forgetting where she was going and cycles to her bedroom and to the door.
+true
+In this simulation both symptoms are combined. Tremors make the patient perform tasks more slowly and she sometimes loses track of where she was going and wanders a bit through the house.
+10
+true
+This simulation models the patients daily activities when she was still living at home with her housekeeper
+true
+This simulation models one of the patients symptoms which is reported as echoing herself a lot, talking about the same thing over and over again.
