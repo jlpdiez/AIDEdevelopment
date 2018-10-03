@@ -11,7 +11,7 @@ for i in range(10):
 
     for key in keys:
         if (key.attrib["type"] == "ingenias.editor.entities.SimulationDiagramDataEntity"):
-            print("true")
+            print(key.attrib["id"])
             simDescs = key.findall("./mapproperties/key")
             for desc in simDescs:
                 if (desc.attrib["id"] == "Description"):
