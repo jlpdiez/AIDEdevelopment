@@ -1,6 +1,4 @@
-# Interview to patient/caregiver EX
-
-### Socioeconomic status, general information
+# Description
 
 ### Specific problems reported.
 
