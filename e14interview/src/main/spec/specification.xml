@@ -7677,120 +7677,18 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="210" type="ingenias.editor.entities.InitializedSymptom">
-<object id="210" type="ingenias.editor.entities.InitializedSymptom">
+<relationship id="191" type="ingenias.editor.entities.InitialLocation">
+<object id="191" type="ingenias.editor.entities.InitialLocation">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="PDSymtom0" class="ingenias.editor.entities.PDSymtom" roleName="InitializedSymptomtarget" type="ingenias.editor.entities.InitializedSymptomtargetRole" dgcid="578070162">
+<role idEntity="BedRoom1LeftSide" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="1562707277">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="SymptomInitialization2" class="ingenias.editor.entities.SymptomInitialization" roleName="InitializedSymptomsource" type="ingenias.editor.entities.InitializedSymptomsourceRole" dgcid="1961422648">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="209" type="ingenias.editor.entities.InitializesSymptom">
-<object id="209" type="ingenias.editor.entities.InitializesSymptom">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="SymptomInitialization2" class="ingenias.editor.entities.SymptomInitialization" roleName="InitializesSymptomtarget" type="ingenias.editor.entities.InitializesSymptomtargetRole" dgcid="1961422648">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="HumanInitialization5" class="ingenias.editor.entities.HumanInitialization" roleName="InitializesSymptomsource" type="ingenias.editor.entities.InitializesSymptomsourceRole" dgcid="1112701988">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="188" type="ingenias.editor.entities.RelatedHuman">
-<object id="188" type="ingenias.editor.entities.RelatedHuman">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="HumanInitialization4" class="ingenias.editor.entities.HumanInitialization" roleName="RelatedHumansource" type="ingenias.editor.entities.RelatedHumansourceRole" dgcid="1371141173">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="Daughter" class="ingenias.editor.entities.Human" roleName="RelatedHumantarget" type="ingenias.editor.entities.RelatedHumantargetRole" dgcid="1827558331">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="186" type="ingenias.editor.entities.RelatedHuman">
-<object id="186" type="ingenias.editor.entities.RelatedHuman">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="HumanInitialization3" class="ingenias.editor.entities.HumanInitialization" roleName="RelatedHumansource" type="ingenias.editor.entities.RelatedHumansourceRole" dgcid="583918800">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="Husband" class="ingenias.editor.entities.Human" roleName="RelatedHumantarget" type="ingenias.editor.entities.RelatedHumantargetRole" dgcid="1468797675">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="183" type="ingenias.editor.entities.InitialDate">
-<object id="183" type="ingenias.editor.entities.InitialDate">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="WorldInitialization0" class="ingenias.editor.entities.WorldInitialization" roleName="InitialDatesource" type="ingenias.editor.entities.InitialDatesourceRole" dgcid="38128107">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="SDate0" class="ingenias.editor.entities.SDate" roleName="InitialDatetarget" type="ingenias.editor.entities.InitialDatetargetRole" dgcid="1651157736">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="187" type="ingenias.editor.entities.InitialLocation">
-<object id="187" type="ingenias.editor.entities.InitialLocation">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="HumanInitialization3" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="583918800">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="BedRoom1RightSide" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="2015636902">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role></relationship>
-<relationship id="189" type="ingenias.editor.entities.InitialLocation">
-<object id="189" type="ingenias.editor.entities.InitialLocation">
-<mapproperties>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</object>
-<role idEntity="MainDoorArea" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="1292208377">
-<mapproperties>
-<key id="attributeToShow">0</key>
-<key id="_view_type">INGENIAS</key>
-</mapproperties>
-</role><role idEntity="HumanInitialization4" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="1371141173">
+</role><role idEntity="HumanInitialization5" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="1112701988">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -7813,18 +7711,120 @@
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </role></relationship>
-<relationship id="191" type="ingenias.editor.entities.InitialLocation">
-<object id="191" type="ingenias.editor.entities.InitialLocation">
+<relationship id="189" type="ingenias.editor.entities.InitialLocation">
+<object id="189" type="ingenias.editor.entities.InitialLocation">
 <mapproperties>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
-<role idEntity="BedRoom1LeftSide" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="1562707277">
+<role idEntity="MainDoorArea" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="1292208377">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
-</role><role idEntity="HumanInitialization5" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="1112701988">
+</role><role idEntity="HumanInitialization4" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="1371141173">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="187" type="ingenias.editor.entities.InitialLocation">
+<object id="187" type="ingenias.editor.entities.InitialLocation">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="HumanInitialization3" class="ingenias.editor.entities.HumanInitialization" roleName="InitialLocationsource" type="ingenias.editor.entities.InitialLocationsourceRole" dgcid="583918800">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="BedRoom1RightSide" class="ingenias.editor.entities.SArea" roleName="InitialLocationtarget" type="ingenias.editor.entities.InitialLocationtargetRole" dgcid="2015636902">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="183" type="ingenias.editor.entities.InitialDate">
+<object id="183" type="ingenias.editor.entities.InitialDate">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="WorldInitialization0" class="ingenias.editor.entities.WorldInitialization" roleName="InitialDatesource" type="ingenias.editor.entities.InitialDatesourceRole" dgcid="38128107">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SDate0" class="ingenias.editor.entities.SDate" roleName="InitialDatetarget" type="ingenias.editor.entities.InitialDatetargetRole" dgcid="1651157736">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="186" type="ingenias.editor.entities.RelatedHuman">
+<object id="186" type="ingenias.editor.entities.RelatedHuman">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="HumanInitialization3" class="ingenias.editor.entities.HumanInitialization" roleName="RelatedHumansource" type="ingenias.editor.entities.RelatedHumansourceRole" dgcid="583918800">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Husband" class="ingenias.editor.entities.Human" roleName="RelatedHumantarget" type="ingenias.editor.entities.RelatedHumantargetRole" dgcid="1468797675">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="188" type="ingenias.editor.entities.RelatedHuman">
+<object id="188" type="ingenias.editor.entities.RelatedHuman">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="HumanInitialization4" class="ingenias.editor.entities.HumanInitialization" roleName="RelatedHumansource" type="ingenias.editor.entities.RelatedHumansourceRole" dgcid="1371141173">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="Daughter" class="ingenias.editor.entities.Human" roleName="RelatedHumantarget" type="ingenias.editor.entities.RelatedHumantargetRole" dgcid="1827558331">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="209" type="ingenias.editor.entities.InitializesSymptom">
+<object id="209" type="ingenias.editor.entities.InitializesSymptom">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="SymptomInitialization2" class="ingenias.editor.entities.SymptomInitialization" roleName="InitializesSymptomtarget" type="ingenias.editor.entities.InitializesSymptomtargetRole" dgcid="1961422648">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="HumanInitialization5" class="ingenias.editor.entities.HumanInitialization" roleName="InitializesSymptomsource" type="ingenias.editor.entities.InitializesSymptomsourceRole" dgcid="1112701988">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role></relationship>
+<relationship id="210" type="ingenias.editor.entities.InitializedSymptom">
+<object id="210" type="ingenias.editor.entities.InitializedSymptom">
+<mapproperties>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</object>
+<role idEntity="PDSymtom0" class="ingenias.editor.entities.PDSymtom" roleName="InitializedSymptomtarget" type="ingenias.editor.entities.InitializedSymptomtargetRole" dgcid="578070162">
+<mapproperties>
+<key id="attributeToShow">0</key>
+<key id="_view_type">INGENIAS</key>
+</mapproperties>
+</role><role idEntity="SymptomInitialization2" class="ingenias.editor.entities.SymptomInitialization" roleName="InitializedSymptomsource" type="ingenias.editor.entities.InitializedSymptomsourceRole" dgcid="1961422648">
 <mapproperties>
 <key id="attributeToShow">0</key>
 <key id="_view_type">INGENIAS</key>
@@ -22129,7 +22129,7 @@
 
 	<graph>
 			
-	<node id="190" nid="node19" type="RelatedHuman">
+	<node id="190" nid="node2" type="RelatedHuman">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22138,38 +22138,7 @@
 			<rectangle x="97" y="298" width="84" height="16"></rectangle>		</attr>
 
 
-	<connected id="node18"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node8">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="188" nid="node3" type="RelatedHuman">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="96" y="216" width="84" height="16"></rectangle>		</attr>
-
-
-	<connected id="node4"><attr name="extraLabels">
+	<connected id="node3"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -22191,7 +22160,38 @@
 	</connected>
 	</node>
 			
-	<node id="210" nid="node0" type="InitializedSymptom">
+	<node id="188" nid="node18" type="RelatedHuman">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="96" y="216" width="84" height="16"></rectangle>		</attr>
+
+
+	<connected id="node17"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node8">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="210" nid="node21" type="InitializedSymptom">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22200,7 +22200,7 @@
 			<rectangle x="324" y="388" width="105" height="16"></rectangle>		</attr>
 
 
-	<connected id="node2"><attr name="extraLabels">
+	<connected id="node19"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -22212,7 +22212,7 @@
 
 
 	</connected>
-	<connected id="node21">
+	<connected id="node0">
 
 
 
@@ -22222,45 +22222,14 @@
 	</connected>
 	</node>
 			
-	<node id="Patient" nid="node8" type="Human">
+	<node id="Patient" nid="node13" type="Human">
 		<attr name="bounds">
 			<rectangle x="43" y="286" width="38" height="48"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="189" nid="node17" type="InitialLocation">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="307" y="215" width="82" height="16"></rectangle>		</attr>
-
-
-	<connected id="node4"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node14">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="183" nid="node10" type="InitialDate">
+	<node id="183" nid="node11" type="InitialDate">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22269,7 +22238,7 @@
 			<rectangle x="180" y="50" width="62" height="16"></rectangle>		</attr>
 
 
-	<connected id="node12"><attr name="extraLabels">
+	<connected id="node9"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -22281,7 +22250,7 @@
 
 
 	</connected>
-	<connected id="node11">
+	<connected id="node10">
 
 
 
@@ -22291,120 +22260,16 @@
 	</connected>
 	</node>
 			
-	<node id="Daughter" nid="node13" type="Human">
-		<attr name="bounds">
-			<rectangle x="32" y="200" width="51" height="48"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="SymptomInitialization2" nid="node2" type="SymptomInitialization">
-		<attr name="bounds">
-			<rectangle x="198" y="367" width="123" height="64"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="SDate0" nid="node11" type="SDate">
-		<attr name="bounds">
-			<rectangle x="269" y="24" width="98" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="187" nid="node16" type="InitialLocation">
+	<node id="189" nid="node4" type="InitialLocation">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="286" y="141" width="82" height="16"></rectangle>		</attr>
+			<rectangle x="307" y="215" width="82" height="16"></rectangle>		</attr>
 
 
-	<connected id="node6"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node15">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="BedRoom1RightSide" nid="node15" type="SArea">
-		<attr name="bounds">
-			<rectangle x="370" y="124" width="117" height="48"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="186" nid="node5" type="RelatedHuman">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="82" y="144" width="84" height="16"></rectangle>		</attr>
-
-
-	<connected id="node6"><attr name="extraLabels">
-			<array>
-
-</array>
-</attr>
-
-
-
-
-
-
-	</connected>
-	<connected id="node9">
-
-
-
-
-
-
-	</connected>
-	</node>
-			
-	<node id="HumanInitialization4" nid="node4" type="HumanInitialization">
-		<attr name="bounds">
-			<rectangle x="194" y="192" width="112" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="HumanInitialization5" nid="node18" type="HumanInitialization">
-		<attr name="bounds">
-			<rectangle x="198" y="267" width="112" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="191" nid="node20" type="InitialLocation">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="304" y="290" width="82" height="16"></rectangle>		</attr>
-
-
-	<connected id="node18"><attr name="extraLabels">
+	<connected id="node17"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -22426,51 +22291,37 @@
 	</connected>
 	</node>
 			
-	<node id="Husband" nid="node9" type="Human">
+	<node id="Daughter" nid="node8" type="Human">
 		<attr name="bounds">
-			<rectangle x="25" y="129" width="51" height="48"></rectangle>		</attr>
+			<rectangle x="32" y="200" width="51" height="48"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="WorldInitialization0" nid="node12" type="WorldInitialization">
+	<node id="SymptomInitialization2" nid="node19" type="SymptomInitialization">
 		<attr name="bounds">
-			<rectangle x="51" y="18" width="103" height="84"></rectangle>		</attr>
+			<rectangle x="198" y="367" width="123" height="64"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="HumanInitialization3" nid="node6" type="HumanInitialization">
+	<node id="SDate0" nid="node10" type="SDate">
 		<attr name="bounds">
-			<rectangle x="173" y="117" width="112" height="68"></rectangle>		</attr>
+			<rectangle x="269" y="24" width="98" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="MainDoorArea" nid="node14" type="SArea">
-		<attr name="bounds">
-			<rectangle x="391" y="197" width="78" height="48"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="PDSymtom0" nid="node21" type="PDSymtom">
-		<attr name="bounds">
-			<rectangle x="431" y="361" width="69" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="209" nid="node1" type="InitializesSymptom">
+	<node id="187" nid="node5" type="InitialLocation">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="205" y="343" width="103" height="16"></rectangle>		</attr>
+			<rectangle x="295" y="141" width="82" height="16"></rectangle>		</attr>
 
 
-	<connected id="node18"><attr name="extraLabels">
+	<connected id="node15"><attr name="extraLabels">
 			<array>
 
 </array>
@@ -22482,7 +22333,7 @@
 
 
 	</connected>
-	<connected id="node2">
+	<connected id="node6">
 
 
 
@@ -22492,7 +22343,156 @@
 	</connected>
 	</node>
 			
-	<node id="BedRoom1LeftSide" nid="node7" type="SArea">
+	<node id="BedRoom1RightSide" nid="node6" type="SArea">
+		<attr name="bounds">
+			<rectangle x="370" y="124" width="117" height="48"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="186" nid="node16" type="RelatedHuman">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="91" y="144" width="84" height="16"></rectangle>		</attr>
+
+
+	<connected id="node15"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node12">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="HumanInitialization4" nid="node17" type="HumanInitialization">
+		<attr name="bounds">
+			<rectangle x="194" y="192" width="112" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="HumanInitialization5" nid="node3" type="HumanInitialization">
+		<attr name="bounds">
+			<rectangle x="198" y="267" width="112" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="Husband" nid="node12" type="Human">
+		<attr name="bounds">
+			<rectangle x="25" y="129" width="51" height="48"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="191" nid="node1" type="InitialLocation">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="304" y="290" width="82" height="16"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node14">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="WorldInitialization0" nid="node9" type="WorldInitialization">
+		<attr name="bounds">
+			<rectangle x="51" y="18" width="103" height="84"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="MainDoorArea" nid="node7" type="SArea">
+		<attr name="bounds">
+			<rectangle x="391" y="197" width="78" height="48"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="HumanInitialization3" nid="node15" type="HumanInitialization">
+		<attr name="bounds">
+			<rectangle x="190" y="117" width="112" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="PDSymtom0" nid="node0" type="PDSymtom">
+		<attr name="bounds">
+			<rectangle x="431" y="361" width="69" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="209" nid="node20" type="InitializesSymptom">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="205" y="343" width="103" height="16"></rectangle>		</attr>
+
+
+	<connected id="node3"><attr name="extraLabels">
+			<array>
+
+</array>
+</attr>
+
+
+
+
+
+
+	</connected>
+	<connected id="node19">
+
+
+
+
+
+
+	</connected>
+	</node>
+			
+	<node id="BedRoom1LeftSide" nid="node14" type="SArea">
 		<attr name="bounds">
 			<rectangle x="380" y="273" width="108" height="48"></rectangle>		</attr>
 
@@ -22508,7 +22508,7 @@
 
 	<layout>
 			
-	<node id="node19">
+	<node id="node2">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22519,7 +22519,7 @@
 
 	</node>
 			
-	<node id="node3">
+	<node id="node18">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22530,7 +22530,7 @@
 
 	</node>
 			
-	<node id="node0">
+	<node id="node21">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22541,25 +22541,14 @@
 
 	</node>
 			
-	<node id="node8">
+	<node id="node13">
 		<attr name="bounds">
 			<rectangle x="43" y="286" width="38" height="48"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node17">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="307" y="215" width="82" height="16"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node10">
+	<node id="node11">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22570,41 +22559,34 @@
 
 	</node>
 			
-	<node id="node13">
+	<node id="node4">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="307" y="215" width="82" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node8">
 		<attr name="bounds">
 			<rectangle x="32" y="200" width="51" height="48"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node2">
+	<node id="node19">
 		<attr name="bounds">
 			<rectangle x="198" y="367" width="123" height="64"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node11">
+	<node id="node10">
 		<attr name="bounds">
 			<rectangle x="269" y="24" width="98" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node16">
-		<attr name="view">
-			<string>ingenias</string>
-		</attr>
-
-		<attr name="bounds">
-			<rectangle x="286" y="141" width="82" height="16"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node15">
-		<attr name="bounds">
-			<rectangle x="370" y="124" width="117" height="48"></rectangle>		</attr>
 
 
 	</node>
@@ -22615,26 +22597,51 @@
 		</attr>
 
 		<attr name="bounds">
-			<rectangle x="82" y="144" width="84" height="16"></rectangle>		</attr>
+			<rectangle x="295" y="141" width="82" height="16"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node4">
+	<node id="node6">
+		<attr name="bounds">
+			<rectangle x="370" y="124" width="117" height="48"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node16">
+		<attr name="view">
+			<string>ingenias</string>
+		</attr>
+
+		<attr name="bounds">
+			<rectangle x="91" y="144" width="84" height="16"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node17">
 		<attr name="bounds">
 			<rectangle x="194" y="192" width="112" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node18">
+	<node id="node3">
 		<attr name="bounds">
 			<rectangle x="198" y="267" width="112" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node20">
+	<node id="node12">
+		<attr name="bounds">
+			<rectangle x="25" y="129" width="51" height="48"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node1">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22647,40 +22654,33 @@
 			
 	<node id="node9">
 		<attr name="bounds">
-			<rectangle x="25" y="129" width="51" height="48"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node12">
-		<attr name="bounds">
 			<rectangle x="51" y="18" width="103" height="84"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node6">
-		<attr name="bounds">
-			<rectangle x="173" y="117" width="112" height="68"></rectangle>		</attr>
-
-
-	</node>
-			
-	<node id="node14">
+	<node id="node7">
 		<attr name="bounds">
 			<rectangle x="391" y="197" width="78" height="48"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node21">
+	<node id="node15">
+		<attr name="bounds">
+			<rectangle x="190" y="117" width="112" height="68"></rectangle>		</attr>
+
+
+	</node>
+			
+	<node id="node0">
 		<attr name="bounds">
 			<rectangle x="431" y="361" width="69" height="68"></rectangle>		</attr>
 
 
 	</node>
 			
-	<node id="node1">
+	<node id="node20">
 		<attr name="view">
 			<string>ingenias</string>
 		</attr>
@@ -22691,7 +22691,7 @@
 
 	</node>
 			
-	<node id="node7">
+	<node id="node14">
 		<attr name="bounds">
 			<rectangle x="380" y="273" width="108" height="48"></rectangle>		</attr>
 
