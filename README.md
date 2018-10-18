@@ -1,6 +1,6 @@
 #  Ambient Intelligence Development Environment for People with Neurodegenerative Diseases
 
-This site shows how to use the [AIDE](http://grasia.fdi.ucm.es/aide/) toolset for the deveolopment of AAL solutions for people with neurogenerative diseases (NDD).
+This site shows how to use the [AIDE](http://grasia.fdi.ucm.es/aide/) toolset for the development of AAL solutions for people with neurogenerative diseases (NDD).
 
 It first briefly explains what is [AIDE](http://grasia.fdi.ucm.es/aide/), how to install it, and then a set of case studies that illustrate what can be done with it.
 
