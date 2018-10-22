@@ -1,6 +1,6 @@
 # Description
 
-### Specific problems reported.
+## Specific problems reported.
 
-### Technological solutions that were discussed and their impressions about them.
+## Technological solutions that were discussed and their impressions about them.
 
