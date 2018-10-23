@@ -4,10 +4,6 @@ jdk:
 
 sudo: false
 
-install:
-  - cd e1interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - cd ../e2interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
 #Init X Virtual Framebuffer
 before_script:
   - "export DISPLAY=:99.0"
@@ -15,5 +11,7 @@ before_script:
   - sleep 3
 
 script:
-- cd e1interview/ && mvn test -B
-- cd ../e2interview/ && mvn test -B
+- cd e1interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e2interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
