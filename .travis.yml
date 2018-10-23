@@ -15,3 +15,29 @@ script:
 - mvn test -B
 - cd ../e2interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 - mvn test -B
+- cd ../e3interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e4interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e5interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e6interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e7interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e8interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e9interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e10interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e11interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e12interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e13interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e14interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
+- cd ../e15interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- mvn test -B
