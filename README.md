@@ -1,4 +1,8 @@
 #  Ambient Intelligence Development Environment for People with Neurodegenerative Diseases
+[![Build Status](https://travis-ci.com/Melkoroth/AIDEdevelopment.svg?branch=master)](https://travis-ci.com/Melkoroth/AIDEdevelopment)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Maven Version](https://img.shields.io/badge/maven-v3.1.1-yellow.svg)](https://maven.apache.org/)
+[![OpenJDK Version](https://img.shields.io/badge/openjdk-v1.8-yellow.svg)](https://openjdk.java.net/)
 
 This site shows how to use the [AIDE](http://grasia.fdi.ucm.es/aide/) toolset for the development of AAL solutions for people with neurogenerative diseases (NDD).
 
