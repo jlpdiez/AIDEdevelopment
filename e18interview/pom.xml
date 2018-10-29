@@ -7,10 +7,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.mydevel</groupId>
-  <artifactId>baseModel</artifactId>
+  <artifactId>e18interview</artifactId>
   <packaging>jar</packaging>
-  <name>Base project</name>
-  <description>A project from which to build others</description>
+  <name>Interview to caregiver 18</name>
+  <description>This models E18 interview daily activities and symptom</description>
   <url>http://grasiagroup.fdi.ucm.es/aidendd/</url>
   <properties>
     <vendor>GRASIA Research Group</vendor>
