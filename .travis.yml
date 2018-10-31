@@ -49,3 +49,5 @@ script:
 - mvn test -B -q
 - cd ../e19interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -q
 - mvn test -B -q
+- cd ../e20interview/ && mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -q
+- mvn test -B -q
