@@ -1,8 +1,9 @@
 #  Ambient Intelligence Development Environment for People with Neurodegenerative Diseases
 [![Build Status](https://travis-ci.com/Melkoroth/AIDEdevelopment.svg?branch=master)](https://travis-ci.com/Melkoroth/AIDEdevelopment)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Maven Version](https://img.shields.io/badge/maven-v3.1.1-yellow.svg)](https://maven.apache.org/)
-[![OpenJDK Version](https://img.shields.io/badge/openjdk-v1.8-yellow.svg)](https://openjdk.java.net/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![OpenJDK Version](https://img.shields.io/badge/openjdk-v1.8-red.svg)](http://openjdk.java.net/)
+[![Maven Version](https://img.shields.io/badge/maven-v3.1.1-orange.svg)](http://maven.apache.org/)
+[![Ant Version](https://img.shields.io/badge/ant-v1.8.2-yellow.svg)](http://ant.apache.org/)
 
 This site shows how to use the [AIDE](http://grasia.fdi.ucm.es/aide/) toolset for the development of AAL solutions for people with neurogenerative diseases (NDD).
 
@@ -83,7 +84,7 @@ $ sudo apt install ant
     
     **$ ant runSimName**
 
-*NOTE:* Bash completion for ant is useful when searching for simulations with "ab" key: http://ingenias.sourceforge.net/blog/2012/12/04/a-useful-bashcompletion-extension-for-ant/
+*NOTE:* Bash completion for ant is useful when searching for simulations: <http://ingenias.sourceforge.net/blog/2012/12/04/a-useful-bashcompletion-extension-for-ant/>
 
 ### Case Study Usage Example:
 Download full repository
