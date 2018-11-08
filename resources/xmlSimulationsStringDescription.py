@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 data = list()
-for i in range(10):
+for i in range(20):
     print(i+1)
     data.append("/home/ender/Desktop/AIDEdevelopment/e" + str(i + 1) + "interview/src/main/spec/specification.xml")
 

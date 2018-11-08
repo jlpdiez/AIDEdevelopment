@@ -70,3 +70,74 @@ SimNoSymptoms
 This simulation models the patients daily activities when she was still living at home with her housekeeper
 SimRepeatTalk
 This simulation models one of the patients symptoms which is reported as echoing herself a lot, talking about the same thing over and over again.
+11
+SimNoSymptoms
+This simulation mimics the patients and her caregivers daily activities as described in the interview.
+SimMovement
+This simulation tries to mimic the patients troubles when moving. All move actions are delayed by 50%
+SimPain
+This simulation focuses on the reported pain the patient has in the lower back area. The filter this time is in the form of an out loud message. When performing tasks such as walking, getting in and out of bed or sitting in a chair the agent has a 30% chance of complaining about her pain.
+SimAll
+This simulation combines the previous two symptoms but as a whole. The patient has movement problems and sometimes compains about her lower back pain.
+12
+SimNoSymptoms
+SimArgue
+13
+SimNoSymptoms
+This simulation models the day to day activities of the patient, her daughter and her caregiver as reported in the interview.
+SimEquilibrium
+For this simulation equilibrium difficulties have been modeled. Each and every time the patient tries to get out of bed she falls and asks for help.
+SimMovement
+This simulation mimicks the patients mobility problems. A filter is applied to every walking the agent does so it becomes twice as slow as she would do it normally.
+SimAll
+This simulation combines both filters created for this model. On one hand, the patient is twice as slow while walking and on the other one she loses her equilibrium and falls every time she raises from bed.
+14
+SimNoSymptoms
+SimMovement
+This simulation models the problems with movement the patient has. These problems are caused by two hernias the patient has on her lower back. For these problems a filter was created that, with a probability of 0.2, makes him 150% slower on movement tasks.
+SimPain
+This simulation models the patients pain caused by two hernias she has on her lower back. For this specific problem a filter was created that, with a probability of 0.2, makes him complain out loud about her pain.
+SimAll
+This simulation combines both filters previously created. One makes her perform actions more slowly and the other makes her complain about her pain at random.
+15
+SimNoSymptoms
+SimInBed
+This simulates the patient being unable to leave the bed at all which happened for three years according to the interview.
+SimMovement
+16
+SimNoSymptoms
+A simulation of a typical 24 hour period as reported in the interview.
+SimNightTerrors
+This simulates the hallucinations and terrors the caregiver reported the patient had at night. Every time the patient is lying in bed she has a 0.01 probability of speaking the phrase: - There are creepy crawlers in my pillow -
+17
+SimNoSymptoms
+A reported 24 hour period of the patients daily activities. This simulation has no symptoms attached.
+SimDisorient
+This simulation models the dissorientation problems the patient has. It is reported that she used to check a lot throughout the day if the beds were done. For this reason a filter was created that makes her check the bedroom regularly.
+SimTremors
+This simulations models the tremors the patient was reported as having.
+SimAll
+This simulates a 24h period of the patients daily activities but with all the symptoms combined. On one hand the patient is constantly checking if the beds were made and on the other hand she has trembling hands.
+18
+SimNoSymptoms
+24 hour period of the three members of the family doing their daily activities.
+SimTalkToTV
+This siumlation models one of the patients symptoms which is that she used to talk to the people inside the TV. For this reason, when the patient is seated in front of the TV she has a 0.05 chance of saying "Hello man inside the TV"
+19
+SimNoSymptoms
+A simulation with no symptoms attached. Just the normal reported daily activities the patient and her husband are reported as doing in a typical day.
+SimDisorientCooking
+This simulation models the patient getting disoriented while cooking. To simulate this effect the patient speaks about her disorientation and then waiting for 60seconds to simulate the act of gathering her thoughts while opening the fridge.
+SimForgetFire
+This simulations has the patient forget that she was cooking and going to sit in the livingroom. It is reported that she set fire to the kitchen at least once because of this.
+SimAllSymptoms
+In this simulation both symptoms are combined. On one hand the patient forgets tasks she was doing while opening the fridge and using the sink and on the other she leaves the fire unattended. Both model cooking problems the patient had and which were the reason why she had to stop cooking.
+20
+SimNoSymptoms
+Simulation with no symptoms attached, just the normal daily activities.
+SimRefuseShower
+In this simulation the patient refuses to shower, which is a symptom that reported her daughter in law in the interview.
+SimRefuseMedicines
+In this simulation the patient refuses to take her medicines which happens twice daily at breakfast and supper.
+SimAll
+This simulation combines both modeled symptoms. Firstly the patient refuses to shower daily and secondly she doesnt take her medicines at all.

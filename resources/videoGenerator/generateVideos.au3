@@ -49,6 +49,7 @@ For $folderNum = 0 To $dirSize - 1
 	sendCommand("cd " & $dirs[$folderNum])
 	;Compile
 	showTooltip("Compiling E" & $folderNum + 1)
+	;Flag not needed since dce614d - Check
 	sendCommand("mvn clean compile -Dfile.encoding=UTF8")
 
 	;Wait for build to end
