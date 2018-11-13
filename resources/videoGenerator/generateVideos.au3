@@ -71,6 +71,7 @@ For $folderNum = 0 To $dirSize - 1
 	Sleep(500)
 Next
 
+;Main sim+recording loop
 Func recordVideo($commandList, $cmdIndex, $folderN)
 	showTooltip("Starting E" & $folderN + 1 & " " & $commandList[$cmdIndex])
 	;Run simulation
@@ -83,16 +84,19 @@ Func recordVideo($commandList, $cmdIndex, $folderN)
 	WEnd
 	;Pause
 	showTooltip("Pausing E" & $folderN + 1 & " " & $commandList[$cmdIndex])
-	MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+	$yCoordButtons = calcYcoordButtons()
+	MouseClick($MOUSE_CLICK_LEFT, 100, $yCoordButtons)
+	;Reset size of video recording frame
+	changeRecordingFrameSize()
 	;Accelerate simulation -> 8 clicks equals 256x
 	showTooltip("Accelerating E" & $folderN + 1 & " " & $commandList[$cmdIndex])
-	MouseClick($MOUSE_CLICK_LEFT, 220, 50, 7)
+	MouseClick($MOUSE_CLICK_LEFT, 220, $yCoordButtons, 7)
 	;Record
 	showTooltip("Recording E" & $folderN + 1 & " " & $commandList[$cmdIndex])
 	startRecording()
 	;Restart
 	;showTooltip("Restarting E" & $folderNum + 1 & " " & $retunedCommands[$i])
-	MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+	MouseClick($MOUSE_CLICK_LEFT, 100, $yCoordButtons)
 	MouseMove(@DesktopWidth, @DesktopHeight)
 	;Wait for sim to finish
 	;At 256 speed 00:00 is at 3m 31s => 211 seconds
@@ -120,6 +124,18 @@ Func recordVideo($commandList, $cmdIndex, $folderN)
 	WinWaitActive($consoleWinName)
 	Sleep(100)
 	Send("^c")
+EndFunc
+
+;Calcs y coordinate for PHATSIM buttons depending on window size
+;Two cases detected: With two agents window height is 849 and with three of them it's 889
+Func calcYcoordButtons()
+	;[CLASS:LWJGL; INSTANCE:1]
+	$winPosition = WinGetPos($phatsimWinName)
+	If ($winPosition[3] == 849) Then
+		return 50
+	Else
+		return 70
+	EndIf
 EndFunc
 
 ;*************************************
@@ -152,17 +168,9 @@ Func searchImage($img)
 	Return _ImageSearch($img, 1, $x, $y, 100)
 EndFunc
 
+;Tooltip helper function
 Func showTooltip($message, $title = ".::[ PHATSIM AutoRecorder ]::.")
 	ToolTip($message, @DesktopWidth - 250, @DesktopHeight - 150, $title, $TIP_NOICON, $TIP_BALLOON)
-EndFunc
-
-;Tests to see if an exception happened
-Func testError()
-	;If (WinExists("Error in application")) Then
-	;	Return True
-	;Else
-	;	Return False
-	;EndIf
 EndFunc
 
 ;*************************************
@@ -192,8 +200,6 @@ Func getNumberOfInterviews()
 EndFunc
 
 ;Returns an array with the commands needed to execute the simulations
-;TODO: If simulation equals one I think this func returns 0 records ¿? -> Test
-;Failed on e8 -> runSimDisorient as it ¿doesn't seem to generate proper classes?
 Func getAntCommands(ByRef $simNum)
 	Local $fileNames[15]
 	Local $fullRoute = $workingDir & "\" & $dirs[$simNum] & "\target\classes\phat\sim\*Record.java"
@@ -257,6 +263,24 @@ Func launchRecordingSW()
 	WinWaitActive($recordWinName)
 	Local $winPos = WinGetPos($recordWinName)
 	MouseClickDrag($MOUSE_CLICK_LEFT, $winPos[0], $winPos[1], @DesktopWidth - 350, $winPos[1])
+EndFunc
+
+;Changes recording frame height depending on PHATSIMs window size
+Func changeRecordingFrameSize()
+	WinActivate($recordWinName)
+	WinWaitActive($recordWinName)
+	;Open "region" menu
+	Send("!r")
+	;Open "Fixed Region" window
+	Send("f")
+	;Three tabs make us edit height parameter
+	Send("{TAB}{TAB}{TAB}")
+	;Set new height
+	$winPosition = WinGetPos($phatsimWinName)
+	$toSend = $winPosition[3] - 8
+	Send($toSend)
+	;Enter to set parameters
+	Send("{ENTER}")
 EndFunc
 
 Func startRecording()
