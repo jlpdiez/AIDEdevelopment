@@ -43,7 +43,7 @@ launchRecordingSW()
 ;sendCommand("echo %JAVA_TOOL_OPTIONS%")
 
 ;Cycle through folders
-For $folderNum = 0 To $dirSize - 1
+For $folderNum = 5 To $dirSize - 1
 	showTooltip("Opening E" & $folderNum + 1)
 	;Enter directory
 	sendCommand("cd " & $dirs[$folderNum])
@@ -62,42 +62,7 @@ For $folderNum = 0 To $dirSize - 1
 	$retunedCommands = getAntCommands($folderNum)
 	;Cycle through simulations
 	For $i = 0 To UBound($retunedCommands) - 1
-		showTooltip("Running E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		;Run simulation
-		sendCommand($retunedCommands[$i])
-		;Wait to sim to start
-		PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
-		While @error
-			Sleep(100)
-			PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
-		WEnd
-		;Pause
-		showTooltip("Pausing E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		MouseClick($MOUSE_CLICK_LEFT, 100, 50)
-		;Accelerate simulation -> 8 clicks equals 256x
-		showTooltip("Accelerating E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		MouseClick($MOUSE_CLICK_LEFT, 220, 50, 8)
-		;Record
-		showTooltip("Recording E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		startRecording()
-		;Restart
-		;showTooltip("Restarting E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		MouseClick($MOUSE_CLICK_LEFT, 100, 50)
-		MouseMove(@DesktopWidth, @DesktopHeight)
-		;Wait for sim to finish
-		;At 256 speed 00:00 is at 3m 31s => 211 seconds
-		For $timeRemaining = 211 To 0 Step -1
-			showTooltip("Recording E" & $folderNum + 1 & " " & $retunedCommands[$i] & @CRLF & "Seconds left: " & $timeRemaining)
-			Sleep(1000)
-		Next
-		;Stop recording
-		stopRecording($folderNum + 1, $retunedCommands[$i])
-		;Stop simulation
-		showTooltip("Stopping E" & $folderNum + 1 & " " & $retunedCommands[$i])
-		WinActivate($consoleWinName)
-		WinWaitActive($consoleWinName)
-		Sleep(100)
-		Send("^c")
+		recordVideo($retunedCommands, $i, $folderNum)
 	Next
 
 	;Go up one level in directory structure
@@ -106,18 +71,69 @@ For $folderNum = 0 To $dirSize - 1
 	Sleep(500)
 Next
 
+Func recordVideo($commandList, $cmdIndex, $folderN)
+	showTooltip("Starting E" & $folderN + 1 & " " & $commandList[$cmdIndex])
+	;Run simulation
+	sendCommand($commandList[$cmdIndex])
+	;Wait to sim to start
+	PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
+	While @error
+		Sleep(100)
+		PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
+	WEnd
+	;Pause
+	showTooltip("Pausing E" & $folderN + 1 & " " & $commandList[$cmdIndex])
+	MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+	;Accelerate simulation -> 8 clicks equals 256x
+	showTooltip("Accelerating E" & $folderN + 1 & " " & $commandList[$cmdIndex])
+	MouseClick($MOUSE_CLICK_LEFT, 220, 50, 7)
+	;Record
+	showTooltip("Recording E" & $folderN + 1 & " " & $commandList[$cmdIndex])
+	startRecording()
+	;Restart
+	;showTooltip("Restarting E" & $folderNum + 1 & " " & $retunedCommands[$i])
+	MouseClick($MOUSE_CLICK_LEFT, 100, 50)
+	MouseMove(@DesktopWidth, @DesktopHeight)
+	;Wait for sim to finish
+	;At 256 speed 00:00 is at 3m 31s => 211 seconds
+	For $timeRemaining = 420 To 0 Step -1
+		showTooltip("Recording E" & $folderN + 1 & " " & $commandList[$cmdIndex] & @CRLF & "Seconds left: " & $timeRemaining)
+		;Exception catch
+		If (WinExists("Error")) Then
+			showTooltip("Recording failed!")
+			;Kill java windows
+			While ProcessExists("java.exe")
+				ProcessClose("java.exe")
+			WEnd
+			stopRecording()
+			;Re record
+			recordVideo($commandList, $cmdIndex, $folderN)
+			Return
+		EndIf
+		Sleep(1000)
+	Next
+	;Stop recording
+	finishRecording($folderN + 1, $commandList[$cmdIndex])
+	;Stop simulation
+	showTooltip("Stopping E" & $folderN + 1 & " " & $commandList[$cmdIndex])
+	WinActivate($consoleWinName)
+	WinWaitActive($consoleWinName)
+	Sleep(100)
+	Send("^c")
+EndFunc
+
 ;*************************************
 ; AUXILIARY FUNCTIONS
 ;*************************************
 ;Exits the program
 Func quitScript()
 	showTooltip("Killing processes and exiting program")
-	WinClose($consoleWinName)
-	WinClose($recordWinName)
 	;Close java as it sometimes bugs itself
 	While ProcessExists("java.exe")
 		ProcessClose("java.exe")
 	WEnd
+	WinClose($consoleWinName)
+	stopRecording()
 	Exit
 EndFunc
 
@@ -133,11 +149,20 @@ EndFunc
 ;Searchs for a given image and returns true or false
 Func searchImage($img)
 	Local $x, $y
-	Return _ImageSearch($img, 1, $x, $y, 250)
+	Return _ImageSearch($img, 1, $x, $y, 100)
 EndFunc
 
 Func showTooltip($message, $title = ".::[ PHATSIM AutoRecorder ]::.")
 	ToolTip($message, @DesktopWidth - 250, @DesktopHeight - 150, $title, $TIP_NOICON, $TIP_BALLOON)
+EndFunc
+
+;Tests to see if an exception happened
+Func testError()
+	;If (WinExists("Error in application")) Then
+	;	Return True
+	;Else
+	;	Return False
+	;EndIf
 EndFunc
 
 ;*************************************
@@ -238,7 +263,17 @@ Func startRecording()
 	Send("^!r")
 EndFunc
 
-Func stopRecording($folderNum, ByRef $simName)
+;Stop recording and cancel save
+Func stopRecording()
+	Send("^!p")
+	Sleep(1000)
+	If (WinExists("Save AVI File")) Then
+		WinWaitActive("Save AVI File")
+		Send("{ESC}")
+	EndIf
+EndFunc
+
+Func finishRecording($folderNum, ByRef $simName)
 	Local $dialogWinName = "Save AVI File"
 	Send("^!p")
 	;WinActivate($dialogWinName)
