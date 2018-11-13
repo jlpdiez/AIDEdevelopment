@@ -81,7 +81,9 @@ SimAll
 This simulation combines the previous two symptoms but as a whole. The patient has movement problems and sometimes compains about her lower back pain.
 12
 SimNoSymptoms
+A simulation with no symptoms attached. Just the normal reported daily activities the patient and her husband are reported as doing in a typical day.
 SimArgue
+This simulation tries to mimic one of the patients symptoms which is reported as being more angry in general towards her daughter. For this reason the patient has a 0.3 probability of speaking about her anger when both agents are seated together.
 13
 SimNoSymptoms
 This simulation models the day to day activities of the patient, her daughter and her caregiver as reported in the interview.
