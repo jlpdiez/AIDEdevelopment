@@ -43,7 +43,7 @@ launchRecordingSW()
 ;sendCommand("echo %JAVA_TOOL_OPTIONS%")
 
 ;Cycle through folders
-For $folderNum = 5 To $dirSize - 1
+For $folderNum = 0 To $dirSize - 1
 	showTooltip("Opening E" & $folderNum + 1)
 	;Enter directory
 	sendCommand("cd " & $dirs[$folderNum])
