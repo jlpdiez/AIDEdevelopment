@@ -20137,7 +20137,7 @@
  <model id="SimTalkToTV" type="ingenias.editor.models.SimulationDiagramModelJGraph">
 <object id="SimTalkToTV" type="ingenias.editor.entities.SimulationDiagramDataEntity">
 <mapproperties>
-<key id="Description">This siumlation models one of the patients symptoms which is that she used to talk to the people inside the TV. For this reason, when the patient is seated in front of the TV she has a 0.05 chance of saying &quot;Hello man inside the TV&quot;</key>
+<key id="Description">This siumlation models one of the patients symptoms which is that she used to talk to the people inside the TV. For this reason, when the patient is seated in front of the TV she has a 0.05 chance of saying Hello man inside the TV</key>
 <key id="_view_type">INGENIAS</key>
 </mapproperties>
 </object>
