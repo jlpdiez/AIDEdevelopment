@@ -81,6 +81,12 @@ Func recordVideo($commandList, $cmdIndex, $folderN)
 	While @error
 		Sleep(100)
 		PixelSearch(500, 250, 1500, 750, 0x00FF00, 25)
+		;Treat exception at init
+		;If (isJavaException()) Then
+			;Re record
+		;	recordVideo($commandList, $cmdIndex, $folderN)
+		;	Return
+		;EndIf
 	WEnd
 	;Pause
 	showTooltip("Pausing E" & $folderN + 1 & " " & $commandList[$cmdIndex])
@@ -103,12 +109,7 @@ Func recordVideo($commandList, $cmdIndex, $folderN)
 	For $timeRemaining = 420 To 0 Step -1
 		showTooltip("Recording E" & $folderN + 1 & " " & $commandList[$cmdIndex] & @CRLF & "Seconds left: " & $timeRemaining)
 		;Exception catch
-		If (WinExists("Error")) Then
-			showTooltip("Recording failed!")
-			;Kill java windows
-			While ProcessExists("java.exe")
-				ProcessClose("java.exe")
-			WEnd
+		If (isJavaException()) Then
 			stopRecording()
 			;Re record
 			recordVideo($commandList, $cmdIndex, $folderN)
@@ -135,6 +136,20 @@ Func calcYcoordButtons()
 		return 50
 	Else
 		return 70
+	EndIf
+EndFunc
+
+;Detects java error window, kills all it's processes and returns a boolean
+Func isJavaException()
+	If (WinExists("Error")) Then
+		showTooltip("Recording failed!")
+		;Kill java windows
+		While ProcessExists("java.exe")
+			ProcessClose("java.exe")
+		WEnd
+		Return True
+	Else
+		Return False
 	EndIf
 EndFunc
 
