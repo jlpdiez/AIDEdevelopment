@@ -2,8 +2,6 @@ language: java
 jdk:
   - openjdk8
 
-sudo: false
-
 #Init X Virtual Framebuffer
 before_script:
   - "export DISPLAY=:99.0"
