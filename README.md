@@ -34,14 +34,12 @@ The main components are:
 
     2.2 [**PHAT Simulator**](https://github.com/Grasia/phatsim) is a simulator developed from scratch using jMonkeyEngine, which makes the entire framework [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software).
 
-    *Note:* Both PHAT components can be found [here](https://github.com/Grasia/phatsim)
-
 ## Getting Started:
 
 ### Installation:
 #### Java 1.8 at least (set variable JAVA_HOME). 
 
-In ubuntu at the time of writing the minimun version is 1.8. Install it by typing:
+Under GNU/Linux you can install it by typing these into the console:
 ```bash
 sudo apt install openjdk-8-jre
 sudo apt install openjdk-8-jdk-headless
