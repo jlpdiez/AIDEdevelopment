@@ -95,6 +95,7 @@ SimAll
 This simulation combines both filters created for this model. On one hand, the patient is twice as slow while walking and on the other one she loses her equilibrium and falls every time she raises from bed.
 14
 SimNoSymptoms
+Simulation with no symptoms attached, just the normal daily tasks are performed with no impairment.
 SimMovement
 This simulation models the problems with movement the patient has. These problems are caused by two hernias the patient has on her lower back. For these problems a filter was created that, with a probability of 0.2, makes him 150% slower on movement tasks.
 SimPain
@@ -103,9 +104,11 @@ SimAll
 This simulation combines both filters previously created. One makes her perform actions more slowly and the other makes her complain about her pain at random.
 15
 SimNoSymptoms
+Simulation with no symptoms attached, just the normal daily tasks are performed with no impairment.
 SimInBed
 This simulates the patient being unable to leave the bed at all which happened for three years according to the interview.
 SimMovement
+Simulates low movement problems. The patient performs tasks such as walking, sitting and getting in and out of bed 300% slower.
 16
 SimNoSymptoms
 A simulation of a typical 24 hour period as reported in the interview.
