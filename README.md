@@ -36,7 +36,7 @@ The main components are:
 ## Getting Started:
 
 ### Installation:
-#### Java 1.7 at least (set variable JAVA_HOME). 
+#### Java 1.8 at least (set variable JAVA_HOME). 
 
 In ubuntu at the time of writing the minimun version is 1.8. Install it by typing:
 ```
@@ -103,7 +103,7 @@ If you get an error message complaining about encoding you should call maven wit
 $ mvn clean compile -Dfile.encoding=UTF8
 ```
 This should launch a PHATSIM window with the simulation. It should be similar to this one:
-![phatsim example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/phatExample.png)
+![phatsim example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/phatSim.gif)
 
 If you are interested in the modelling part:
 ```
