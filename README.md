@@ -17,7 +17,7 @@ They will co-create AAL solutions in an iterative process, where the interaction
 
 These simulations can be seen and analysed by the different actors, who can comment on them, and such information is taken to provide a refined solution.
 
-In order to do this, several tools from the [**AIDE Framework**](http://grasia.fdi.ucm.es/aide/) are used, mainly [**SociaalML Editor**](http://grasia.fdi.ucm.es/sociaal/) and [**PHAT simulator**](https://github.com/Grasia/phatsim).
+In order to do this, several tools from the [**AIDE Framework**](http://grasia.fdi.ucm.es/aide/) are used, mainly [**SociAALML Editor**](http://grasia.fdi.ucm.es/sociaal/) and [**PHAT Simulator**](https://github.com/Grasia/phatsim).
 
 ![workflow](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/workflow.png)
 
