@@ -31,7 +31,7 @@ The main components are:
 - [**PHAT Simulator**](https://github.com/Grasia/phatsim) is a simulator developed from scratch using jMonkeyEngine, which makes the entire framework [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software).
 *Note:* Both PHAT components can be found [here](https://github.com/Grasia/phatsim)
 
-![activities](http://grasia.fdi.ucm.es/aide/img/activities.png)
+![workflow](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/workflow.png)
 
 ## Getting Started:
 
