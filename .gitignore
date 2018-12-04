@@ -4,10 +4,15 @@
 .classpath
 .settings
 *~
-target
-assets/*
 *.log
 *.log.lck
 */assets/*
 */OpenAL64.dll
 */lwjgl64.dll
+#Ignore everything in /target except site
+**/classes/*
+**/dochtml/*
+**/generated/*
+**/generated_sources/*
+**/maven-status/*
+!**/site/*
