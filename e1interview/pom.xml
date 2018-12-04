@@ -10,7 +10,7 @@
   <artifactId>e1interview</artifactId>
   <packaging>jar</packaging>
   <name>Models interview E1</name>
-  <description>A project from which to build others</description>
+  <description>Models based on interview 1</description>
   <url>http://grasiagroup.fdi.ucm.es/aidendd/</url>
   <properties>
     <vendor>GRASIA Research Group</vendor>

@@ -12,7 +12,7 @@
   <name>E12 interview model</name>
   <description>Models patient data based on interview 12</description>
   <url>http://grasiagroup.fdi.ucm.es/aidendd/</url>
-  <properties>
+ <properties>
     <vendor>GRASIA Research Group</vendor>
     <developername>Juan L. Perez Diez</developername>
     <developeremail>jlpdiez@ucm.es</developeremail>
@@ -54,11 +54,11 @@
       <artifactId>phat-generator</artifactId>
       <version>${phat.version}</version>
     </dependency>
-    <dependency>
+    <!--dependency>
       <groupId>org.apache.maven.doxia</groupId>
       <artifactId>doxia-module-markdown</artifactId>
       <version>1.5</version>
-    </dependency>
+    </dependency-->
     <dependency>
       <groupId>net.sf.sociaal</groupId>
       <artifactId>sociaalmled</artifactId>
@@ -73,6 +73,7 @@
     </dependency>
   </dependencies>
   <profiles>
+  
     <profile>
       <id>release-sign-artifacts</id>
       <activation>
@@ -175,6 +176,11 @@
         <configuration>
           <siteDirectory>${project.basedir}/target/dochtml</siteDirectory>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.7</version>
       </plugin>
       <!-- It generates the documentation associated wiht the metamodel in each submodule-->
       <plugin>

@@ -10,7 +10,7 @@
   <artifactId>e6Model</artifactId>
   <packaging>jar</packaging>
   <name>Model from interview E6</name>
-  <description>A project from which to build others</description>
+  <description>Simulations based on e6</description>
   <url>http://grasiagroup.fdi.ucm.es/aidendd/</url>
   <properties>
     <vendor>GRASIA Research Group</vendor>
