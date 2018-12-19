@@ -107,7 +107,7 @@ If you get an error message complaining about encoding you should call maven wit
 mvn clean compile -Dfile.encoding=UTF8
 ```
 This should launch a PHATSIM window with the simulation. It should be similar to this one:
-![phatsim example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/phatSim.gif)
+![phatsim example](https://github.com/Grasia/AIDEdevelopment/raw/master/documentation/phatSim.gif)
 
 If you are interested in the modelling part:
 ```bash
@@ -116,7 +116,7 @@ mvn clean compile
 ant edit
 ```
 This will laund the SociAALML editor, which is similar to this capture:
-![sociaalml example](https://github.com/Melkoroth/AIDEdevelopment/raw/master/documentation/sociaalExample.png)
+![sociaalml example](https://github.com/Grasia/AIDEdevelopment/raw/master/documentation/sociaalExample.png)
 
 ## Acknowledgements
 
